@@ -4,6 +4,7 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
+/*    color:#252525; */
 }
 
 h1, h2 {
@@ -12,4 +13,43 @@ h1, h2 {
 
 body {
     font-family: 'Libre Franklin', sans-serif;
+}
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 50px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 10px;
+}
+
+#logo {
+    float: left;
+    font-size: 150%;
+    margin-left: 30px;
+    color:#fff;
+    letter-spacing: 4px;
+}
+
+/* navigation links */
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 5%;
+    color: inherit;
+    letter-spacing: 4px;
+}
+
+#menu a {text-decoration: none;
+color: inherit;
+font-family: 'Libre Baskerville', serif;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
 }
