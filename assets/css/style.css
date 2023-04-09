@@ -3,12 +3,13 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: 'Libre Franklin', sans-serif;}
-
-    body {
     font-family: 'Libre Franklin', sans-serif;
-    font-weight:300;
-    color:#333;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    color: #333;
 }
 
 .navbar {
@@ -23,11 +24,13 @@
     padding: 0 40px;
 }
 
-ul {list-style-type: none;
+ul {
+    list-style-type: none;
 }
 
 /* Heading and logo styles */
-h1, h2 {
+h1,
+h2 {
     font-family: 'Libre Baskerville', serif;
     margin: 10px 0;
     color: #252525;
@@ -35,7 +38,7 @@ h1, h2 {
 
 .header {
     grid-area: hd;
-    background-color:rgb(167, 248, 221);
+    background-color: rgb(167, 248, 221);
     color: #fff;
     height: 50px;
 }
@@ -44,16 +47,17 @@ h1, h2 {
     float: left;
     font-size: 110%;
     margin-left: 30px;
-    color:#fff;
+    color: #fff;
     letter-spacing: 4px;
 }
 
 #menu {
     font-size: 110%;
-letter-spacing: 4px;
+    letter-spacing: 4px;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 50px;
 }
 
@@ -62,11 +66,13 @@ letter-spacing: 4px;
     float: right;
     list-style-type: none;
     margin-right: 30px;
-    color: inherit;}
+    color: inherit;
+}
 
-#menu a {text-decoration: none;
-color: inherit;
-font-family: 'Libre Baskerville', serif;
+#menu a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Libre Baskerville', serif;
 }
 
 #menu a:hover {
@@ -102,13 +108,10 @@ body {
     grid-area: main;
 }
 
-.main-centre { 
+.main-centre {
     grid-area: main;
-background-color: blue;}
-
-.main-right {
-grid-area: rhside;
-background-color: aquamarine;}
+    background-color: blue;
+}
 
 /* Flexbox styling for map and walk IDs to appear in centre of screen */
 .mainmap {
@@ -118,6 +121,7 @@ background-color: aquamarine;}
 }
 
 /* Flexbox styling for walk ids to display around edges of container */
+/* z-index is set to 2 to set the walk IDs to the front */
 .walk-id {
     position: absolute;
     z-index: 2;
@@ -135,12 +139,17 @@ background-color: aquamarine;}
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: center;
-     align-content: space-between; 
+    align-content: space-between;
+}
+
+/* Change display when hover over individual walks */
+.walk-id a:hover {
+    font-size: 130%;
 }
 
 /* Include specific styling for google map to pop it into the middle of its container and make it responsive*/
 .google-map {
-    /* grid-area: main; */
+    grid-area: main;
     padding-bottom: 70%;
     position: relative;
 }
@@ -150,7 +159,7 @@ background-color: aquamarine;}
     width: 80%;
     left: 10%;
     top: 10%;
-    margin-right:10%;
+    margin-right: 10%;
     position: absolute;
 }
 
@@ -162,14 +171,14 @@ background-color: aquamarine;}
 
 /* Footer styling */
 footer {
-    grid-area: foot;  
-    height: 90px; 
-    background-color:rgb(167, 248, 221);
+    grid-area: foot;
+    height: 50px; 
+    background-color: rgb(167, 248, 221);
 }
 
 .partners {
-        text-align: center;
-    vertical-align:top; 
+    text-align: center;
+    vertical-align:top;
 }
 
 .partners li {
@@ -177,11 +186,8 @@ footer {
 }
 
 .partners i {
-     font-size: 160%;
-    /* margin: 10%; */
-    padding: 1%;
-    text-spacing:4px;
-    color: #3a3a3a;
+    font-size: 160%;
     margin: auto;
-    overflow: auto;
+    color: #3a3a3a;
+    overflow: auto; 
 }
