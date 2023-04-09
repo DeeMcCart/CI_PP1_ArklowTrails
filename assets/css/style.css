@@ -59,7 +59,7 @@ font-family: 'Libre Baskerville', serif;
 /* Footer styling */
 footer {
     grid-area: foot;
-    height: 150px;
+    height: 50px;
     background-color:rgb(167, 248, 221);
 }
 
@@ -72,7 +72,7 @@ footer {
 }
 
 .partners i {
-    font-size: 160%;
+    /* font-size: 160%; */
     margin: 1%;
     padding: 5%;
     color: #3a3a3a
