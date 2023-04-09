@@ -3,24 +3,12 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;}
+
+    body {
     font-family: 'Libre Franklin', sans-serif;
-/*    background-color:rgb(167, 248, 221); */
-/*    color:#252525; */
-}
-
-h1, h2 {
-    font-family: 'Libre Baskerville', serif;
-}
-
-body {
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-.header {
-    grid-area: hd;
-    background-color:rgb(167, 248, 221);
-    color: #fff;
-    height: 50px;
+    font-weight:300;
+    color:#333;
 }
 
 .navbar {
@@ -30,27 +18,51 @@ body {
 
 .container {
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
     overflow: auto;
-    padding: 10px;
+    padding: 0 40px;
+}
+
+ul {list-style-type: none;
+}
+
+/* Heading and logo styles */
+h1, h2 {
+    font-family: 'Libre Baskerville', serif;
+    margin: 10px 0;
+    color: #252525;
+}
+
+.header {
+    grid-area: hd;
+    background-color:rgb(167, 248, 221);
+    color: #fff;
+    height: 50px;
 }
 
 #logo {
     float: left;
-    font-size: 150%;
+    font-size: 110%;
     margin-left: 30px;
     color:#fff;
     letter-spacing: 4px;
+}
+
+#menu {
+    font-size: 110%;
+letter-spacing: 4px;
+}
+
+#menu, #logo {
+    line-height: 50px;
 }
 
 /* navigation links */
 #menu li {
     float: right;
     list-style-type: none;
-    margin-right: 5%;
-    color: inherit;
-    letter-spacing: 4px;
-}
+    margin-right: 30px;
+    color: inherit;}
 
 #menu a {text-decoration: none;
 color: inherit;
@@ -58,6 +70,10 @@ font-family: 'Libre Baskerville', serif;
 }
 
 #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
     border-bottom: 1px solid #3a3a3a;
 }
 
