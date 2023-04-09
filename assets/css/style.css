@@ -77,6 +77,11 @@ font-family: 'Libre Baskerville', serif;
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* General styling for images */
+img {
+    width: 100%;
+}
+
 /* body styling grid format */
 body {
     display: grid;
@@ -87,7 +92,7 @@ body {
         "foot foot foot";
 }
 
-/* Text to position in left hand screen panel */
+/* Position of text in left hand screen panel */
 .main-left {
     grid-area: lhside;
     background-color: beige
@@ -99,7 +104,38 @@ body {
 
 .main-centre { 
     grid-area: main;
-background-color: blue;
+background-color: blue;}
+
+.main-right {
+grid-area: rhside;
+background-color: aquamarine;}
+
+/* Flexbox styling for map and walk IDs to appear in centre of screen */
+.mainmap {
+    grid-area: main;
+    position: relative;
+    z-index: 1;
+}
+
+/* Flexbox styling for walk ids to display around edges of container */
+.walk-id {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 3px dotted blue;
+    background-color: transparent;
+    padding: 0;
+    color: red;
+    font-size: 80px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+     align-content: space-between; 
 }
 
 /* Include specific styling for google map to pop it into the middle of its container and make it responsive*/
