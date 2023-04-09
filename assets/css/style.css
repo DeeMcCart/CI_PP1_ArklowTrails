@@ -55,6 +55,22 @@ font-family: 'Libre Baskerville', serif;
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* Include specific styling for google map to pop it into the middle of its container and make it responsive*/
+.google-map {
+    grid-area: main;
+    padding-bottom: 70%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    margin-right:10%;
+    position: absolute;
+}
+
 
 /* Footer styling */
 footer {
