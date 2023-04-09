@@ -4,7 +4,7 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Libre Franklin', sans-serif;
-    background-color:rgb(167, 248, 221);
+/*    background-color:rgb(167, 248, 221); */
 /*    color:#252525; */
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .navbar {
-    background-color: #047aed;
+    background-color:rgb(167, 248, 221);
     color: #fff;
     height: 50px;
 }
@@ -53,4 +53,27 @@ font-family: 'Libre Baskerville', serif;
 
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* Footer styling */
+footer {
+    grid-area: foot;
+    height: 150px;
+    background-color:rgb(167, 248, 221);
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners li {
+    display: inline;
+}
+
+.partners i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a
 }
