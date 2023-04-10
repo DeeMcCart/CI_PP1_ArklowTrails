@@ -36,6 +36,8 @@ h2 {
     color: #252525;
 }
 
+/* check if the class below is genuinely needed or could be incorporated into other styling */
+/* think its needed for the grid area and that's it? */
 .header {
     grid-area: hd;
     background-color: rgb(167, 248, 221);
