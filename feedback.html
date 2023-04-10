@@ -65,7 +65,7 @@
         <p>All feedback will be assessed for inclusion on the site</p>
         <br>
         <form action="https://formdump.codeinstitute.net" method="POST">
-            <label for="Kilbride">Walk:<br></label>
+        <!--    <label for="Kilbride">Walk:<br></label>
             <input id="Kilbride" type="radio" name="walk" value="kilbride" />
             <label for="Kilbride">  Kilbride<br></label>
             <input id="Glenart" type="radio" name="walk" value="glenart" />
@@ -75,10 +75,20 @@
             <input id="NatureRes" type="radio" name="walk" value="nature_res" />
             <label for="NatureRes">   Nature Reserve<br></label>
             <input id="ArklowRock" type="radio" name="walk" value="arklow_rock" />
-            <label for="ArklowRock">   Arklow Rock<br></label>
+            <label for="ArklowRock">   Arklow Rock<br></label> -->
             
             <!-- try implementing the above as a drop down list rather than radio buttons as might be more appropriate to mobile screen usage -->
-            <br>
+            <label for="walk-name">Walk: <br></label>
+            <select id="walk-name" name="walkname">
+                <option value="kilbride">Kibride Pyramid</option>
+                <option value="glenart">Glenart</option>
+                <option value="riverbank">Riverbank</option>
+                <option value="nature_res">Nature Reserve & Duckpond</option>
+                <option value="arklow_rock">Arklow Rock</option>
+                <option value="other">Other (add details below)</option>
+            </select>
+            
+            <br><br>
             <label for="firstname">Firstname: </label>
             <input id="firstname" type="text" name="fname"/>
 
@@ -100,9 +110,9 @@
             <input type="submit" />Submit Feeback
         </form>
         <br>
-        <p>Text box with overflows giving:
-            Description of what feedback is, and how it will be used (e.g. email address will be verified before
-            moderator uploads images)</p>
+        <p>Feedback is used to rate the walks listed and also to suggest new walks which should be added (choose 'Other' and add details/ photos).</p>
+         <p>Email address will be verified prior to upload of images or reviews are shared</p>
+            
     </section>
 
     <section class="main-right">
