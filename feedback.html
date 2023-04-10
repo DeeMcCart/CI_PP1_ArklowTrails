@@ -31,7 +31,7 @@
                         <a href="feedback.html" class="active">Feedback</a>
                     </li>
                     <li>
-                        <a href="gallery.html" >Gallery</a>
+                        <a href="gallery.html">Gallery</a>
                     </li>
                     <li>
                         <a href="walks.html">Walks</a>
@@ -45,71 +45,101 @@
     </header>
     <section class="main-left">
         <p>Plenty of text to describe a walk, why you might do it, what the walk characteristics are and
-        so on</p>
+            so on</p>
     </section>
-    
+
     <!-- Main section (some descriptive text with a form below this) -->
     <section class="main">
         <h2>About</h2>
         <p>Arklow has a rich and varied landscape with coast, riverside, woodland and hilly terrain.</p>
         <br>
-        <p>Spectacular views can be seen along the Wicklow and Wexford coastlines, particularly from elevated viewing points.</p>
-        <p>Locations of historic interest include Arklow Pyramid (actually a burial crypt), remains of the Kynochs gunpowder plant which operated here in the early 1900's, 
-            Arklow maritime museum.  
+        <p>Spectacular views can be seen along the Wicklow and Wexford coastlines, particularly from elevated viewing
+            points.</p>
+        <p>Locations of historic interest include Arklow Pyramid (actually a burial crypt), remains of the Kynochs
+            gunpowder plant which operated here in the early 1900's,
+            Arklow maritime museum.
             Walking, hiking and jogging trails have been cultivated to highlight points of interest</p>
-            <br>
-            <p>Please test out the walks described here and upload a review to help the next person, and photos if you have them</p>
-            <p>All feedback will be assessed for inclusion on the site</p>
         <br>
-            <form action="https://formdump.codeinstitute.net" method="POST">
-                <input type="radio" />
-                <input type="text"> Firstname
-                <input type="text"> Surname
-                <input type="email" name="email"/>Email 
-                <input type="image" name="TrailPhoto1">Your photo
-                <input type="text" name="review"/>Review
-                <input type="submit"/>Submit Feeback
-            </form>
+        <p>Please test out the walks described here and upload a review to help the next person, and photos if you have
+            them</p>
+        <p>All feedback will be assessed for inclusion on the site</p>
+        <br>
+        <form action="https://formdump.codeinstitute.net" method="POST">
+            <label for="Kilbride">Walk:<br></label>
+            <input id="Kilbride" type="radio" name="walk" value="kilbride" />
+            <label for="Kilbride">  Kilbride<br></label>
+            <input id="Glenart" type="radio" name="walk" value="glenart" />
+            <label for="Glenart">   Glenart<br></label>
+            <input id="Riverbank" type="radio" name="walk" value="riverbank" />
+            <label for="Riverbank">   Riverbank<br></label>
+            <input id="NatureRes" type="radio" name="walk" value="nature_res" />
+            <label for="NatureRes">   Nature Reserve<br></label>
+            <input id="ArklowRock" type="radio" name="walk" value="arklow_rock" />
+            <label for="ArklowRock">   Arklow Rock<br></label>
+            
+            <!-- try implementing the above as a drop down list rather than radio buttons as might be more appropriate to mobile screen usage -->
             <br>
-            <p>Text box with overflows giving:
-                Description of what feedback is, and how it will be used (e.g. email address will be verified before moderator uploads images)</p>
+            <label for="firstname">Firstname: </label>
+            <input id="firstname" type="text" name="fname"/>
+
+            <label for="surname">Surname: </label>
+            <input id="surname" type="text" name="sname"/>
+            <br><br>
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email" required />
+<br><br>
+            <label for="review">Your review:<br> </label>
+            <input id="review" type="textarea" name="review" required />
+            <br><br>
+
+            <label for="photo1">Your photos(s);  </label>
+            <input id="photo1" type="image" name="TrailPhoto1"/>
+            <br><br>
+            <input id="accept_terms" type="checkbox" name="accept_terms"/>
+            <label for="tandc">Tick to accept Terms and Conditions<br></label>
+            <input type="submit" />Submit Feeback
+        </form>
+        <br>
+        <p>Text box with overflows giving:
+            Description of what feedback is, and how it will be used (e.g. email address will be verified before
+            moderator uploads images)</p>
     </section>
 
-        <section class="main-right">
-            <p>Descriptive text for gallery,
-             mainly to shove the footer along</p>
-        </section>
-        
-    
-        <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
-        <footer>
-            <ul class="partners container">
-                <li>
-                    <a href="https://www.facebook.com/TrailTrottersArklow/" target="_blank" rel="noopener"
-                        aria-label="Arklow Trail Trotters facebook (opens in a new tab)"><i
-                            class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://visitwicklow.ie/listing/arklow/" target="_blank" rel="noopener"
-                        aria-label="Wicklow Tourism (opens in a new tab)"><i class="fa-regular fa-snowflake"
-                            style="color: #c70505;"></i>
-                        </i></a>
-                </li>
-                <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener"
-                        aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube"
-                            style="color: #f25a07;"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Insta (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-            </ul>
-        </footer>
-        <!-- font awesome script -->
-        <!-- using current/latest font awesome release pack -->
+    <section class="main-right">
+        <p>Descriptive text for gallery,
+            mainly to shove the footer along</p>
+    </section>
 
-        <script src="https://kit.fontawesome.com/a5acd5b07c.js" crossorigin="anonymous"></script>
+
+    <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
+    <footer>
+        <ul class="partners container">
+            <li>
+                <a href="https://www.facebook.com/TrailTrottersArklow/" target="_blank" rel="noopener"
+                    aria-label="Arklow Trail Trotters facebook (opens in a new tab)"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://visitwicklow.ie/listing/arklow/" target="_blank" rel="noopener"
+                    aria-label="Wicklow Tourism (opens in a new tab)"><i class="fa-regular fa-snowflake"
+                        style="color: #c70505;"></i>
+                    </i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube"
+                        style="color: #f25a07;"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Insta (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- font awesome script -->
+    <!-- using current/latest font awesome release pack -->
+
+    <script src="https://kit.fontawesome.com/a5acd5b07c.js" crossorigin="anonymous"></script>
 
 </body>
 
