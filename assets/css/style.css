@@ -37,7 +37,7 @@ h2 {
 }
 
 /* check if the class below is genuinely needed or could be incorporated into other styling */
-/* think its needed for the grid area and that's it? */
+/* think its needed for the grid area and that's it? - think its required OK */
 .header {
     grid-area: hd;
     background-color: rgb(167, 248, 221);
@@ -46,6 +46,7 @@ h2 {
 }
 
 #logo {
+    grid-area:hd;
     float: left;
     font-size: 110%;
     margin-left: 30px;
@@ -103,11 +104,12 @@ body {
 /* Position of text in left hand screen panel */
 .main-left {
     grid-area: lhside;
-    background-color: beige
+    background-color: beige;
 }
 
+/* Check if i still need this */
 .main {
-    grid-area: main;
+    grid-area: lhside main rhside;
 }
 
 .main-centre {
@@ -121,6 +123,8 @@ body {
     position: relative;
     z-index: 1;
 }
+
+
 
 /* Flexbox styling for walk ids to display around edges of container */
 /* z-index is set to 2 to set the walk IDs to the front */
@@ -169,6 +173,14 @@ body {
 .main-right {
     grid-area: rhside;
     background-color: beige
+}
+
+/* gallery styling */
+#photos {
+    clear:both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
 }
 
 /* Footer styling */
