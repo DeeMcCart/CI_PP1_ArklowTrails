@@ -272,6 +272,8 @@ footer {
   .flip-card-back {
     background-color: #2980b9;
     color: white;
+    font-size: 0.75em;
+    text-align: center;
     transform: rotateY(180deg);
   }
 
