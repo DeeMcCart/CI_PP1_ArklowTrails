@@ -185,6 +185,7 @@ body {
 
 .walk-detail {
     padding-bottom: 10px;
+    overflow:auto;
    } 
 
 /* gallery styling */
