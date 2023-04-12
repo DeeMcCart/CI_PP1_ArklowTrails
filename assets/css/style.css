@@ -99,7 +99,7 @@ img {
 body {
     display: grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 75px auto 75px;
+    grid-template-rows: 75px auto 100px;
     grid-template-areas: "hd hd hd"
         "lhside main rhside"
         "foot foot foot";
@@ -200,7 +200,7 @@ body {
 /* Footer styling */
 footer {
     grid-area: foot;
-    height: 100px; 
+    min-height: 75px; 
     background-color: rgb(96, 239, 191);
     /* margin: auto; */
 }
@@ -210,16 +210,18 @@ grid-area:foot;
     /* margin: auto; */
     /* clear:left; */
     text-align:center;
+    clear:all;
+    align-self: center;
     }
 
-.partners li {
+.partners > li {
     display: inline;
 }
 
 .partners i {
     font-size: 160%;
     padding: 5%;
-    margin: 1%;
+    margin: auto;
     color: #3a3a3a;
     /* overflow: auto; */ 
 }
