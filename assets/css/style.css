@@ -196,7 +196,7 @@ body {
 /* Footer styling */
 footer {
     grid-area: foot;
-    height: 50px; 
+    height: 70px; 
     background-color: rgb(167, 248, 221);
 }
 
