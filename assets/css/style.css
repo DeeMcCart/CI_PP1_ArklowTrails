@@ -7,7 +7,6 @@
 }
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
     color: #333;
 }
@@ -179,9 +178,9 @@ body {
     grid-area: main;
 }
 
-/* .walk-detail {
-    grid-area: rhside;
-   } */
+.walk-detail {
+    padding-bottom: 10px;
+   } 
 
 /* gallery styling */
 #photos {
