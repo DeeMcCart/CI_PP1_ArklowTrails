@@ -50,22 +50,39 @@
 
     <!-- Main section (some descriptive text with a form below this) -->
     <section class="main">
+        <hr>
+        <br>
         <h2>About</h2>
-        <p>Arklow has a rich and varied landscape with coast, riverside, woodland and hilly terrain.</p>
+        <p>Arklow has a rich and varied landscape with coastal, riverside, woodland and hilly terrain.</p>
         <br>
-        <p>Spectacular views can be seen along the Wicklow and Wexford coastlines, particularly from elevated viewing
-            points.</p>
-        <p>Locations of historic interest include Arklow Pyramid (actually a burial crypt), remains of the Kynochs
-            gunpowder plant which operated here in the early 1900's,
-            Arklow maritime museum.
-            Walking, hiking and jogging trails have been cultivated to highlight points of interest</p>
+        <p><strong>Coastal walks</strong> offer spectacular views along the Wicklow and Wexford coastlines, particularly
+            from elevated viewing
+            points. This includes the elevated path at Arklow Nature reserve ('North beach'), and the Arklow Rock walk
+            ('South Beach').
+            Each offers a chance to observed the ever-changing 'mood' of the sea and sky, and to capture wonderful
+            photos.
+            While the north beach itself is largely eroded, follow the Nature Reserve walk through the caravan park to
+            reach
+            a small sandy beach, with the possibility of exploring further if you are willing to climb the headlands
+            between beaches threaded between Arklow up along the Wicklow coastline. 
+            Remains of the Kynochs gunpowder plant, dating from the 1900's, can be seen along this route.
+        </p>
         <br>
-        <p>Please test out the walks described here and upload a review to help the next person, and photos if you have
+        <p>Glenart to the southwest, and Kilbride to the opposite end of the town are each <strong>woodland</strong> trails .
+            </strong>Locations of historic interest include Arklow Pyramid (actually a burial crypt).
+            Glenart offers a possible glimpse back in time with its historic castle, and Kilbride trail passes a
+            historic cemetery with pyramid crypt.</p>
+
+            
+        Arklow maritime museum.
+        Walking, hiking and jogging trails have been cultivated to highlight points of interest</p>
+        <br>
+        <p>Please try the walks described here and upload a review to help the next person, and photos if you have
             them</p>
         <p>All feedback will be assessed for inclusion on the site</p>
         <br>
         <form action="https://formdump.codeinstitute.net" method="POST">
-        <!--    <label for="Kilbride">Walk:<br></label>
+            <!--    <label for="Kilbride">Walk:<br></label>
             <input id="Kilbride" type="radio" name="walk" value="kilbride" />
             <label for="Kilbride">  Kilbride<br></label>
             <input id="Glenart" type="radio" name="walk" value="glenart" />
@@ -76,7 +93,7 @@
             <label for="NatureRes">   Nature Reserve<br></label>
             <input id="ArklowRock" type="radio" name="walk" value="arklow_rock" />
             <label for="ArklowRock">   Arklow Rock<br></label> -->
-            
+
             <!-- try implementing the above as a drop down list rather than radio buttons as might be more appropriate to mobile screen usage -->
             <label for="walk-name">Walk: <br></label>
             <select id="walk-name" name="walkname">
@@ -86,38 +103,39 @@
                 <option value="nature_res">Nature Reserve & Duckpond</option>
                 <option value="moneylands">Moneylands Farm</option>
                 <option value="riverbank">Riverbank</option>
-                
+
                 <option value="other">Other (add details below)</option>
             </select>
-            
+
             <br><br>
             <label for="firstname">Firstname: </label>
-            <input id="firstname" type="text" name="fname"/>
+            <input id="firstname" type="text" name="fname" />
 
             <label for="surname">Surname: </label>
-            <input id="surname" type="text" name="sname"/>
+            <input id="surname" type="text" name="sname" />
             <br><br>
             <label for="email">Email: </label>
             <input id="email" type="email" name="email" required />
-<br><br>
-            <label for ="date-walked">Date: <br></label>
+            <br><br>
+            <label for="date-walked">Date: <br></label>
             <input id="date-walked" type="date" name="date" />
-            
+
             <label for="review">Your review:<br> </label>
             <input id="review" type="textarea" name="review" required />
             <br><br>
 
-            <label for="photo1">Your photos(s);  </label>
-            <input id="photo1" type="image" name="TrailPhoto1"/>
+            <label for="photo1">Your photos(s); </label>
+            <input id="photo1" type="image" name="TrailPhoto1" />
             <br><br>
-            <input id="accept_terms" type="checkbox" name="accept_terms"/>
+            <input id="accept_terms" type="checkbox" name="accept_terms" />
             <label for="tandc">Tick to accept Terms and Conditions<br></label>
             <input type="submit" />Submit Feeback
         </form>
         <br>
-        <p>Feedback is used to rate the walks listed and also to suggest new walks which should be added (choose 'Other' and add details/ photos).</p>
-         <p>Email address will be verified prior to upload of images or reviews are shared</p>
-            
+        <p>Feedback is used to rate the walks listed and also to suggest new walks which should be added (choose 'Other'
+            and add details/ photos).</p>
+        <p>Email address will be verified prior to upload of images or reviews are shared</p>
+
     </section>
 
     <section class="main-right">
