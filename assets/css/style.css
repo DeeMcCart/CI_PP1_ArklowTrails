@@ -175,6 +175,10 @@ body {
     background-color: beige
 }
 
+.walks {
+    grid-area: main;
+}
+
 /* .walk-detail {
     grid-area: rhside;
    } */
