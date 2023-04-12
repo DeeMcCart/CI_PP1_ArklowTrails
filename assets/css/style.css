@@ -99,7 +99,7 @@ img {
 body {
     display: grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 75px auto 75px;
     grid-template-areas: "hd hd hd"
         "lhside main rhside"
         "foot foot foot";
@@ -200,14 +200,17 @@ body {
 /* Footer styling */
 footer {
     grid-area: foot;
-    height: 70px; 
-    background-color: rgb(167, 248, 221);
+    height: 100px; 
+    background-color: rgb(96, 239, 191);
+    /* margin: auto; */
 }
 
 .partners {
-    text-align: center;
-    vertical-align:top;
-}
+grid-area:foot;
+    /* margin: auto; */
+    /* clear:left; */
+    text-align:center;
+    }
 
 .partners li {
     display: inline;
@@ -215,9 +218,10 @@ footer {
 
 .partners i {
     font-size: 160%;
-    margin: auto;
+    padding: 5%;
+    margin: 1%;
     color: #3a3a3a;
-    overflow: auto; 
+    /* overflow: auto; */ 
 }
 
 /* Add responsiveness for screen sizes below 800px width */
