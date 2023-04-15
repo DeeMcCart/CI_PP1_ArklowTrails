@@ -118,7 +118,7 @@ body {
 
 .main-centre {
     grid-area: main;
-    background-color: blue;
+    background-color: beige;
 }
 
 /* Flexbox styling for map and walk IDs to appear in centre of screen */
@@ -126,6 +126,7 @@ body {
     grid-area: main;
     position: relative;
     z-index: 1;
+    background-color: beige;
 }
 
 
@@ -256,8 +257,37 @@ grid-area:foot;
     width: 200px;
     height: 150px;
     perspective: 1000px;
+    /* border-width: 50px; */
+      }
+
+  .blue-border {
+    border: 5px solid;
+    border-color: rgb(2,136,209);
   }
-  
+
+  .fuschia-border {
+    border: 5px solid;
+    border-color: rgb(136,14,79);
+  }
+
+  .orange-border {
+    border: 5px solid;
+    border-color: rgb(230,81,0);
+  }
+  .yellow-border {
+    border: 5px solid;
+    border-color: rgb(255,234,0);
+  }
+  .sludgegreen-border {
+    border: 5px solid;
+    border-color: rgb(129,119,23);
+  }
+  .purple-border {
+    border: 5px solid;
+    border-color: rgb(103,58,183);
+  }
+
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -266,7 +296,7 @@ grid-area:foot;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
   }
   
   .flip-card:hover .flip-card-inner {
