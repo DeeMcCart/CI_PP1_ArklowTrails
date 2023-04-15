@@ -247,6 +247,15 @@ grid-area:foot;
     #photos {
         column-count: 1;
     }
+    
+    body {
+        grid-template-columns: 20% auto;
+        grid-template-areas: "hd"
+        "main"
+        "lhside"
+        "rhside"
+        "foot";
+    }
 }
 
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
