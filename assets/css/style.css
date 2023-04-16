@@ -14,14 +14,15 @@ body {
 /* 12/04/23 DMcC : think this is now redundant 
 .navbar {
     color: #fff;
-    height: 50x;
+    height: 50px;
 } */
 
 /* 16/04/23 DMcC:  Reinistate container as needed for responsive media queries */
 .container {
-    grid-area:hd;
+    grid-area: hd;
     /*
     max-width: 1100px; */
+    min-height: 75px;
     margin: 0 auto;
     overflow: auto;
     padding: 0;
@@ -100,10 +101,11 @@ img {
 /* body styling grid format */
 body {
     display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows: 75px auto 100px;
-    grid-template-areas: "hd hd hd"
-        "lhside main rhside"
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+        "hd hd hd"
+        "lhside main-center rhside"
         "foot foot foot";
 }
 
@@ -113,19 +115,19 @@ body {
     background-color: beige;
 }
 
-/* Check if i still need this */
-.main {
+/* 16/04/23 DMcC: Removed as no longer required, using main-center instead
+/* .main {
     grid-area: lhside main rhside;
-}
+}*/
 
-.main-centre {
-    grid-area: main;
+.main-center {
+    grid-area: main-center;
     background-color: beige;
 }
 
 /* Flexbox styling for map and walk IDs to appear in centre of screen */
 .mainmap {
-    grid-area: main;
+    grid-area: main-center;
     position: relative;
     z-index: 1;
     background-color: beige;
@@ -162,7 +164,7 @@ body {
 
 /* Include specific styling for google map to pop it into the middle of its container and make it responsive*/
 .google-map {
-    grid-area: main;
+    grid-area: main-center;
     padding-bottom: 70%;
     position: relative;
 }
@@ -182,7 +184,7 @@ body {
     background-color: beige
 }
 
-/* 16/04/23 DMcC Class walks and walks-detail no longer required as these were for flexbox styling - alternative design (grid) approach taken */ 
+/* 16/04/23 DMcC Class walks and walks-detail no longer required as these were for flexbox styling - alternative design (grid) approach taken */
 /*.walks {
     grid-area: main;
 }
@@ -238,9 +240,11 @@ footer {
     }
 
     body {
-        grid-template-columns: 20% auto;
-        grid-template-areas: "hd hd"
-            "main main"
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto 75px;
+        grid-template-areas:
+            "hd hd"
+            "main-center main-center"
             "lhside rhside"
             "foot foot";
     }
@@ -253,8 +257,10 @@ footer {
     }
 
     body {
-        grid-template-columns: 20% auto;
-        grid-template-areas: "hd"
+        grid-template-columns: 100%;
+        grid-template-rows: 150px auto auto auto 75px;
+        grid-template-areas:
+            "hd"
             "main"
             "lhside"
             "rhside"
