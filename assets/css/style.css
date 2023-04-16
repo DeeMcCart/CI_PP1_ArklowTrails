@@ -11,6 +11,17 @@ body {
     color: #333;
 }
 
+/* body styling grid format */
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+        "hd hd hd"
+        "lhside main-center rhside"
+        "foot foot foot";
+}
+
 /* 12/04/23 DMcC : think this is now redundant 
 .navbar {
     color: #fff;
@@ -98,16 +109,7 @@ img {
     width: 100%;
 }
 
-/* body styling grid format */
-body {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 75px auto 75px;
-    grid-template-areas:
-        "hd hd hd"
-        "lhside main-center rhside"
-        "foot foot foot";
-}
+
 
 /* Position of text in left hand screen panel */
 .main-left {
@@ -184,15 +186,17 @@ body {
     background-color: beige
 }
 
-/* 16/04/23 DMcC Class walks and walks-detail no longer required as these were for flexbox styling - alternative design (grid) approach taken */
-/*.walks {
-    grid-area: main;
+/* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
+.walks {
+    grid-area: main-center;
 }
 
 .walk-detail {
+    padding-top: 10px; 
     padding-bottom: 10px;
     overflow: auto;
-} */
+    text-justify: auto;
+} 
 
 /* gallery styling */
 #photos {
@@ -214,7 +218,7 @@ footer {
 
 .partners {
     grid-area: foot;
-    /* margin: auto; */
+    margin: auto; 
     /* clear:left; */
     text-align: center;
     clear: all;
@@ -261,7 +265,7 @@ footer {
         grid-template-rows: 150px auto auto auto 75px;
         grid-template-areas:
             "hd"
-            "main"
+            "main-center"
             "lhside"
             "rhside"
             "foot";
