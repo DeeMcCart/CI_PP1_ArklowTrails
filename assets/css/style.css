@@ -14,7 +14,7 @@ body {
 /* body styling grid format */
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 75px auto 75px;
     grid-template-areas:
         "hd hd hd"
@@ -115,12 +115,12 @@ img {
 .main-left {
     grid-area: lhside;
     background-color: beige;
-}
+ }
 
-/* 16/04/23 DMcC: Removed as no longer required, using main-center instead
-/* .main {
-    grid-area: lhside main rhside;
-}*/
+/* 16/04/23 DMcC: Using this to specify items that span <lhside & main-center & rhside> e.g. in walks.html to use full width of page for descriptive text */
+.main {
+    grid-area: 2 / 1/ 2 /4;
+    }  
 
 .main-center {
     grid-area: main-center;
@@ -139,6 +139,7 @@ img {
 
 /* Flexbox styling for walk ids to display around edges of container */
 /* z-index is set to 2 to set the walk IDs to the front */
+/* 16/04/23 DMcC:  Think this is no longer relevant as was originally used to show walk numbers in flex box arrangement */
 .walk-id {
     position: absolute;
     z-index: 2;
@@ -156,10 +157,11 @@ img {
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    align-content: space-between;
+    align-content: space-between; */
 }
 
 /* Change display when hover over individual walks */
+/* 16/04/23 DMcC:  Think the below code no longer relevant as related to using flex box to show walk IDs */
 .walk-id a:hover {
     font-size: 130%;
 }
@@ -183,14 +185,13 @@ img {
 /* Text to position in right hand screen panel */
 .main-right {
     grid-area: rhside;
-    background-color: beige
-}
+    background-color: beige;
+    }
 
 /* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
 .walks {
-    grid-area: main-center;
     background-color: beige;
-}
+} 
 
 .walk-detail {
     padding-top: 10px; 
@@ -281,6 +282,8 @@ footer {
     width: 200px;
     height: 150px;
     perspective: 1000px;
+    display: flex;
+    align-items: center;
     /* border-width: 50px; */
 }
 
