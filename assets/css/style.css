@@ -189,6 +189,7 @@ img {
 /* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
 .walks {
     grid-area: main-center;
+    background-color: beige;
 }
 
 .walk-detail {
@@ -262,7 +263,7 @@ footer {
 
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 150px auto auto auto 75px;
+        grid-template-rows: 225px auto auto auto 75px;
         grid-template-areas:
             "hd"
             "main-center"
