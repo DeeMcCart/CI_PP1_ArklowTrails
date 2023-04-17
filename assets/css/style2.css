@@ -31,6 +31,7 @@ body {
 /* 16/04/23 DMcC:  Reinistate container as needed for responsive media queries */
 .container {
     grid-area: hd;
+    position:relative;
     /*
     max-width: 1100px; */
     min-height: 75px;
@@ -221,34 +222,37 @@ img {
 
 /* Footer styling, updated 16/04/23 DMcC to include overflow, margins and padding */
 .footer {
-    grid-area: 3 / 1/ 3/ 4;
+   /* grid-area: 3 / 1/ 3/ 4; */
+    grid-area: foot;
+    /* column-span:all; */
+    position: relative;
     min-height: 75px;
     margin: 0;
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 0;
     background-color: rgb(96, 239, 191);
+    display: flex;
+    align-content:stretch;
     }
 
 .partners {
-    /*grid-area: foot;
-    margin: auto; */ 
-    clear:left;
-        text-align: center;
-    clear: all;
-    align-self: center;
-}
+    position: absolute;
+    display:flex;
+    /*place-self:center;*/
+    align-content:stretch;
+        } 
 
 .partners>li {
     display: inline;
-}
+    padding:10px;
+    } 
 
 .partners i {
     font-size: 160%;
     padding: 5%;
-    margin: auto;
+    /* margin: auto; */
     color: #3a3a3a;
-    /* overflow: auto; */
-}
+    }
 
 /* Add responsiveness for screen sizes below 800px width */
 @media screen and (max-width: 800px) {

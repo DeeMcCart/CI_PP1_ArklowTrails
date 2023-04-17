@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 17/04/23 DMcC: This is a testing page for the Arklow Trails website, used to resolve issues with head foot and positioning -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arklow Trails">
+  <meta name="keywords"
+    content="arklow, wicklow, ireland, walk, walks, trail, hike, run, running, jog, jogging, dog, family, children, nature, pond, seaside, sea-side, sea, kids, beach, hill-walk, hill, path">
+  <title>Arklow Trails</title>
+
+  <!--15/04/23 DMcC:  Reinstated missing end link: issue 004 css file not found on deployed version -->
+  <link rel="stylesheet" href="./assets/css/style2.css" />
+
+  <!-- Add Libre Franklin & Libre Baskerville fonts -->
+  <!-- Added a link to html rather than import to css, as per recommendation from stack overflow -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Libre+Franklin&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <!-- 16/04/23 DMcC:  Reinstate navbar and container classes as needed for responsive media queries-->
+    <div class="container"> 
+    <a href="index.html">
+      <h1 id="logo">Arklow Trails</h1>
+    </a>
+    <nav id="navbar">
+      <!-- Add list items -->
+      <ul id="menu">
+        <li> <a href="index.html" class="active">Home</a>
+        </li>
+        <li>
+            <a href="walks.html">Walks</a>
+          </li>
+          <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="feedback.html">Feedback</a>
+          </li>
+          
+      </ul>
+    </nav>
+      </div> 
+  </header>
+  <!-- <h1 class="main-left"></h1> Arklow Trails</h1> -->
+  <!-- <h2 class="main-left">More detail to demonstrate font</h2> -->
+  <section class="main-left" style = "background-color:yellowgreen;" !important>
+    
+
+    <!-- Add flip card details for each of the walks -->       
+              <a href="walks.html#kilbride_pyramid">Kilbride Pyramid 5km - More details...</a>
+                        <a href="walks.html#riverbank">Arklow Riverbank 3km - More details...</a>
+                        <a href="walks.html#glenart_wood">Glenart Woods 5-8km - More details...</a>
+          </section> <!-- end of the left hand section -->
+
+  <!-- Main centre section (google map with surrounding walk-info-cards in lhside and rhside) -->
+  <section class="main-center">
+    <!-- 17/04/23 blanked out to focus on header -->
+    <br>
+    <p>Placeholder:  instructions legend and disclaimer buttons</p>
+  </section>
+
+  <section class="main-right">
+    <!-- Card Flip with Text -->
+    <!-- Add flip card details for each of the walks -->
+    <a href="walks.html#kilbride_pyramid">Kilbride Pyramid 5km - More details...</a>
+                        <a href="walks.html#riverbank">Arklow Riverbank 3km - More details...</a>
+                        <a href="walks.html#glenart_wood">Glenart Woods 5-8km - More details...</a>
+  </section>
+
+
+
+  <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
+  <footer class="footer">
+    <!-- DMcC 12/04/23 remove reference to container in class below-->
+    <!-- DMcC 16/04/23: Issue 005 Class "partners" not being picked up due to misspelling 'class' as 'classs' -->
+    <!-- <div>  -->
+      <ul class="partners">
+        <li>
+          <a href="https://www.facebook.com/coastalrunnersarklow/" target="_blank" rel="noopener"
+            aria-label="Arklow Trail Trotters facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://visitwicklow.ie/listing/arklow/" target="_blank" rel="noopener"
+            aria-label="Wicklow Tourism (opens in a new tab)"><i class="fa-regular fa-snowflake"
+              style="color: #c70505;"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://youtube.com" target="_blank" rel="noopener"
+            aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube"
+              style="color: #f25a07;"></i></a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank" rel="noopener"
+            aria-label="Visit our Insta (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+      </ul>
+    <!-- </div>  -->
+  </footer>
+  <!-- font awesome script -->
+  <!-- using current/latest font awesome release pack -->
+
+  <script src="https://kit.fontawesome.com/a5acd5b07c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
