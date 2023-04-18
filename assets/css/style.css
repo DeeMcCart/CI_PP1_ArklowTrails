@@ -147,7 +147,7 @@ img {
 .mainmap {
     grid-area: main-center;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     background-color: beige;
 }
 
@@ -225,9 +225,14 @@ img {
     font-weight: 800;
 }
 
-#review-stars {
+/* DMcC 18/04/23 Need to look at the below in the context of issue #011 Feedback stars are displaying L->R rather than R-L */
+.feedback .star-rating {
     display: flex;
-    flex-direction: row;
+    flex-direction:row-reversed;
+    justify-content: flex-start;
+    /*
+    flex-direction: row-reversed;
+    justify-content:flex-end; */
 }
 
 #review {
