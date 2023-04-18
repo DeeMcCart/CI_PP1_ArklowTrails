@@ -214,6 +214,7 @@ img {
 /* 16/04/23 DMcC:  Added container-foot class styling as think it might be needed for footer */
 .container-foot {
     grid-area: foot;
+    /*position: absolute;*/
     /*
     max-width: 1100px; */
     min-height: 75px;
@@ -241,8 +242,8 @@ img {
 .partners {
     position: absolute;
     display:flex;
-    /*place-self:center;*/
-    align-content:stretch;
+    place-self: auto center;
+    /* align-content:stretch; */
         } 
 
 .partners>li {
