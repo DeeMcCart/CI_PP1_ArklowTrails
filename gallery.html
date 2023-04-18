@@ -25,34 +25,31 @@
     <!-- removed referernces to class 'header' and on the div to class 'navbar' -->
     <!-- 'container' as think I can find a simpler way of doing these -->
     <header class="header">
-        <div class = "navbar container">
-            <h1 id="logo">Arklow Trails</h1>
-            <nav>
-                <!-- Add list items in reverse display order (ie rightmost item first on list)-->
-                <ul id="menu">
-                    <li>
-                        <a href="feedback.html">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html" class="active">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="walks.html">Walks</a>
-                    </li>
-                    <li> <a href="index.html">Home</a>
-                    </li>
-
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <!-- 16/04/23 DMcC:  main-left no longer needed as main section will span all of 2nd row <lhside main-center rhside> -->
-    <!--
-    <section class="main-left">
-        <p>Plenty of text to describe a walk, why you might do it, what the walk characteristics are and
-        so on</p>
-    </section>
-    -->
+        <!-- 18/04/23 DMcC:  Reinstate navbar and container classes as needed for responsive media queries-->
+        <div class="navbar container"> 
+        <a href="index.html" state:>
+          <h1 id="logo">Arklow Trails</h1>
+        </a>
+        <nav>
+          <!-- Add list items in reverse display order (ie rightmost item first on list)-->
+          <ul id="menu">
+            <li> <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="walks.html">Walks</a>
+              </li>
+              <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="feedback.html">Feedback</a>
+              </li>
+              
+          </ul>
+        </nav>
+        <!--  </div> -->
+      </header>
+      
     
     <!-- Main section (photos from these lovely walks) -->
     <section class="main" id="photos">
@@ -73,14 +70,6 @@
         <img src="./assets/images/Kilbride-Woods- Pyramid.JPG" alt="Kilbride Woods Pyramid">
       
     </section>
-<!-- 16/04/23 DMcC:  main-left no longer needed as main section will span all of 2nd row <lhside main-center rhside> -->
-    <!--
-    
-        <section class="main-right">
-            <p>Descriptive text for gallery,
-             mainly to shove the footer along</p>
-        </section>
-    -->    
     
          <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
   <footer class="footer">
