@@ -116,6 +116,9 @@ img {
 .main-left {
     grid-area: lhside;
     background-color: beige;
+    display:flex;
+    flex-direction:column;
+    align-items:self-end;
  }
 
 /* 16/04/23 DMcC: Using this to specify items that span <lhside & main-center & rhside> e.g. in walks.html to use full width of page for descriptive text */
@@ -292,6 +295,7 @@ img {
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 
 .flip-card {
+    position:relative;
     background-color: transparent;
     border-radius: 15%;
     width: 200px;
@@ -299,6 +303,7 @@ img {
     perspective: 1000px;
     display: flex;
     align-items: center;
+    justify-content: center;
     /* border-width: 50px; */
 }
 
