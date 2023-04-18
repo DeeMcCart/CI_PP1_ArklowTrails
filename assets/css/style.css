@@ -202,10 +202,9 @@ img {
 } 
 
 .walk-detail {
-    padding-top: 10px; 
-    padding-bottom: 10px;
+    padding: 30px 10px 30px 10px; 
     overflow: auto;
-    text-justify: auto;
+    text-justify:auto;
 } 
 
 /* gallery styling */
@@ -382,3 +381,56 @@ img {
 }
 
 /* End flip card functionality */
+
+/* The keyframes animation code below is adapted from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/ */
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 225px;
+    width: 300px;
+    margin: 0 auto;
+    }
+    
+    /* Style each of the sides
+    with a fixed width and height */
+    .slide {
+    float: left;
+    height: 225px;
+    width: 300px;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(300px * 4);
+    
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 15s ease infinite;
+    }
+    
+    /* Define the animation
+    for the slideshow */
+    @keyframes slide {
+    
+    /* Calculate the margin-left for
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    
+    40% {
+        margin-left: calc(-300px * 1);
+    }
+    
+    60% {
+        margin-left: calc(-300px * 2);
+    }
+    
+    80% {
+        margin-left: calc(-300px * 3);
+    }
+    }
+    
