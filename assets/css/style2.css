@@ -217,6 +217,8 @@ img {
     /*position: absolute;*/
     /*
     max-width: 1100px; */
+    display:flex;
+    align-items: center; 
     min-height: 75px;
     margin: 0 auto;
     overflow: auto;
@@ -226,9 +228,7 @@ img {
 
 /* Footer styling, updated 16/04/23 DMcC to include overflow, margins and padding */
 .footer {
-   /* grid-area: 3 / 1/ 3/ 4; */
     grid-area: foot;
-    /* column-span:all; */
     position: relative;
     min-height: 75px;
     margin: 0;
@@ -240,7 +240,7 @@ img {
     }
 
 .partners {
-    position: absolute;
+    /* position: absolute; */
     display:flex;
     place-self: auto center;
     /* align-content:stretch; */
