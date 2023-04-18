@@ -1,4 +1,4 @@
-# Arklow Trail Trotters
+# Arklow Walking Trails 
 (Developer:  Deirdre McCarthy)
 
 # Table of Contents:
@@ -40,27 +40,44 @@
 
 ## About
 This website highlights jogging, hiking and walking trails available in the Arklow, Co. Wicklow area of Ireland.  It is designed for recreational runners and walkers, which may include tourists (First-time and Returning site visitors), and local people (typcially Returning site visitors).   
-The website is hosted by the Arklow Trail Trotters, an informal group who meet twice weekly and run or walk between 5 - 10km, using the trails listed here.  The site is intended to raise awareness of Arklow's community walking routes, to highlight the natural and urban landscape of Arklow, and, as a tourism aid, to showcase some of the pleasant and interesting features within Arklow Town.  Site visitors are invited to informally participate with the Arklow Trail Trotters if they The provision of gallery images makes the user aware of the attractiveness and features of each walk.   Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks.
+The website is hosted by the Arklow Trail Development Company Ltd .  
+The site is intended to raise awareness of Arklow's community walking routes, to highlight the natural and urban landscape of Arklow, and, as a tourism aid, to showcase some of the pleasant and interesting features within Arklow Town.  Site visitors are invited to participate in developing the site by contributing their own feedback and photos.  
+However the site aims to showcase the routes available, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
 
-![Responsive Mockup]
-Live webpage link
+Notice that the gallery images provided illustrate landscapes rather than people, thus encouraging independent access to the routes,  Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks (facebook link in footer).
+
+### Responsive Mockup
+https://ui.dev/amiresponsive?url=https://deemccart.github.io/CI_PP1_ArklowTrails/
+
+### Live webpage link
+https://deemccart.github.io/CI_PP1_ArklowTrails
 
 ## Project Goals
 To produce a user-friendly, informative website of walks in the Arklow geographical area.
 ### Strategy
 The aim is to increase the 'brand awareness' of Arklow as an active tourism destination.
-It it an offshoot of the Wicklow Tourism website.
+It is an offshoot of the Wicklow Tourism website.
 The audience is:
 a. Tourists visiting the Arklow region,  and who wish to explore the area on foot
 b. Arklow residents who wish to explore the area and familiarise themselves with local history
 Note that both these groups may have varying mobility capabilities, and therefore it is important to flag if certain routes are wheelchair/ pushchair friendly.
-c. Groups on school tours or day outings who are seeking guided walks 
+c. Groups on school tours or day outings who are seeking (possibly guided) walks 
 
-Existing walking guides include:<br>
+### Analysis of Competitor Offerings:
+Existing walking guide sites covering this locality include:<br>
 https://www.alltrails.com/ireland/county-wicklow/arklow <br>
-https://www.visitarklow.ie/nature-outdoors/walks
+https://www.visitarklow.ie/nature-outdoors/walks<br>
+https://www.visitarklow.ie/post/4-family-friendly-trails-in-arklow-town-great-for-a-walk-cycle-or-scoot<br>
+https://www.visitarklow.ie/post/arklow-town-heritage-walks<br>
+https://www.coillte.ie/site/glenart-wood/<br>
+https://www.sportireland.ie/outdoors/walking/trails/<br>
 
-The existing sites do not include the full range of walks available, and don't consistently include actual route maps and parking information.
+A competitive analysis of these offerings can be seen here <#placeholder for link>.
+
+In summary, while each of these sites promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users (personas).
+Few of the available websites facilitate independent navigation to the walk routes.  None of the existing sites includes the full range of available trails, and don't consistently include actual route maps and parking information.
+
+The Arklow Trails website therefore proposes to provide a portal whereby standard Google Maps functionality (including navigation) is made available to the end user, and the Google Map acts as an entry point to a database of walks presented on this website.   This solution is intended to be scaleable and could be adopted as a standardised portal which can be linked to by multiple partner organisations (Wicklow County Development, Wicklow Local Authorities, Historical Societies, and so on).   It is intended that users can navigate the site access information easily, without incurring stress or frustration.
 
 ### Target Audience
 * The target audience includes visitors to, and residents of, Arklow who seek running/walking route information
@@ -79,7 +96,7 @@ This section to be completed ....
 ## User Goals/ User Stories
 ### Site owner Goals
 * As site owner I want to list five (or more) key walks inthe Arklow area
-* As site owner I want to categorize walks to allow users to choose the most appropriate
+* As site owner I want to categorize walks to allow users to choose the most appropriate for their needs
 * As site owner I want to provide a google maps link to the location of each of the walks
 * As site owner I want to provide an attractive gallery of images which encourage outdoor pursuits in this locality
 * As site owner I want to raise awareness of local sightseeing items
@@ -89,9 +106,9 @@ This section to be completed ....
 * As site owner I want to encourage awareness of community sponsors including: Arklow Tidy Towns, Arklow Municipal District, Wicklow Sports Partnership, Arklow Maritime Musemu, Arklow Historical Society 
 
 ### First-time User Goals
-* As a first-time user I want to see what trails are available by the geographic area
+* As a first-time user I want to see what trails are available within a geographic area
 * As a first-time user I want to see how long a trail is, and how difficult (gradient, terrain) it is
-* As a family user I want to know whether it is suitable for pushchairs
+* As a family user I want to know whether it is suitable for pushchairs or young children
 * As a first-time user I want to see attractive pictures (to motivate me and others to select a particular trail)
 * As a first-time/ family/ recreational user I would like to know what rest/food facilities are available on the route
 * As a first-time user I would like to understand how to reach the start point from my current location   
@@ -103,6 +120,12 @@ This section to be completed ....
 * As a returning user I would like to be able to view photo gallery for individual walks
 * As a returning user I would like to locate the start of a walk relative to my own location
 * As a returning user I would like to have a facility to upload my walk photos and add reviews/comments
+* As a returning user I would like to be able to suggest other walks of interest and upload information for consideration by the site owners
+
+### Other stakeholder Goals
+* As a local restaurant/cafe/shop owner, while I don't plan to use the site myself, I would like my business to be promoted as a stop-off
+* As a local litter warden I would like people to be aware where the doggie poop bins/ bag stores are located
+* As the local Tidy Towns co-ordinator I would like to promote certain walks where we want to increase foot traffic thereby reducing anti-social activity
 
 ## UX Design Decisions
 ### Wireframes
@@ -111,12 +134,16 @@ This section to be completed ....
 (link to wireframe images mobile - assuming it is best practice to include a wireframe image for mobile also)
 
 ### Fonts Chosen
-Libre Franklin and Libre Baskerville are chosen because they are readable on large screens or smaller mobile devices.  This font is recommended for sites that may be content-heavy but which are regarded as fun friendly and approachable/inclusive.
-.. these fonts are likely to change as look readable and businesslike, but don't look particularly  friendly or approachable... therefore an improved font would be less formal (sans serif???)
+Libre Franklin and Libre Baskerville are chosen because they are readable on large screens or smaller mobile devices.  This font is recommended for sites that may be content-heavy but which are regarded as fun friendly and approachable/inclusive.  These are identified by Google as good pairing.
+
+In practice, these fonts DO look readable and businesslike, but don't look particularly  friendly or approachable... therefore an improved font would be less formal (sans serif???)
 
 ### Colour Scheme
 The colour combinations chosen are ...
-blue-green, light-blue, ice-cream yellow.... the overall to resemble neapolitan ice cream which is a visual trigger for Arklow as a seaside town. The colours used are non-threatening and feel friendly, familiar and safe, so encouraging to users who may be socially hesitant,  or feel embarassed about their level of fitness, to feel that the Arklow Trail Trotters group is inclusive, friendly and will welcome them.
+blue-green, light-blue, ice-cream yellow.... the overall to resemble neapolitan ice cream which is a visual trigger for Arklow as a seaside town.
+These colours also represent forest, water - river and sea, and sand - these are typical landscapes covered by the walks shown, as Arklow is a coastal town sited in a river valley and giving access to large stretches of rocky coastline.
+
+ The colours used are non-threatening and feel friendly, familiar and safe, so encouraging to users who may be socially hesitant,  or feel embarassed about their level of fitness, to feel that the Arklow Trails are inclusive, friendly and will welcome them.
 
 ### Design Imagery
 The images chosen is reminicent of .....
@@ -130,6 +157,54 @@ slightly faded postcard photos ... retro feel to bring people back into safety o
 * focusing on who this website is for, 
 * what it is that they want to achieve and 
 * how your project is the best way to help them achieve these things.
+ 
+### Google Maps used as the anchor image on the landing page
+![Landing Page showing Google Map at centre](./assets/readme_images/230418%20Landing%20Page.jpg?raw=true "Landing Page")
+
+The use of Google Map was a deliberate design decision. Google maps is widely used (by people of all demographics) as a navigation tool.  It's familiarity reduces the overall learning curve for new users of the Arklow Trails website.  
+
+### Color-coded mapped walks
+Six colour-coded mapped trails are shown.  The range of colours means they can be distinguished from one another.  
+
+### Google Maps app functionality preserved on Arklow Trails website
+Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.
+
+### Mapped trails routes
+Six colour-coded mapped trails routes are selectable within the Google Maps panel, and clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
+![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
+
+### Colour-edged Flipcards
+The landing page map is surrounded by colour-edged flipcards.
+The border colour of each flipcard corresponds to the #rgb colour of its associated trail.
+Each flipcard shows an attractive or intruiging photo, encouraging the user to explore furthersummary trail information.
+
+### The colour-edged photos flip to reveal data
+If the user hovers over (desktop) or clicks (mobile) a colour-edged photo, it performs a pleasing shimmy and reveals summary trail data.
+The user can then select a 'More details' link to access a point within the detailed 'Walks' page
+
+### More details for each trail
+The user can see more details per trail in one of three ways:
+* By clicking on the 'more details' link from a flipcard (link to more details for a specific trail)
+* By clicking on the URL linked to each trail in Google Maps (link to more details for a specific trail)
+* Using the navbar to 
+
+### Navbar
+More detail needed here.
+Four links are available - Home - Walks - Gallery - Feedback
+The navbar is accessible from each screen by scrolling up. 
+
+### Partner social media links (footer)
+As this is effectively a community website, the social media links dont relate directly to the site owner.... more detail needed here...
+
+### Walks page
+Categorisation
+Text
+Average review score
+Photo carousel
+hyperlinks within page to position at each walk (walk01, walk02, etc )
+
+### Walk page - photo carousel
+This is a simple html/css implementation using a deck of 4 photos per walk with the viewing window transitioning between them.
 
 ### Features in Scope
 This website includes 5 pages and X features (to be completed...)
@@ -200,8 +275,9 @@ including ability to upload image of user's own walk
 - __The Feedback Page__
   - This page encourages the user to add their own reviews relating to various walks
   - and to upload their photos
-  - the user must provide a username and email address in order to be permitted to upload photos
-  will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
+  - and to add a star rating
+  - the user must provide a username and email address in order to be permitted to upload photos.  They must also accept the terms and conditions.
+
 
 ![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
 
@@ -311,63 +387,3 @@ https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project
 
 ### Acknowledgements
 Acknowledgements including mentor acknowledgement here
-
-## Gitpod Reminders
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
