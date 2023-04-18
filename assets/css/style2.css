@@ -86,8 +86,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     font-size: 110%;
-    /*flex-wrap:wrap;*/
-}
+    }
 
 
 /* navigation links */
