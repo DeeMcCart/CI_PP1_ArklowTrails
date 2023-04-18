@@ -74,6 +74,7 @@ h2 {
     letter-spacing: 4px;
 }
 
+
 #logo {
     font-size: 180%;
     margin-left: 30px;
@@ -86,10 +87,13 @@ h2 {
     font-size: 110%;
 }
 
+#menu .active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* navigation links */
 #menu li {
-        list-style-type: none;
+    list-style-type: none;
     margin-right: 30px;
 }
 
@@ -103,16 +107,10 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
 /* General styling for images */
 img {
     width: 100%;
 }
-
-
 
 /* Position of text in left hand screen panel */
 /* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
@@ -135,13 +133,14 @@ img {
     background-color: beige;
 }
 
-.main-center h1{
-margin-top:20px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;justify-content: center;
-align-content: center;
-} 
+.main-center h1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 
 
 /* Flexbox styling for map and walk IDs to appear in centre of screen */
@@ -353,11 +352,12 @@ align-content: center;
             "rhside"
             "foot";
     }
-     /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
-     #menu,
-     #logo {
-         font-size: 0.5em;
-     }
+
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
+    #menu,
+    #logo {
+        font-size: 0.5em;
+    }
 }
 
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
@@ -500,7 +500,7 @@ align-content: center;
 
 /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
 /* styling for entering a star rating  on the feedback form */
-.active {
+.star-rating{
     display: flex;
     flex-direction: row-reversed;
     justify-content: flex-end;
