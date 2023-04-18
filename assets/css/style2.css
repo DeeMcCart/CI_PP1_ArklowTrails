@@ -31,9 +31,12 @@ body {
 /* 16/04/23 DMcC:  Reinistate container as needed for responsive media queries */
 .container {
     grid-area: hd;
-    position:relative;
-    /*
-    max-width: 1100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /*position:relative;*/
+    /*max-width: 1100px; */
     min-height: 75px;
     margin: 0 auto;
     overflow: auto;
@@ -59,6 +62,7 @@ h2 {
     grid-area: hd;
     color: rgba(7, 117, 36, 0.5);
     line-height: 75px;
+
 }
 
 #logo {
@@ -74,19 +78,21 @@ h2 {
 }
 
 #logo {
-    float: left;
     font-size: 180%;
     margin-left: 30px;
 }
 
 #menu {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 110%;
+    /*flex-wrap:wrap;*/
 }
 
 
 /* navigation links */
 #menu li {
-    float: right;
+    /*    float: right; */
     list-style-type: none;
     margin-right: 30px;
 }
@@ -116,15 +122,15 @@ img {
 .main-left {
     grid-area: lhside;
     background-color: beige;
-    display:flex;
-    flex-direction:column;
-    align-items:self-end;
- }
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
 
 /* 16/04/23 DMcC: Using this to specify items that span <lhside & main-center & rhside> e.g. in walks.html to use full width of page for descriptive text */
 .main {
     grid-area: 2 / 1/ 2 /4;
-    }  
+}
 
 .main-center {
     grid-area: main-center;
@@ -188,19 +194,19 @@ img {
 .main-right {
     grid-area: rhside;
     background-color: beige;
-    }
+}
 
 /* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
 .walks {
     background-color: beige;
-} 
+}
 
 .walk-detail {
-    padding-top: 10px; 
+    padding-top: 10px;
     padding-bottom: 10px;
     overflow: auto;
     text-justify: auto;
-} 
+}
 
 /* gallery styling */
 #photos {
@@ -217,8 +223,8 @@ img {
     /*position: absolute;*/
     /*
     max-width: 1100px; */
-    display:flex;
-    align-items: center; 
+    display: flex;
+    align-items: center;
     min-height: 75px;
     margin: 0 auto;
     overflow: auto;
@@ -236,27 +242,27 @@ img {
     padding: 0;
     background-color: rgb(96, 239, 191);
     display: flex;
-    align-content:stretch;
-    }
+    align-content: stretch;
+}
 
 .partners {
     /* position: absolute; */
-    display:flex;
+    display: flex;
     place-self: auto center;
     /* align-content:stretch; */
-        } 
+}
 
 .partners>li {
     display: inline;
-    padding:10px;
-    } 
+    padding: 10px;
+}
 
 .partners i {
     font-size: 160%;
     padding: 5%;
     /* margin: auto; */
     color: #3a3a3a;
-    }
+}
 
 /* Add responsiveness for screen sizes below 800px width */
 @media screen and (max-width: 800px) {
@@ -271,7 +277,11 @@ img {
             "hd hd"
             "main-center main-center"
             "lhside rhside"
-            "foot foot";
+            "foot foot";}
+    
+    #menu,
+    #logo {
+        font-size: 0.9em;
     }
 }
 
@@ -291,12 +301,18 @@ img {
             "rhside"
             "foot";
     }
+
+    #menu,
+    #logo {
+        font-size: 0.7em;
+    }
+
 }
 
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 
 .flip-card {
-    position:relative;
+    position: relative;
     background-color: transparent;
     border-radius: 15%;
     width: 200px;
@@ -386,29 +402,29 @@ img {
     height: 225px;
     width: 300px;
     margin: 0 auto;
-    }
-    
-    /* Style each of the sides
+}
+
+/* Style each of the sides
     with a fixed width and height */
-    .slide {
+.slide {
     float: left;
     height: 225px;
     width: 300px;
-    }
-    
-    /* Add animation to the slides */
-    .slide-wrapper {
-    
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+
     /* Calculate the total width on the
     basis of number of slides */
     width: calc(300px * 4);
-    
+
     /* Specify the animation with the
     duration and speed */
     animation: slide 10s ease infinite;
-    }
-    
-    /* Set the background color
+}
+
+/* Set the background color
     of each of the slides - possibly not needed so will comment out    .slide:nth-child(1) {
     background: green;
     }
@@ -426,26 +442,25 @@ img {
     }
     */
 
-    /* Define the animation
+/* Define the animation
     for the slideshow */
-    @keyframes slide {
-    
+@keyframes slide {
+
     /* Calculate the margin-left for
     each of the slides */
     20% {
         margin-left: 0px;
     }
-    
+
     40% {
         margin-left: calc(-300px * 1);
     }
-    
+
     60% {
         margin-left: calc(-300px * 2);
     }
-    
+
     80% {
         margin-left: calc(-300px * 3);
     }
-    }
-    
+}
