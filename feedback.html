@@ -44,12 +44,15 @@
             </nav>
         </div>
     </header>
-    
+    <section class = "main-left">
+      <p></p>
+    </section>
+
     <!-- Main section (descriptive text with a feedback form ) -->
-    <section class="main feedback">
+    <section class="mainmap feedback">
         <hr>
         <br>
-        <h2>Call to action!</h2>
+        <!-- <h2>Call to action!</h2> -->
         <p>Please give us your <a href="feedback.html">feedback</a> on walks taken, photos gathered, and other interesting trails!</p>
         <br>
         <br>
@@ -58,20 +61,8 @@
         <p>All feedback will be assessed for inclusion on the site</p>
         <br>
         <form action="https://formdump.codeinstitute.net" method="POST">
-            <!--    <label for="Kilbride">Walk:<br></label>
-            <input id="Kilbride" type="radio" name="walk" value="kilbride" />
-            <label for="Kilbride">  Kilbride<br></label>
-            <input id="Glenart" type="radio" name="walk" value="glenart" />
-            <label for="Glenart">   Glenart<br></label>
-            <input id="Riverbank" type="radio" name="walk" value="riverbank" />
-            <label for="Riverbank">   Riverbank<br></label>
-            <input id="NatureRes" type="radio" name="walk" value="nature_res" />
-            <label for="NatureRes">   Nature Reserve<br></label>
-            <input id="ArklowRock" type="radio" name="walk" value="arklow_rock" />
-            <label for="ArklowRock">   Arklow Rock<br></label> -->
-
-            <!-- try implementing the above as a drop down list rather than radio buttons as might be more appropriate to mobile screen usage -->
-            <label for="walk-name">Walk: <br></label>
+            <!-- Choice of walks implemented as a drop down list rather than radio buttons as might be more appropriate to mobile screen usage -->
+            <label for="walk-name">Walk:    </label>
             <select id="walk-name" name="walkname">
                 <option value="arklow_rock">Arklow Rock</option>
                 <option value="glenart">Glenart</option>
@@ -84,7 +75,8 @@
             </select>
 
             <br>
-            <form class="star-rating">
+            <label for="review-stars">Your star rating:    </label>
+            <form class="star-rating" id="review-stars">
                 <input class="radio-input" type="radio" id="star5" name="star-input" value="5" />
                 <label class="radio-label" class for="star5" title="5 stars">5 stars</label>
               
@@ -101,6 +93,21 @@
                 <label class="radio-label" for="star1" title="1 star">1 star</label>
               </form>
               <br>
+            <label for="date-walked">Date walked: <br></label>
+            <input id="date-walked" type="date" name="date" />
+<br>
+            <label for="review">Your review:<br> </label>
+            <input id="review" type="textarea" name="review" required />
+            <br><br>
+
+            <label for="photo1">Your photos(s); </label>
+            <input id="photo1" type="file" name="TrailPhoto1" />
+            <input id="photo2" type="file" name="TrailPhoto2" />
+            <input id="photo3" type="file" name="TrailPhoto3" />
+            
+            <br><br>
+
+            
             <label for="firstname">Firstname: </label>
             <input id="firstname" type="text" name="fname" />
 
@@ -109,16 +116,6 @@
             <br><br>
             <label for="email">Email: </label>
             <input id="email" type="email" name="email" required />
-            <br><br>
-            <label for="date-walked">Date: <br></label>
-            <input id="date-walked" type="date" name="date" />
-
-            <label for="review">Your review:<br> </label>
-            <input id="review" type="textarea" name="review" required />
-            <br><br>
-
-            <label for="photo1">Your photos(s); </label>
-            <input id="photo1" type="image" name="TrailPhoto1" />
             <br><br>
             <input id="accept_terms" type="checkbox" name="accept_terms" />
             <label for="tandc">Tick to accept Terms and Conditions<br></label>
@@ -130,7 +127,10 @@
         <p>Email address will be verified prior to upload of images or reviews are shared</p>
 
     </section>
-
+<section class = "main-right">
+      <p></p>
+    </section>
+    
     
     <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
   <footer class="footer">

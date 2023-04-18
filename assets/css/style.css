@@ -6,145 +6,145 @@
     font-family: 'Libre Franklin', sans-serif;
 }
 
-    body {
-        font-weight: 300;
-        color: #333;
-    }
+body {
+    font-weight: 300;
+    color: #333;
+}
 
-    /* body styling grid format */
-    body {
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 75px auto 75px;
-        grid-template-areas:
-            "hd hd hd"
-            "lhside main-center rhside"
-            "foot foot foot";
-    }
+/* body styling grid format */
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+        "hd hd hd"
+        "lhside main-center rhside"
+        "foot foot foot";
+}
 
-    /* 12/04/23 DMcC : think this is now redundant 
+/* 12/04/23 DMcC : think this is now redundant 
 .navbar {
     color: #fff;
     height: 50px;
 } */
 
-    /* 16/04/23 DMcC:  Reinistate container as needed for responsive media queries */
-    .container {
-        grid-area: hd;
-        /*
+/* 16/04/23 DMcC:  Reinistate container as needed for responsive media queries */
+.container {
+    grid-area: hd;
+    /*
     max-width: 1100px; */
-        min-height: 75px;
-        margin: 0 auto;
-        overflow: auto;
-        padding: 0;
-        background-color: rgb(96, 239, 191);
-    }
+    min-height: 75px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0;
+    background-color: rgb(96, 239, 191);
+}
 
-    ul {
-        list-style-type: none;
-    }
+ul {
+    list-style-type: none;
+}
 
-    /* Heading and logo styles */
-    h1,
-    h2 {
-        font-family: 'Libre Baskerville', serif;
-        /* margin: 10px 0; */
-        color: #252525;
-    }
+/* Heading and logo styles */
+h1,
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    /* margin: 10px 0; */
+    color: #252525;
+}
 
-    /* check if the class below is genuinely needed or could be incorporated into other styling */
-    /* think its needed for the grid area and background colours */
-    .header {
-        grid-area: hd;
-        color: rgba(7, 117, 36, 0.5);
-        line-height: 75px;
-    }
+/* check if the class below is genuinely needed or could be incorporated into other styling */
+/* think its needed for the grid area and background colours */
+.header {
+    grid-area: hd;
+    color: rgba(7, 117, 36, 0.5);
+    line-height: 75px;
+}
 
-    #logo {
-        clear: all;
-        text-transform: uppercase;
-    }
+#logo {
+    clear: all;
+    text-transform: uppercase;
+}
 
-    #menu,
-    #logo {
-        line-height: 75px;
-        grid-area: hd;
-        letter-spacing: 4px;
-    }
+#menu,
+#logo {
+    line-height: 75px;
+    grid-area: hd;
+    letter-spacing: 4px;
+}
 
-    #logo {
-        float: left;
-        font-size: 180%;
-        margin-left: 30px;
-    }
+#logo {
+    float: left;
+    font-size: 180%;
+    margin-left: 30px;
+}
 
-    #menu {
-        font-size: 110%;
-    }
-
-
-    /* navigation links */
-    #menu li {
-        float: right;
-        list-style-type: none;
-        margin-right: 30px;
-    }
-
-    #menu a {
-        text-decoration: none;
-        color: inherit;
-        font-family: 'Libre Baskerville', serif;
-    }
-
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
-
-    .active {
-        border-bottom: 1px solid #3a3a3a;
-    }
-
-    /* General styling for images */
-    img {
-        width: 100%;
-    }
+#menu {
+    font-size: 110%;
+}
 
 
+/* navigation links */
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
 
-    /* Position of text in left hand screen panel */
-    /* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
-    .main-left {
-        grid-area: lhside;
-        background-color: beige;
-        display: flex;
-        flex-direction: column;
-        align-items: self-end;
-        justify-content: center;
-    }
+#menu a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Libre Baskerville', serif;
+}
 
-    /* 16/04/23 DMcC: Using this to specify items that span <lhside & main-center & rhside> e.g. in walks.html to use full width of page for descriptive text */
-    .main {
-        grid-area: 2 / 1/ 2 /4;
-        }
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* General styling for images */
+img {
+    width: 100%;
+}
 
 
-    .main-center {
-        grid-area: main-center;
-        background-color: beige;
-    }
 
-    /* Flexbox styling for map and walk IDs to appear in centre of screen */
-    .mainmap {
-        grid-area: main-center;
-        position: relative;
-        z-index: 1;
-        background-color: beige;
-    }
+/* Position of text in left hand screen panel */
+/* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
+.main-left {
+    grid-area: lhside;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: center;
+}
 
-    /* Flexbox styling for walk ids to display around edges of container */
-    /* z-index is set to 2 to set the walk IDs to the front */
-    /* 16/04/23 DMcC:  Think this is no longer relevant as was originally used to show walk numbers in flex box arrangement */
-    /*.walk-id {
+/* 16/04/23 DMcC: Using this to specify items that span <lhside & main-center & rhside> e.g. in walks.html to use full width of page for descriptive text */
+.main {
+    grid-area: 2 / 1/ 2 /4;
+}
+
+
+.main-center {
+    grid-area: main-center;
+    background-color: beige;
+}
+
+/* Flexbox styling for map and walk IDs to appear in centre of screen */
+.mainmap {
+    grid-area: main-center;
+    position: relative;
+    z-index: 1;
+    background-color: beige;
+}
+
+/* Flexbox styling for walk ids to display around edges of container */
+/* z-index is set to 2 to set the walk IDs to the front */
+/* 16/04/23 DMcC:  Think this is no longer relevant as was originally used to show walk numbers in flex box arrangement */
+/*.walk-id {
     position: absolute;
     z-index: 2;
     top: 0;
@@ -164,360 +164,396 @@
     align-content: space-between;} */
 
 
-    /* Change display when hover over individual walks */
-    /* 16/04/23 DMcC:  Think the below code no longer relevant as related to using flex box to show walk IDs */
-    .walk-id a:hover {
-        font-size: 130%;
-    }
+/* Change display when hover over individual walks */
+/* 16/04/23 DMcC:  Think the below code no longer relevant as related to using flex box to show walk IDs */
+.walk-id a:hover {
+    font-size: 130%;
+}
 
-    /* Include specific styling for google map to pop it into the middle of its container and make it responsive*/
-    .google-map {
-        grid-area: main-center;
-        padding-bottom: 70%;
-        position: relative;
-    }
+/* Include specific styling for google map to pop it into the middle of its container and make it responsive*/
+.google-map {
+    grid-area: main-center;
+    padding-bottom: 70%;
+    position: relative;
+}
 
-    .google-map iframe {
-        height: 80%;
-        width: 80%;
-        left: 10%;
-        top: 10%;
-        margin-right: 10%;
-        position: absolute;
-    }
+.google-map iframe {
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    margin-right: 10%;
+    position: absolute;
+}
 
-    /* Text to position in right hand screen panel */
-    /* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
-    .main-right {
-        grid-area: rhside;
-        background-color: beige;
-        display: flex;
-        flex-direction: column;
-        align-items: self-start;
-        justify-content: center;
-    }
+/* Text to position in right hand screen panel */
+/* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
+.main-right {
+    grid-area: rhside;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+}
 
-    /* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
-    .walks {
-        background-color: beige;
-    }
+/* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
+.walks {
+    background-color: beige;
+}
 
-    .feedback {
-        background-color: beige;
-    }
+.feedback {
+    background-color: beige;
+    grid-area: main-center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 110%;
+}
 
-    .walk-detail {
-        padding: 30px 10px 30px 10px;
-        overflow: auto;
-        text-justify: auto;
-    }
+.feedback label {
+    font-weight: 800;
+}
 
-    /* gallery styling */
+#review-stars {
+    display: flex;
+    flex-direction: row;
+}
+
+#review {
+    min-height: 5rem;
+    min-width: 50%;
+}
+
+#date-walked {
+    min-height: auto;
+    min-width: 20px;
+    max-width: fit-content
+}
+
+#firstname,
+#surname {
+    min-width: 30%;
+    min-height: 15px;
+}
+
+
+#walk-name {
+    font-size: 120%;
+}
+
+.walk-detail {
+    padding: 30px 10px 30px 10px;
+    overflow: auto;
+    text-justify: auto;
+}
+
+/* gallery styling */
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 3;
+    column-gap: 0;
+    padding: 1px;
+}
+
+/* 16/04/23 DMcC:  Added container-foot class styling as think it might be needed for footer */
+.container-foot {
+    grid-area: foot;
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0;
+    background-color: rgb(96, 239, 191);
+}
+
+/* Footer styling, updated 16/04/23 DMcC to include overflow, margins and padding */
+/* 17/04/23 DMcC:  reinstated named grid-area and relative positioning */
+.footer {
+    grid-area: foot;
+    position: relative;
+    min-height: 75px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(96, 239, 191);
+    display: flex;
+    /* flex-wrap:wrap; */
+    align-content: stretch;
+}
+
+
+/* 18/04/23 DMcC:  Remove absolute positioning, flex display can then work - as per support call with Ed 18/04/23*/
+.partners {
+    display: flex;
+    place-self: auto center;
+}
+
+
+.partners>li {
+    display: inline;
+    padding: 10px;
+    /* padding-left:30%; */
+}
+
+.partners i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/* Add responsiveness for screen sizes below 800px width */
+@media screen and (max-width: 800px) {
     #photos {
-        clear: both;
-        line-height: 0;
-        column-count: 3;
-        column-gap: 0;
-        padding: 1px;
+        column-count: 2;
     }
 
-    /* 16/04/23 DMcC:  Added container-foot class styling as think it might be needed for footer */
-    .container-foot {
-        grid-area: foot;
-        display: flex;
-        align-items: center;
-        min-height: 75px;
-        margin: 0 auto;
-        overflow: auto;
-        padding: 0;
-        background-color: rgb(96, 239, 191);
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto 75px;
+        grid-template-areas:
+            "hd hd"
+            "main-center main-center"
+            "lhside rhside"
+            "foot foot";
+    }
+}
+
+/* Add responsiveness for small screen sizes below 320px width */
+@media screen and (max-width: 320px) {
+    #photos {
+        column-count: 1;
     }
 
-    /* Footer styling, updated 16/04/23 DMcC to include overflow, margins and padding */
-    /* 17/04/23 DMcC:  reinstated named grid-area and relative positioning */
-    .footer {
-        grid-area: foot;
-        position: relative;
-        min-height: 75px;
-        margin: 0;
-        padding: 0;
-        background-color: rgb(96, 239, 191);
-        display: flex;
-        /* flex-wrap:wrap; */
-        align-content: stretch;
+    body {
+        grid-template-columns: 100%;
+        grid-template-rows: 225px auto auto auto 75px;
+        grid-template-areas:
+            "hd"
+            "main-center"
+            "lhside"
+            "rhside"
+            "foot";
     }
+}
+
+/* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+/* 18/04/23 DMcC:  Apply position relative & justify-content in order to force alignment towards the main-centre map */
+.flip-card {
+    position: relative;
+    background-color: transparent;
+    border-radius: 15%;
+    width: 200px;
+    height: 150px;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-width: 50px; */
+}
+
+.blue-border {
+    border: 5px solid;
+    border-color: rgb(2, 136, 209);
+}
+
+.fuschia-border {
+    border: 5px solid;
+    border-color: rgb(136, 14, 79);
+}
+
+.orange-border {
+    border: 5px solid;
+    border-color: rgb(230, 81, 0);
+}
+
+.yellow-border {
+    border: 5px solid;
+    border-color: rgb(255, 234, 0);
+}
+
+.sludgegreen-border {
+    border: 5px solid;
+    border-color: rgb(129, 119, 23);
+}
+
+.purple-border {
+    border: 5px solid;
+    border-color: rgb(103, 58, 183);
+}
 
 
-    /* 18/04/23 DMcC:  Remove absolute positioning, flex display can then work - as per support call with Ed 18/04/23*/
-    .partners {
-        display: flex;
-        place-self: auto center;
-    }
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+}
 
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
 
-    .partners>li {
-        display: inline;
-        padding: 10px;
-        /* padding-left:30%; */
-    }
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    border-radius: 15%;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
-    .partners i {
-        font-size: 160%;
-        padding: 5%;
-        color: #3a3a3a;
-    }
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
 
-    /* Add responsiveness for screen sizes below 800px width */
-    @media screen and (max-width: 800px) {
-        #photos {
-            column-count: 2;
-        }
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    font-size: 0.75em;
+    text-align: center;
+    transform: rotateY(180deg);
+}
 
-        body {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 150px auto auto 75px;
-            grid-template-areas:
-                "hd hd"
-                "main-center main-center"
-                "lhside rhside"
-                "foot foot";
-        }
-    }
+/* End flip card functionality */
 
-    /* Add responsiveness for small screen sizes below 320px width */
-    @media screen and (max-width: 320px) {
-        #photos {
-            column-count: 1;
-        }
+/* The keyframes animation code below is adapted from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/ */
+/* Styling the area of the slides */
+#slideshow {
+    overflow: hidden;
+    height: 225px;
+    width: 300px;
+    margin: 0 auto;
+}
 
-        body {
-            grid-template-columns: 100%;
-            grid-template-rows: 225px auto auto auto 75px;
-            grid-template-areas:
-                "hd"
-                "main-center"
-                "lhside"
-                "rhside"
-                "foot";
-        }
-    }
-
-    /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-    /* 18/04/23 DMcC:  Apply position relative & justify-content in order to force alignment towards the main-centre map */
-    .flip-card {
-        position: relative;
-        background-color: transparent;
-        border-radius: 15%;
-        width: 200px;
-        height: 150px;
-        perspective: 1000px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* border-width: 50px; */
-    }
-
-    .blue-border {
-        border: 5px solid;
-        border-color: rgb(2, 136, 209);
-    }
-
-    .fuschia-border {
-        border: 5px solid;
-        border-color: rgb(136, 14, 79);
-    }
-
-    .orange-border {
-        border: 5px solid;
-        border-color: rgb(230, 81, 0);
-    }
-
-    .yellow-border {
-        border: 5px solid;
-        border-color: rgb(255, 234, 0);
-    }
-
-    .sludgegreen-border {
-        border: 5px solid;
-        border-color: rgb(129, 119, 23);
-    }
-
-    .purple-border {
-        border: 5px solid;
-        border-color: rgb(103, 58, 183);
-    }
-
-
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 15%;
-        text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
-    }
-
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        border-radius: 15%;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-
-    .flip-card-front {
-        background-color: #bbb;
-        color: black;
-    }
-
-    .flip-card-back {
-        background-color: #2980b9;
-        color: white;
-        font-size: 0.75em;
-        text-align: center;
-        transform: rotateY(180deg);
-    }
-
-    /* End flip card functionality */
-
-    /* The keyframes animation code below is adapted from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/ */
-    /* Styling the area of the slides */
-    #slideshow {
-        overflow: hidden;
-        height: 225px;
-        width: 300px;
-        margin: 0 auto;
-    }
-
-    /* Style each of the sides
+/* Style each of the sides
     with a fixed width and height */
-    .slide {
-        float: left;
-        height: 225px;
-        width: 300px;
-    }
+.slide {
+    float: left;
+    height: 225px;
+    width: 300px;
+}
 
-    /* Add animation to the slides */
-    .slide-wrapper {
+/* Add animation to the slides */
+.slide-wrapper {
 
-        /* Calculate the total width on the
+    /* Calculate the total width on the
     basis of number of slides */
-        width: calc(300px * 4);
+    width: calc(300px * 4);
 
-        /* Specify the animation with the
+    /* Specify the animation with the
     duration and speed */
-        animation: slide 15s ease infinite;
-    }
+    animation: slide 15s ease infinite;
+}
 
-    /* Define the animation
+/* Define the animation
     for the slideshow */
-    @keyframes slide {
+@keyframes slide {
 
-        /* Calculate the margin-left for
+    /* Calculate the margin-left for
     each of the slides */
-        20% {
-            margin-left: 0px;
-        }
-
-        40% {
-            margin-left: calc(-300px * 1);
-        }
-
-        60% {
-            margin-left: calc(-300px * 2);
-        }
-
-        80% {
-            margin-left: calc(-300px * 3);
-        }
+    20% {
+        margin-left: 0px;
     }
 
-    /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
-    /* styling for entering a star rating  on the feedback form */
-    .active {
-        display: flex;
-        flex-direction: row-reversed;
-        justify-content: flex-end;
+    40% {
+        margin-left: calc(-300px * 1);
     }
 
-    .radio-input {
-        position: fixed;
-        opacity: 0;
-        pointer-events: none;
+    60% {
+        margin-left: calc(-300px * 2);
     }
 
-    .radio-label {
-        cursor: pointer;
-        font-size: 0;
-        color: rgba(0, 0, 0, 0.2);
-        transition: color 0.1s ease-in-out;
+    80% {
+        margin-left: calc(-300px * 3);
     }
+}
 
-    .radio-label:before {
-        content: "★";
-        display: inline-block;
-        font-size: 32px;
-    }
+/* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
+/* styling for entering a star rating  on the feedback form */
+.active {
+    display: flex;
+    flex-direction: row-reversed;
+    justify-content: flex-end;
+}
 
-    .radio-input:checked~.radio-label {
-        color: #ffc700;
-        color: gold;
-    }
+.radio-input {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
 
-    .radio-label:hover,
-    .radio-label:hover~.radio-label {
-        color: goldenrod;
-    }
+.radio-label {
+    cursor: pointer;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0.2);
+    transition: color 0.1s ease-in-out;
+}
 
-    .radio-input:checked+.radio-label:hover,
-    .radio-input:checked+.radio-label:hover~.radio-label,
-    .radio-input:checked~.radio-label:hover,
-    .radio-input:checked~.radio-label:hover~.radio-label,
-    .radio-label:hover~.radio-input:checked~.radio-label {
-        color: darkgoldenrod;
-    }
+.radio-label:before {
+    content: "★";
+    display: inline-block;
+    font-size: 32px;
+}
 
-    /* Add display styling for star-reviews shown on walks.html */
-    .trail-rating,
-    .average-rating {
-        position: relative;
-        appearance: none;
-        color: transparent;
-        width: auto;
-        display: inline-block;
-        vertical-align: baseline;
-    }
+.radio-input:checked~.radio-label {
+    color: #ffc700;
+    color: gold;
+}
 
-    .average-rating::before {
-        --percent: calc(4.3/5*100%);
-        content: '★★★★★';
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: rgba(0, 0, 0, 0.2);
-        background:
-            linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.radio-label:hover,
+.radio-label:hover~.radio-label {
+    color: goldenrod;
+}
 
-    .trail-rating::before {
-        --percent: calc(5/5*100%);
-        content: '★★★★★';
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: rgba(0, 0, 0, 0.2);
-        background:
-            linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+.radio-input:checked+.radio-label:hover,
+.radio-input:checked+.radio-label:hover~.radio-label,
+.radio-input:checked~.radio-label:hover,
+.radio-input:checked~.radio-label:hover~.radio-label,
+.radio-label:hover~.radio-input:checked~.radio-label {
+    color: darkgoldenrod;
+}
+
+/* Add display styling for star-reviews shown on walks.html */
+.trail-rating,
+.average-rating {
+    position: relative;
+    appearance: none;
+    color: transparent;
+    width: auto;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.average-rating::before {
+    --percent: calc(4.3/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.2);
+    background:
+        linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trail-rating::before {
+    --percent: calc(5/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.2);
+    background:
+        linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
