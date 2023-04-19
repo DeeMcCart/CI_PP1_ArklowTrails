@@ -4,46 +4,55 @@
 # Table of Contents:
 1. [About](#about)
 2. [Project Goals: ](#project-goals)
-2.1 [Strategy; ](#strategy) 
-2.2 [Target Audience](#target-audience)
-2.3 [User Requirements and Expectations](#user-requirements-and-expectations)
-3. [User goals/ user stories: ](#user-goals-user-stories)
-3.1 [Site Owner Goals; ](#site-owner-goals)
-3.2 [First-time User Goals](#first-time-user-goals)
-3.3 [Returning User Goals](#returning-user-goals)
-4. [UX Design: ](#ux-design)
-4.1 [Wireframes; ](#wireframes)
-4.1 [Fonts; ](#fonts-chosen) 
-4.2 [Colours](#colour-scheme)
-4.3 [Imagery](#design-images)
+  2.1 [UX Design - Strategy ](#ux-design-strategy) 
+  2.2 [UX Design - Strategy - Competitor Portals](#ux-design-strategy-analysis-of-competitor-offerings)
+  2.2 [UX Design - Strategy - Target Audience](#ux-design-strategy-target-audience)
+3. [UX Design - Scope](#ux-design-scope)  
+  3.1 [UX Design - Scope - User Requirements and Expectations](#ux-design-scope-user-requirements-and-expectations)
+  3.2 [UX Design - Scope - Data](#ux-design-scope-data)
+  3.3 [UX Design - Scope - Viewing Device](#ux-design-scope-viewing-device)
+4. [User goals/ user stories: ](#user-goals-user-stories)
+  4.1 [Site Owner Goals](#site-owner-goals)
+  4.2 [First-time User Goals](#first-time-user-goals)
+  4.3 [Returning User Goals](#returning-user-goals)
+  4.4 [Other stakeholder Goals](#other-stakeholder-goals)
+  4.5 [Future Site owner and Administrator Goals](#future-site-owner-and-administrator-goals)
+5. [UX Design: ](#ux-design-decisions)
+5.1 [Structure](#structure)
+5.2 [Wireframes; ](#wireframes)
+5.3 [Fonts; ](#fonts-chosen) 
+5.4 [Colours](#colour-scheme)
+5.5[Imagery](#design-images)
 5. [Features](#features)
-5.1 [Included](#features-in-scope)
-5.2 [Future Development](#features-left-to-implement)
-5.3 [Requirements Tracing](#RTM)
+  5.1 [Included](#features-in-scope)
+  5.2 [Future Development](#features-left-to-implement)
+  5.3 [Requirements Tracing](#RTM)
 6. [Technology](#technologies)
-6.1  [Languages](#langugages)
-6.2  [Frameworks and Tools](#frameworks--tools)
+  6.1  [Languages](#langugages)
+  6.2  [Frameworks and Tools](#frameworks--tools)
 7. [Testing](#testing)
-7.1 [Testing against Requirements](#rtm-proof)
-7.2 [Validator testing](#validator-testing)
-7.3 [Manual Testing](#manual-testing)
-7.4 [Multi-device Testing](#multi-device-testing)
-7.5 [Multi-browser Testing](#multi-browser-testing)
-7.6 [Unfixed Bugs](#unfixed-bugs)
+  7.1 [Testing against Requirements](#rtm-proof)
+  7.2 [Validator testing](#validator-testing)
+  7.3 [Manual Testing](#manual-testing)
+    7.4 [Multi-device Testing](#multi-device-testing)
+    7.5 [Multi-browser Testing](#multi-browser-testing)
+    7.6 [Unfixed Bugs](#unfixed-bugs)
 8. [Accessibility](#accessibility)
 9. [Performance](#performance)
 10. [Deployment](#deployment)
 11. [Credits](#credits)
-11.1 [Content](#content)
-11.2 [Media](#media)
-11.3 [Acknowledgements](#acknowledgements)
+  11.1 [Content](#content)
+  11.2 [Media](#media)
+  11.3 [Acknowledgements](#acknowledgements)
 
 ## About
+---------
 This website highlights jogging, hiking and walking trails available in the Arklow, Co. Wicklow area of Ireland.  It is designed for recreational runners and walkers, which may include tourists (First-time and Returning site visitors), and local people (typically Returning site visitors).   
 The site is intended to raise awareness of Arklow's community walking routes, to highlight the natural and urban landscape of Arklow, and, as a tourism aid, to showcase some of the pleasant and interesting features within Arklow Town.  Site visitors are invited to participate in developing the site by contributing their own feedback and photos.  
-However the site aims is primarily to showcase available routes, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
+<br>
+The site aim is primarily to showcase available routes, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
 
-Notice that the images on this website show walks, landscapes, and objects rather than people.  The intention is to focus largely on the trails, thus encouraging independent access to the routes,  Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks (facebook link in footer).
+Notice that the images on this website show trails, landscapes, animals and objects rather than people.  The intention is to focus largely on the trails, thus encouraging independent access to the routes.  Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks (facebook link in footer).
 
 ### Responsive Mockup
 https://ui.dev/amiresponsive?url=https://deemccart.github.io/CI_PP1_ArklowTrails/
@@ -52,17 +61,21 @@ https://ui.dev/amiresponsive?url=https://deemccart.github.io/CI_PP1_ArklowTrails
 https://deemccart.github.io/CI_PP1_ArklowTrails
 
 ## Project Goals
+----------------
 To produce a user-friendly, informative website of walks and trails in the Arklow geographical area.
-### UX Design - Strategy
-The aim is to increase the 'brand awareness' of Arklow as an active tourism destination.
-It is an offshoot of the Wicklow Tourism website.
-The audience is:
-a. Tourists visiting the locaility, who wish to explore the area on foot<br>
-b. Arklow residents who wish to explore the area <br>
+### UX Design Strategy
+The aim of this specific website is to increase the 'brand awareness' of Arklow as an active tourism destination.
+This website also acts as a 'proof of concept' for a re-usable location-focussed walks site which can be re-configured for individual localities and paired with Google maps data for walks in those localities.
+<br>
+While the site as implemented stands indepdendently, potentially this is an offshoot of the Wicklow Tourism, Failte ireland or other partner website.
+<br>
+The audience is:<br>
+a. Tourists visiting the locality, who wish to explore the area on foot<br>
+b. Local residents who wish to explore the area <br>
 Note that both these groups may have varying mobility capabilities, and therefore it is important to flag if certain routes are wheelchair/ pushchair friendly.
 c. Groups on school tours or day outings who are seeking (possibly guided) walks 
 
-### Analysis of Competitor Offerings:
+### UX Design Strategy Analysis of Competitor Offerings
 Existing walking guide sites covering this locality include:<br>
 https://www.alltrails.com/ireland/county-wicklow/arklow <br>
 https://www.visitarklow.ie/nature-outdoors/walks<br>
@@ -72,31 +85,50 @@ https://www.coillte.ie/site/glenart-wood/<br>
 https://www.sportireland.ie/outdoors/walking/trails/<br>
 
 A competitive analysis of these offerings can be seen here https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/Strategy-competitive-analysis.pdf
+<br>
 From this analysis, a set of possible requirements was identified for a new portal.
 
-In summary, while each of these sites promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users (personas).
+In summary, while each of these portals reviewed promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users (personas).
 Few of the available websites facilitate independent navigation to the walk routes.  None of the existing sites includes the full range of available trails, and don't consistently include actual route maps and parking information.
-While the competitor research was done by targeting a particular geographic location - Arklow - however the problem of difficult-to-find or inaccessible walks data exists throughout Ireland.  Multiple providers are offering  
-
+<br>
+While the competitor research was done by targeting a particular geographic location - Arklow - the problem of difficult-to-find or inaccessible walks data exists throughout Ireland.  Multiple providers are offering parts of a solution, and each has their own approach to mapping with varying degrees of usability.  For a user to find the available walks in a particular area, they would need to first be aware of organisations that might have an offering (Coillte, Sport Ireland, Wicklow Tourism etc).  This in itself requires a certain familiarity with Irish public bodies.  The user must then navigate the quirks of individual portals to arrive at a mapped offering which might not need their needs (e.g. sophisticated hiking map offered to recreational walker ). 
+<br>
+<br>
 The Arklow Trails website therefore proposes to provide a portal whereby standard Google Maps functionality (including navigation) is made available to the end user, and the Google Map acts as an entry point to a database of walks presented on this website.   This solution is intended to be scaleable and could be adopted as a standardised portal which can be linked to by multiple partner organisations (Wicklow County Development, Wicklow Local Authorities, Historical Societies, and so on).  It is intended that users can navigate the site access information easily, without incurring stress or frustration.
+<br>
 
-### Target Audience
+### UX Design Strategy Target Audience
 * The target audience includes visitors to, and residents of, Arklow who seek running/walking route information
-* The target audience includes recreational joggers and walkers, singly or in groups.
+* The target audience includes recreational walkers, joggers and hikers, alone or in groups.
 * Runners are a particular target audience, and would like to know route difficulty level?
 * Family groups are a particular target audience, perhaps including mobility challenges - suitability for pushchairs/wheelchairs
 * Dog walkers?
-* The target audience seeks assistance to choose an appropriate walk (terrain, distance, safety, accessibility) for their needs
-* The target audience may have an interest in local history and wish to learn more via website links
-* The target audience wishes to know about teashops/ bathrooms en route
-* NB  The target audience are likely to commence using the site on desktop, but are likely to progress to small-screen use as will use this site when they are 'out and about' to locate the start of the walk relative to their current location, and possibly to cross reference photos against what they see when walking one of the routes, and to add new photos which and increase the bank of knowledge about this walk.  Therefore the primary site usage is expected to be via mobile devices.
 
-### User Requirements and Expectations
-This section to be completed ....
+## UX Design Scope
+----------------
+
+### UX Design Scope User Requirements and Expectations
+The basic requirement for users is to access a usable website that provides information and mapping for a range of trails.
+
+* The target audience seeks assistance to choose an appropriate walk (terrain, distance, safety, accessibility) for their needs
+* The target audience may have an interest in local history and wish to learn more via website links (possibly a future enhancement)
+* The target audience wishes to know about teashops/ bathrooms en route
+
+### UX Design Scope Data
+The Arklow Trails website, as implemented, features 6 walking trails within a certain geographical locality (Arklow town).
+Mapped Trail start points (Google maps points-of-interest) and routes (Google maps polylines) are provided. 
+Standardised categories (distance, features, terrain) are applied to each walk, and a narrative description is held for each.
+A range of associated photos per walk is to be provided. 
+
+### UX Design Scope Viewing Device 
+* NB  The target audience are likely to commence using the site on desktop, but are likely to progress to small-screen use as will use this site when they are 'out and about' to locate the start of the walk relative to their current location, and possibly to cross reference photos against what they see when walking one of the routes, and to add new photos and reviews, which increase the bank of knowledge about this walk.  Therefore the primary site usage is expected to be via mobile devices.
+*  Support for a range of device types, and responsiveness to the size of the user's screen are highly important for the successful implementation of this website
 
 ## User Goals/ User Stories
+----------------
+
 ### Site owner Goals
-* As site owner I want to list five (or more) key walks inthe Arklow area
+* As site owner I want to list five (or more) key walks in the Arklow area
 * As site owner I want to categorize walks to allow users to choose the most appropriate for their needs
 * As site owner I want to provide a google maps link to the location of each of the walks
 * As site owner I want to provide an attractive gallery of images which encourage outdoor pursuits in this locality
@@ -104,7 +136,7 @@ This section to be completed ....
 * As site owner I wish to promote responsible dog walking (doggie poop bins)
 * As site owner I wish to showcase local hospitality business - cafes and tea shops en route 
 * As site owner I wish to promote community engagement by encouraging users to leave reviews and photos of their walk own experience
-* As site owner I want to encourage awareness of community sponsors including: Arklow Tidy Towns, Arklow Municipal District, Wicklow Sports Partnership, Arklow Maritime Musemu, Arklow Historical Society 
+* As site owner I want to encourage awareness of community sponsors including: Arklow Tidy Towns, Arklow Municipal District, Wicklow Sports Partnership, Arklow Maritime Musemu, Arklow Historical Society
 
 ### First-time User Goals
 * As a first-time user I want to see what trails are available within a geographic area
@@ -128,7 +160,27 @@ This section to be completed ....
 * As a local litter warden I would like people to be aware where the doggie poop bins/ bag stores are located
 * As the local Tidy Towns co-ordinator I would like to promote certain walks where we want to increase foot traffic thereby reducing anti-social activity
 
+### Future Site owner and Administrator Goals
+* NB In the future, the current site owner role may evolve into two roles - Site Owner and Site Administrator.  One or more Site Administrators would take on the roles listed above for specific geographic territories, and a new Site Owner role with overall responsibilities for hosting a bank of trails websites (and possibly for digitising new walks at the site Administrators request)    
+* In order to process user feedback, a future rule of site moderator (Administrator) will be needed to review and approve submitted reviews and photos, and add them to the trails website databank.
+
 ## UX Design Decisions
+----------------
+
+### Structure
+
+The key goals of UX design - structure plane - are addressed as follows:
+
+¦ Design consideration                    ¦   Addressed in Arklow Trails website by                ¦ 
+¦-----------------------------------------¦--------------------------------------------------------¦
+¦ 1. Navigate in intuitive way ¦  1. Minimise text on-screen so that user is not confused  ¬
+¦
+¦
+¦
+¦
+
+
+
 ### Wireframes
 (link to wireframe images desktop)
 (link to wireframe images tablet??)
