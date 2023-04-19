@@ -39,12 +39,11 @@
 11.3 [Acknowledgements](#acknowledgements)
 
 ## About
-This website highlights jogging, hiking and walking trails available in the Arklow, Co. Wicklow area of Ireland.  It is designed for recreational runners and walkers, which may include tourists (First-time and Returning site visitors), and local people (typcially Returning site visitors).   
-The website is hosted by the Arklow Trail Development Company Ltd .  
+This website highlights jogging, hiking and walking trails available in the Arklow, Co. Wicklow area of Ireland.  It is designed for recreational runners and walkers, which may include tourists (First-time and Returning site visitors), and local people (typically Returning site visitors).   
 The site is intended to raise awareness of Arklow's community walking routes, to highlight the natural and urban landscape of Arklow, and, as a tourism aid, to showcase some of the pleasant and interesting features within Arklow Town.  Site visitors are invited to participate in developing the site by contributing their own feedback and photos.  
-However the site aims to showcase the routes available, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
+However the site aims is primarily to showcase available routes, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
 
-Notice that the gallery images provided illustrate landscapes rather than people, thus encouraging independent access to the routes,  Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks (facebook link in footer).
+Notice that the images on this website show walks, landscapes, and objects rather than people.  The intention is to focus largely on the trails, thus encouraging independent access to the routes,  Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks (facebook link in footer).
 
 ### Responsive Mockup
 https://ui.dev/amiresponsive?url=https://deemccart.github.io/CI_PP1_ArklowTrails/
@@ -54,7 +53,7 @@ https://deemccart.github.io/CI_PP1_ArklowTrails
 
 ## Project Goals
 To produce a user-friendly, informative website of walks in the Arklow geographical area.
-### Strategy
+### US Design - Strategy
 The aim is to increase the 'brand awareness' of Arklow as an active tourism destination.
 It is an offshoot of the Wicklow Tourism website.
 The audience is:
@@ -73,11 +72,13 @@ https://www.coillte.ie/site/glenart-wood/<br>
 https://www.sportireland.ie/outdoors/walking/trails/<br>
 
 A competitive analysis of these offerings can be seen here <#placeholder for link>.
+From this analysis, a set of possible requirements was identified for a new portal.
 
 In summary, while each of these sites promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users (personas).
 Few of the available websites facilitate independent navigation to the walk routes.  None of the existing sites includes the full range of available trails, and don't consistently include actual route maps and parking information.
+While the competitor research was done by targeting a particular geographic location - Arklow - however the problem of difficult-to-find or inaccessible walks data exists throughout Ireland.  Multiple providers are offering  
 
-The Arklow Trails website therefore proposes to provide a portal whereby standard Google Maps functionality (including navigation) is made available to the end user, and the Google Map acts as an entry point to a database of walks presented on this website.   This solution is intended to be scaleable and could be adopted as a standardised portal which can be linked to by multiple partner organisations (Wicklow County Development, Wicklow Local Authorities, Historical Societies, and so on).   It is intended that users can navigate the site access information easily, without incurring stress or frustration.
+The Arklow Trails website therefore proposes to provide a portal whereby standard Google Maps functionality (including navigation) is made available to the end user, and the Google Map acts as an entry point to a database of walks presented on this website.   This solution is intended to be scaleable and could be adopted as a standardised portal which can be linked to by multiple partner organisations (Wicklow County Development, Wicklow Local Authorities, Historical Societies, and so on).  It is intended that users can navigate the site access information easily, without incurring stress or frustration.
 
 ### Target Audience
 * The target audience includes visitors to, and residents of, Arklow who seek running/walking route information
