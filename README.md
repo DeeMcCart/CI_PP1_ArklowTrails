@@ -88,9 +88,10 @@ A competitive analysis of these offerings can be seen here https://deemccart.git
 <br>
 From this analysis, a set of possible requirements was identified for a new portal.
 
-In summary, while each of these portals reviewed promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users (personas).
-Few of the available websites facilitate independent navigation to the walk routes.  None of the existing sites includes the full range of available trails, and don't consistently include actual route maps and parking information.
+In summary, while each of these portals reviewed promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users.
 <br>
+Few of the available websites facilitate independent navigation to the walk routes.  None of the existing sites includes the full range of available trails, and portals don't consistently include actual route maps and parking information.
+<br><br>
 While the competitor research was done by targeting a particular geographic location - Arklow - the problem of difficult-to-find or inaccessible walks data exists throughout Ireland.  Multiple providers are offering parts of a solution, and each has their own approach to mapping with varying degrees of usability.  For a user to find the available walks in a particular area, they would need to first be aware of organisations that might have an offering (Coillte, Sport Ireland, Wicklow Tourism etc).  This in itself requires a certain familiarity with Irish public bodies.  The user must then navigate the quirks of individual portals to arrive at a mapped offering which might not need their needs (e.g. sophisticated hiking map offered to recreational walker ). 
 <br>
 <br>
@@ -171,11 +172,13 @@ A range of associated photos per walk is to be provided.
 
 The key goals of UX design - structure plane - are addressed as follows:
 
-¦ Design consideration                    ¦   Addressed in Arklow Trails website by                ¦ 
-¦-----------------------------------------¦--------------------------------------------------------¦
-¦ 1. Navigate in intuitive way ¦  1. Minimise text on-screen so that user is not confused  ¬
-¦
-¦
+¦ Design consideration ¦ Addressed as follows ¦ 
+¦ --- ¦ --- ¦
+¦ 1. Navigate in intuitive way ¦  1. Minimise text on-screen so that user is not confused  
+¦   ¦ 1b. Incorporate standard Google Maps functionality which the user is likely to be familiar with ¦
+¦ 2. Categorise Information ¦ 2a. Walks are colour-coded on map display ¦
+¦   ¦ 2b. Flipcards with summary map detail are colour-coded using mapped walk colours ¦
+
 ¦
 ¦
 
