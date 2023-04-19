@@ -52,13 +52,13 @@ https://ui.dev/amiresponsive?url=https://deemccart.github.io/CI_PP1_ArklowTrails
 https://deemccart.github.io/CI_PP1_ArklowTrails
 
 ## Project Goals
-To produce a user-friendly, informative website of walks in the Arklow geographical area.
-### US Design - Strategy
+To produce a user-friendly, informative website of walks and trails in the Arklow geographical area.
+### UX Design - Strategy
 The aim is to increase the 'brand awareness' of Arklow as an active tourism destination.
 It is an offshoot of the Wicklow Tourism website.
 The audience is:
-a. Tourists visiting the Arklow region,  and who wish to explore the area on foot
-b. Arklow residents who wish to explore the area and familiarise themselves with local history
+a. Tourists visiting the locaility, who wish to explore the area on foot<br>
+b. Arklow residents who wish to explore the area <br>
 Note that both these groups may have varying mobility capabilities, and therefore it is important to flag if certain routes are wheelchair/ pushchair friendly.
 c. Groups on school tours or day outings who are seeking (possibly guided) walks 
 
@@ -71,7 +71,7 @@ https://www.visitarklow.ie/post/arklow-town-heritage-walks<br>
 https://www.coillte.ie/site/glenart-wood/<br>
 https://www.sportireland.ie/outdoors/walking/trails/<br>
 
-A competitive analysis of these offerings can be seen here <#placeholder for link>.
+A competitive analysis of these offerings can be seen here https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/Strategy-competitive-analysis.pdf
 From this analysis, a set of possible requirements was identified for a new portal.
 
 In summary, while each of these sites promotes one or more walks, the data is scattered and inconsistent.  Maps are formatted differently on each site (or, worse still, only available behind a paywall).  It can be very difficult for a non-local user to interpret or relate to the maps given, as they are topographical rather than street-feature based.  In some cases, routes are advertised as being within the town, which in fact are some distance away.  It is difficult, without local knowledge, to evaluate whether a walk is accessible and available to particular groups of users (personas).
