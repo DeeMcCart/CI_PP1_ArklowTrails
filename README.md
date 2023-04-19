@@ -170,7 +170,8 @@ A range of associated photos per walk is to be provided.
 
 ### Structure
 
-The key goals of UX design - structure plane - are addressed as follows:
+The key goals of UX design - structure plane - are addressed as follows:<br>
+
 
 ¦ Design consideration ¦ Addressed as follows ¦ 
 ¦ --- ¦ --- ¦
