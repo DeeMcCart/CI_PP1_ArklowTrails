@@ -9,6 +9,7 @@
 body {
     font-weight: 300;
     color: #333;
+    display: grid;
 }
 
 /* body styling grid format */
@@ -59,7 +60,7 @@ h2 {
 .header {
     grid-area: hd;
     color: rgba(7, 117, 36, 0.5);
-    background-color:rgb(96, 239, 191);
+    background-color: rgb(96, 239, 191);
     /*    line-height: 75px; 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
 }
 
@@ -72,7 +73,8 @@ h2 {
 #logo {
     /* line-height: 75px 20/04/23 DMcC - modified to remove line-height as think this is contributing to overspill large header on small screen */
     grid-area: hd;
-    letter-spacing: 4px;   /* 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
+    letter-spacing: 4px;
+    /* 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
 }
 
 
@@ -98,7 +100,12 @@ h2 {
     margin-right: 30px;
 }
 
-#menu a {
+a {
+    text-decoration: none;
+}
+
+#menu a
+    {
     text-decoration: none;
     color: inherit;
     font-family: 'Libre Baskerville', serif;
@@ -229,7 +236,7 @@ img {
 /* DMcC 18/04/23 Need to look at the below in the context of issue #011 Feedback stars are displaying L->R rather than R-L */
 .feedback .star-rating {
     display: flex;
-    flex-direction:row-reversed;
+    flex-direction: row-reversed;
     justify-content: flex-start;
     /*
     flex-direction: row-reversed;
@@ -459,7 +466,7 @@ img {
 
 /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
 /* styling for entering a star rating  on the feedback form */
-.star-rating{
+.star-rating {
     display: flex;
     flex-direction: row-reversed;
     justify-content: flex-end;
@@ -548,7 +555,8 @@ img {
 
     body {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto 75px; /* 20/04/23 DMcC try auto calculate header size rather than 150px - ref issue #010*/
+        grid-template-rows: auto auto auto 75px;
+        /* 20/04/23 DMcC try auto calculate header size rather than 150px - ref issue #010*/
         grid-template-areas:
             "hd hd"
             "main-center main-center"
@@ -571,7 +579,8 @@ img {
 
     body {
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto 75px; /* 20/04/23 DMcC try auto calculate header size rather than 150px */
+        grid-template-rows: auto auto auto auto 75px;
+        /* 20/04/23 DMcC try auto calculate header size rather than 150px */
         grid-template-areas:
             "hd"
             "main-center"
