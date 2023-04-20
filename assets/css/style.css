@@ -548,7 +548,7 @@ img {
 
     body {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px auto auto 75px;
+        grid-template-rows: auto auto auto 75px; /* 20/04/23 DMcC try auto calculate header size rather than 150px - ref issue #010*/
         grid-template-areas:
             "hd hd"
             "main-center main-center"
@@ -571,7 +571,7 @@ img {
 
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 150px auto auto auto 75px;
+        grid-template-rows: auto auto auto auto 75px; /* 20/04/23 DMcC try auto calculate header size rather than 150px */
         grid-template-areas:
             "hd"
             "main-center"
