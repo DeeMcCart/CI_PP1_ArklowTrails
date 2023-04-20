@@ -72,7 +72,7 @@ h2 {
 #logo {
     /* line-height: 75px 20/04/23 DMcC - modified to remove line-height as think this is contributing to overspill large header on small screen */
     grid-area: hd;
-    /* letter-spacing: 4px;   20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
+    letter-spacing: 4px;   /* 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
 }
 
 

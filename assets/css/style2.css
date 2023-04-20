@@ -72,7 +72,7 @@ h2 {
 #logo {
     /*    line-height: 75px; 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
     grid-area: hd;
-    /* letter-spacing: 4px; 20/04/23 DMcC:  removed this as its affecting a hidden wrap issue 010 */
+    letter-spacing: 4px; /* 20/04/23 DMcC:  removed this as its affecting a hidden wrap issue 010 */
 }
 
 
