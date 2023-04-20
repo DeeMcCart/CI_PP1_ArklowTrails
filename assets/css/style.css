@@ -59,6 +59,7 @@ h2 {
 .header {
     grid-area: hd;
     color: rgba(7, 117, 36, 0.5);
+    background-color:rgb(96, 239, 191);
     /*    line-height: 75px; 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
 }
 
@@ -318,53 +319,6 @@ img {
     color: #3a3a3a;
 }
 
-/* Add responsiveness for screen sizes below 800px width */
-@media screen and (max-width: 800px) {
-    #photos {
-        column-count: 2;
-    }
-
-    body {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px auto auto 75px;
-        grid-template-areas:
-            "hd hd"
-            "main-center main-center"
-            "lhside rhside"
-            "foot foot";
-    }
-
-    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
-    #menu,
-    #logo {
-        font-size: 0.7em;
-    }
-}
-
-/* Add responsiveness for small screen sizes below 320px width */
-@media screen and (max-width: 320px) {
-    #photos {
-        column-count: 1;
-    }
-
-    body {
-        grid-template-columns: 100%;
-        grid-template-rows: 150px auto auto auto 75px;
-        grid-template-areas:
-            "hd"
-            "main-center"
-            "lhside"
-            "rhside"
-            "foot";
-    }
-
-    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
-    #menu,
-    #logo {
-        font-size: 0.5em;
-    }
-}
-
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
 /* 18/04/23 DMcC:  Apply position relative & justify-content in order to force alignment towards the main-centre map */
 .flip-card {
@@ -583,4 +537,52 @@ img {
         linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+/* Add responsiveness for screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto 75px;
+        grid-template-areas:
+            "hd hd"
+            "main-center main-center"
+            "lhside rhside"
+            "foot foot";
+    }
+
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
+    #menu,
+    #logo {
+        font-size: 0.7em;
+    }
+}
+
+/* Add responsiveness for small screen sizes below 320px width */
+@media screen and (max-width: 320px) {
+    #photos {
+        column-count: 1;
+    }
+
+    body {
+        grid-template-columns: 100%;
+        grid-template-rows: 150px auto auto auto 75px;
+        grid-template-areas:
+            "hd"
+            "main-center"
+            "lhside"
+            "rhside"
+            "foot";
+    }
+
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
+    #menu,
+    #logo {
+        font-size: 0.5em;
+    }
 }

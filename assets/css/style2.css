@@ -59,8 +59,8 @@ h2 {
 .header {
     grid-area: hd;
     color: rgba(7, 117, 36, 0.5);
-/*    line-height: 75px; 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
-        grid
+    background-color: rgb(96, 239, 191);
+    /*    line-height: 75px; 20/04/23 DMcC - was 75px, modified to reduce header size on all screens */
 }
 
 #logo {
@@ -229,7 +229,7 @@ img {
 /* DMcC 18/04/23 Need to look at the below in the context of issue #011 Feedback stars are displaying L->R rather than R-L */
 .feedback .star-rating {
     display: flex;
-    flex-direction:row-reversed;
+    flex-direction: row-reversed;
     justify-content: flex-start;
     /*
     flex-direction: row-reversed;
@@ -317,53 +317,6 @@ img {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
-}
-
-/* Add responsiveness for screen sizes below 800px width */
-@media screen and (max-width: 800px) {
-    #photos {
-        column-count: 2;
-    }
-
-    body {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px auto auto 75px;
-        grid-template-areas:
-            "hd hd"
-            "main-center main-center"
-            "lhside rhside"
-            "foot foot";
-    }
-
-    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
-    #menu,
-    #logo {
-        font-size: 0.7em;
-    }
-}
-
-/* Add responsiveness for small screen sizes below 320px width */
-@media screen and (max-width: 320px) {
-    #photos {
-        column-count: 1;
-    }
-
-    body {
-        grid-template-columns: 100%;
-        grid-template-rows: 150px auto auto auto 75px; /* 20/04/23 DMcC - modified from 225 to 150px as this was causing very large header on small screen */
-        grid-template-areas:
-            "hd"
-            "main-center"
-            "lhside"
-            "rhside"
-            "foot";
-    }
-
-    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
-    #menu,
-    #logo {
-        font-size: 0.5em;
-    }
 }
 
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
@@ -506,7 +459,7 @@ img {
 
 /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
 /* styling for entering a star rating  on the feedback form */
-.star-rating{
+.star-rating {
     display: flex;
     flex-direction: row-reversed;
     justify-content: flex-end;
@@ -584,4 +537,53 @@ img {
         linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+/* Add responsiveness for screen sizes below 800px width */
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px auto auto 75px;
+        grid-template-areas:
+            "hd hd"
+            "main-center main-center"
+            "lhside rhside"
+            "foot foot";
+    }
+
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
+    #menu,
+    #logo {
+        font-size: 0.7em;
+    }
+}
+
+/* Add responsiveness for small screen sizes below 320px width */
+@media screen and (max-width: 320px) {
+    #photos {
+        column-count: 1;
+    }
+
+    body {
+        grid-template-columns: 100%;
+        grid-template-rows: 150px auto auto auto 75px;
+        /* 20/04/23 DMcC - modified from 225 to 150px as this was causing very large header on small screen */
+        grid-template-areas:
+            "hd"
+            "main-center"
+            "lhside"
+            "rhside"
+            "foot";
+    }
+
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
+    #menu,
+    #logo {
+        font-size: 0.5em;
+    }
 }
