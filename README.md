@@ -17,16 +17,16 @@
   4.3 [Returning User Goals](#returning-user-goals)
   4.4 [Other stakeholder Goals](#other-stakeholder-goals)
   4.5 [Future Site owner and Administrator Goals](#future-site-owner-and-administrator-goals)
-5. [UX Design: ](#ux-design-decisions)
-5.1 [Structure](#structure)
-5.2 [Wireframes; ](#wireframes)
-5.3 [Fonts; ](#fonts-chosen) 
-5.4 [Colours](#colour-scheme)
-5.5[Imagery](#design-images)
-5. [Features](#features)
-  5.1 [Included](#features-in-scope)
-  5.2 [Future Development](#features-left-to-implement)
-  5.3 [Requirements Tracing](#RTM)
+5. [Further UX Design: ](#ux-design-decisions)
+5.1 [Structure - Checklist](#structure)
+5.2 [Skeleton - Wireframes; ](#wireframes)
+5.3 [Surface - Fonts; ](#fonts-chosen) 
+5.4 [Surface - Colours](#colour-scheme)
+5.5[Surface - Imagery](#design-images)
+6. [Features](#features)
+  6.1 [Included](#features-in-scope)
+  6.2 [Future Development](#features-left-to-implement)
+  6.3 [Requirements Tracing](#RTM)
 6. [Technology](#technologies)
   6.1  [Languages](#langugages)
   6.2  [Frameworks and Tools](#frameworks--tools)
@@ -50,7 +50,7 @@
 This website highlights jogging, hiking and walking trails available in the Arklow, Co. Wicklow area of Ireland.  It is designed for recreational runners and walkers, which may include tourists (First-time and Returning site visitors), and local people (typically Returning site visitors).   
 The site is intended to raise awareness of Arklow's community walking routes, to highlight the natural and urban landscape of Arklow, and, as a tourism aid, to showcase some of the pleasant and interesting features within Arklow Town.  Site visitors are invited to participate in developing the site by contributing their own feedback and photos.  
 <br>
-The site aim is primarily to showcase available routes, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
+The site exists primarily to showcase available walking/jogging trails, to make people aware of the facilities available on each trail, and to assist them in navigating independently to a starting point.
 
 Notice that the images on this website show trails, landscapes, animals and objects rather than people.  The intention is to focus largely on the trails, thus encouraging independent access to the routes.  Visitors are made aware of, and invited to participate in, the informal Trail Trotter runs/ walks (facebook link in footer).
 
@@ -122,8 +122,14 @@ Standardised categories (distance, features, terrain) are applied to each walk, 
 A range of associated photos per walk is to be provided. 
 
 ### UX Design Scope Viewing Device 
-* NB  The target audience are likely to commence using the site on desktop, but are likely to progress to small-screen use as will use this site when they are 'out and about' to locate the start of the walk relative to their current location, and possibly to cross reference photos against what they see when walking one of the routes, and to add new photos and reviews, which increase the bank of knowledge about this walk.  Therefore the primary site usage is expected to be via mobile devices.
-*  Support for a range of device types, and responsiveness to the size of the user's screen are highly important for the successful implementation of this website
+* NB  The target audience are likely to commence using the site on desktop, and then to progress to small-screen use.
+<br>
+They will use this site when they are 'out and about' to:
+* locate the start of the walk relative to their current location, 
+* (possibly) cross-reference site photos against what their obervations when walking one of the routes
+* add new photos and reviews, which increase the bank of knowledge about this walk.  
+Therefore the primary site usage is expected to be via mobile devices.
+Support for a range of device types, and responsiveness to the size of the user's screen are highly important for the successful implementation of this website
 
 ## User Goals/ User Stories
 ----------------
@@ -172,16 +178,7 @@ A range of associated photos per walk is to be provided.
 
 The key goals of UX design - structure plane - are addressed as follows:<br>
 
-
-¦ Design consideration ¦ Addressed as follows ¦ 
-¦ --- ¦ --- ¦
-¦ 1. Navigate in intuitive way ¦  1. Minimise text on-screen so that user is not confused  
-¦   ¦ 1b. Incorporate standard Google Maps functionality which the user is likely to be familiar with ¦
-¦ 2. Categorise Information ¦ 2a. Walks are colour-coded on map display ¦
-¦   ¦ 2b. Flipcards with summary map detail are colour-coded using mapped walk colours ¦
-
-¦
-¦
+https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/UX-structure-plane.jpg
 
 
 
@@ -230,25 +227,24 @@ Arklow Trails website has been designed so that standard Google maps features (n
 Six colour-coded mapped trails routes are selectable within the Google Maps panel, and clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
 ![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
 
-### Colour-edged Flipcards
+### Colour-edged Photo Flipcards
 The landing page map is surrounded by colour-edged flipcards.
 The border colour of each flipcard corresponds to the #rgb colour of its associated trail.
-Each flipcard shows an attractive or intruiging photo, encouraging the user to explore furthersummary trail information.
+Each flipcard shows an attractive or intruiging photo, encouraging the user to hover over the image trail information.
 
 ### The colour-edged photos flip to reveal data
-If the user hovers over (desktop) or clicks (mobile) a colour-edged photo, it performs a pleasing shimmy and reveals summary trail data.
+If the user's mouse moves over (desktop) or clicks (mobile) a colour-edged photo, it performs a pleasing shimmy and reveals summary trail data.
 The user can then select a 'More details' link to access a point within the detailed 'Walks' page
 
 ### More details for each trail
 The user can see more details per trail in one of three ways:
 * By clicking on the 'more details' link from a flipcard (link to more details for a specific trail)
 * By clicking on the URL linked to each trail in Google Maps (link to more details for a specific trail)
-* Using the navbar to 
+* Using the navbar to go directly to the 'Walks' page and scroll to find a walk of interest
 
 ### Navbar
-More detail needed here.
 Four links are available - Home - Walks - Gallery - Feedback
-The navbar is accessible from each screen by scrolling up. 
+The navbar is visible at the top of each screen.   
 
 ### Partner social media links (footer)
 As this is effectively a community website, the social media links dont relate directly to the site owner.... more detail needed here...
@@ -263,7 +259,7 @@ hyperlinks within page to position at each walk (walk01, walk02, etc )
 ### Walk page - photo carousel
 This is a simple html/css implementation using a deck of 4 photos per walk with the viewing window transitioning between them.
 
-### Features in Scope
+### Features in Scope - refer to excel sheet for details of user stories (requirements) features and RTM.
 This website includes 5 pages and X features (to be completed...)
 The pages are:
 * Landing Page (image link)
