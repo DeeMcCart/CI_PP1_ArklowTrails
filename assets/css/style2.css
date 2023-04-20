@@ -35,11 +35,9 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /*position:relative;*/
-    /*max-width: 1100px; */
     min-height: 75px;
-    margin: 0 auto;
-    overflow: auto;
+    /*margin: 0 auto;
+    overflow: auto;*/
     padding: 0;
     background-color: rgb(96, 239, 191);
 }
@@ -62,7 +60,6 @@ h2 {
     grid-area: hd;
     color: rgba(7, 117, 36, 0.5);
     line-height: 75px;
-
 }
 
 #logo {
@@ -77,21 +74,25 @@ h2 {
     letter-spacing: 4px;
 }
 
+
 #logo {
     font-size: 180%;
     margin-left: 30px;
 }
 
 #menu {
+    font-size: 110%;
     display: flex;
     flex-wrap: wrap;
     font-size: 110%;
-    }
+}
 
+#menu .active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* navigation links */
 #menu li {
-    /*    float: right; */
     list-style-type: none;
     margin-right: 30px;
 }
@@ -106,24 +107,20 @@ h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
 /* General styling for images */
 img {
     width: 100%;
 }
 
-
-
 /* Position of text in left hand screen panel */
+/* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
 .main-left {
     grid-area: lhside;
     background-color: beige;
     display: flex;
     flex-direction: column;
     align-items: self-end;
+    justify-content: center;
 }
 
 /* 16/04/23 DMcC: Using this to specify items that span <lhside & main-center & rhside> e.g. in walks.html to use full width of page for descriptive text */
@@ -136,11 +133,21 @@ img {
     background-color: beige;
 }
 
+.main-center h1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
 /* Flexbox styling for map and walk IDs to appear in centre of screen */
 .mainmap {
     grid-area: main-center;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     background-color: beige;
 }
 
@@ -190,9 +197,14 @@ img {
 }
 
 /* Text to position in right hand screen panel */
+/* 18/04/23 DMcC:  Apply flex display to the contents, to align towards the main-centre map */
 .main-right {
     grid-area: rhside;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
 }
 
 /* 16/04/23 DMcC Reinstated class "walks" and "walks-detail as needed for walk.html page - which uses full screen width */
@@ -200,9 +212,53 @@ img {
     background-color: beige;
 }
 
+.feedback {
+    background-color: beige;
+    grid-area: main-center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 110%;
+}
+
+.feedback label {
+    font-weight: 800;
+}
+
+/* DMcC 18/04/23 Need to look at the below in the context of issue #011 Feedback stars are displaying L->R rather than R-L */
+.feedback .star-rating {
+    display: flex;
+    flex-direction:row-reversed;
+    justify-content: flex-start;
+    /*
+    flex-direction: row-reversed;
+    justify-content:flex-end; */
+}
+
+#review {
+    min-height: 5rem;
+    min-width: 50%;
+}
+
+#date-walked {
+    min-height: auto;
+    min-width: 20px;
+    max-width: fit-content
+}
+
+#firstname,
+#surname {
+    min-width: 30%;
+    min-height: 15px;
+}
+
+
+#walk-name {
+    font-size: 120%;
+}
+
 .walk-detail {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 30px 10px 30px 10px;
     overflow: auto;
     text-justify: auto;
 }
@@ -219,9 +275,6 @@ img {
 /* 16/04/23 DMcC:  Added container-foot class styling as think it might be needed for footer */
 .container-foot {
     grid-area: foot;
-    /*position: absolute;*/
-    /*
-    max-width: 1100px; */
     display: flex;
     align-items: center;
     min-height: 75px;
@@ -232,34 +285,36 @@ img {
 }
 
 /* Footer styling, updated 16/04/23 DMcC to include overflow, margins and padding */
+/* 17/04/23 DMcC:  reinstated named grid-area and relative positioning */
 .footer {
     grid-area: foot;
     position: relative;
     min-height: 75px;
     margin: 0;
-    /*overflow: auto;*/
     padding: 0;
     background-color: rgb(96, 239, 191);
     display: flex;
+    /* flex-wrap:wrap; */
     align-content: stretch;
 }
 
+
+/* 18/04/23 DMcC:  Remove absolute positioning, flex display can then work - as per support call with Ed 18/04/23*/
 .partners {
-    /* position: absolute; */
     display: flex;
     place-self: auto center;
-    /* align-content:stretch; */
 }
+
 
 .partners>li {
     display: inline;
     padding: 10px;
+    /* padding-left:30%; */
 }
 
 .partners i {
     font-size: 160%;
     padding: 5%;
-    /* margin: auto; */
     color: #3a3a3a;
 }
 
@@ -276,11 +331,13 @@ img {
             "hd hd"
             "main-center main-center"
             "lhside rhside"
-            "foot foot";}
-    
+            "foot foot";
+    }
+
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
     #menu,
     #logo {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 }
 
@@ -301,15 +358,15 @@ img {
             "foot";
     }
 
+    /* DMcC 18/04/23 - Reduce font size in header to avoid navbar overspill on mobile screens */
     #menu,
     #logo {
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
-
 }
 
 /* Add flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-
+/* 18/04/23 DMcC:  Apply position relative & justify-content in order to force alignment towards the main-centre map */
 .flip-card {
     position: relative;
     background-color: transparent;
@@ -420,26 +477,8 @@ img {
 
     /* Specify the animation with the
     duration and speed */
-    animation: slide 10s ease infinite;
+    animation: slide 15s ease infinite;
 }
-
-/* Set the background color
-    of each of the slides - possibly not needed so will comment out    .slide:nth-child(1) {
-    background: green;
-    }
-    
-    .slide:nth-child(2) {
-    background: pink;
-    }
-    
-    .slide:nth-child(3) {
-    background: red;
-    }
-    
-    .slide:nth-child(4) {
-    background: yellow;
-    }
-    */
 
 /* Define the animation
     for the slideshow */
@@ -462,4 +501,86 @@ img {
     80% {
         margin-left: calc(-300px * 3);
     }
+}
+
+/* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
+/* styling for entering a star rating  on the feedback form */
+.star-rating{
+    display: flex;
+    flex-direction: row-reversed;
+    justify-content: flex-end;
+}
+
+.radio-input {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radio-label {
+    cursor: pointer;
+    font-size: 0;
+    color: rgba(0, 0, 0, 0.2);
+    transition: color 0.1s ease-in-out;
+}
+
+.radio-label:before {
+    content: "★";
+    display: inline-block;
+    font-size: 32px;
+}
+
+.radio-input:checked~.radio-label {
+    color: #ffc700;
+    color: gold;
+}
+
+.radio-label:hover,
+.radio-label:hover~.radio-label {
+    color: goldenrod;
+}
+
+.radio-input:checked+.radio-label:hover,
+.radio-input:checked+.radio-label:hover~.radio-label,
+.radio-input:checked~.radio-label:hover,
+.radio-input:checked~.radio-label:hover~.radio-label,
+.radio-label:hover~.radio-input:checked~.radio-label {
+    color: darkgoldenrod;
+}
+
+/* Add display styling for star-reviews shown on walks.html */
+.trail-rating,
+.average-rating {
+    position: relative;
+    appearance: none;
+    color: transparent;
+    width: auto;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.average-rating::before {
+    --percent: calc(4.3/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.2);
+    background:
+        linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.trail-rating::before {
+    --percent: calc(5/5*100%);
+    content: '★★★★★';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.2);
+    background:
+        linear-gradient(90deg, gold var(--percent), rgba(0, 0, 0, 0.2) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

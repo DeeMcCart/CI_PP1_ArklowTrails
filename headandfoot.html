@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- 17/04/23 DMcC: This is a testing page for the Arklow Trails website, used to resolve issues with head foot and positioning -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
   <title>Arklow Trails</title>
 
   <!--15/04/23 DMcC:  Reinstated missing end link: issue 004 css file not found on deployed version -->
-  <link rel="stylesheet" href="./assets/css/style2.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
   <!-- Add Libre Franklin & Libre Baskerville fonts -->
   <!-- Added a link to html rather than import to css, as per recommendation from stack overflow -->
@@ -24,13 +24,14 @@
 
 <body>
   <header class="header">
-    <!-- 16/04/23 DMcC:  Reinstate navbar and container classes as needed for responsive media queries-->
+    <!-- 18/04/23 DMcC:  Reinstate container classes as needed for responsive media queries-->
     <div class="container"> 
-    <a href="index.html">
-      <h1 id="logo">Arklow Trails</h1>
+    <a href="index.html" state:>
+      <img id="logo" src="./assets/images/logo.jpg" alt="Arklow Trails Logo"
+        style="width:140px;height:75x; border: 2px greenyellow;">
     </a>
     <nav id="navbar">
-      <!-- Add list items -->
+      <!-- Add list items for navbar-->
       <ul id="menu">
         <li> <a href="index.html" class="active">Home</a>
         </li>
@@ -46,15 +47,14 @@
           
       </ul>
     </nav>
-      </div> 
+    </div> 
   </header>
-  <!-- <h1 class="main-left"></h1> Arklow Trails</h1> -->
-  <!-- <h2 class="main-left">More detail to demonstrate font</h2> -->
-  <section class="main-left" style = "background-color:yellowgreen;" !important>
-    
 
-    <!-- Add flip card details for each of the walks -->       
-              <!-- First Walk Kilbride Woods -->
+  <section class="main-left">
+
+    <!-- Add flip card details for each of the walks -->
+
+    <!-- First Walk Kilbride Woods -->
     <br>
     <div class="flip-card">
       <div class="flip-card-inner">
@@ -76,7 +76,7 @@
           <p>Difficulty: Easy </p>
           <p>Terrain: Trail<p>
               <br>
-              <a href="walks.html#kilbride_pyramid">More details...</a>
+              <a href="walks.html#walk05">More details...</a>
         </div>
       </div>
     </div>
@@ -90,17 +90,17 @@
           <img src="assets/images/Arklow-Riverbank-south-quay.jpg" alt="Riverbank Walk picture" class="purple-border"
             style="width:200px;height:150px; border-radius:15px;">
         </div>
-        <div class="flip-card-back  purple-border">
+        <div class="flip-card-back purple-border">
           <br>
           <i class="fa-solid fa-person-walking"></i>
-          Arklow Riverbank 3km
+           Riverbank 3km
           <i class="fa-solid fa-tree"></i> <i class="fa-solid fa-water"></i>
           <br>
-          <i class="fa-solid fa-square-parking"></i> On-street
+          <i class="fa-solid fa-square-parking"></i> Car park (Pay)
           <p>Difficulty: Easy </p>
           <p>Terrain: Concrete path<p>
               <br>
-              <a href="walks.html#riverbank">More details...</a>
+              <a href="walks.html#walk02">More details...</a>
         </div>
       </div>
     </div>
@@ -119,70 +119,127 @@
         <div class="flip-card-back sludgegreen-border">
           <br>
           <i class="fa-solid fa-person-walking"></i>
-          Glenart Woods 5-8km
+          Glenart 5-8km
           <i class="fa-solid fa-tree"></i>
           <br>
           <i class="fa-solid fa-square-parking"></i> On-street
           <p>Difficulty: Easy </p>
           <p>Terrain: Forest track<p>
               <br>
-              <a href="walks.html#glenart_wood">More details...</a>
+              <a href="walks.html#walk03">More details...</a>
         </div>
       </div>
     </div>
   </section> <!-- end of the left hand section -->
 
-  <!-- Main centre section (google map with surrounding walk-info-cards in lhside and rhside) -->
+  <!-- Placeholder for main section (google map with overlaid walk-info-cards) -->
   <section class="main-center">
-    <!-- 17/04/23 blanked out to focus on header -->
-    <br>
-    
-    <!-- 18/04/23 DMcC:  The keyframes animation code below is adapted from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css -->
-        <!-- Define the slideshow container -->
-    <div id="slideshow">
-      <div class="slide-wrapper">
-           
-      <!-- Define each of the slides
-       and write the content -->
-        
-          <div class="slide">
-              <h1 class="slide-number">
-                <img src="./assets/images/Arklow-Rock-from-south-beach-sunny.JPG" alt="Arklow Rock seen from south beach">
-                              </h1>
-          </div>
-          <div class="slide">
-              <h1 class="slide-number">
-                <img src="./assets/images/Arklow-Rock-cove-breakwater.JPG" alt="Arklow South Breakwater seen from Cove">
-                
-              </h1>
-          </div>
-          <div class="slide">
-              <h1 class="slide-number">
-                <img src="./assets/images/Arklow-Rock-wicklow-wexford-coastal-view-south Credit Emma D alltrails_com.jpg"
-                    alt="Views over Wexford and Wicklow coastline">
-              </h1>
-          </div>
-          <div class="slide">
-              <h1 class="slide-number">
-                <img src="./assets/images/Nature-reserve-swans.JPG" alt="Swans on boating lake">
+        <!-- 18/04/23 DMcC:  The keyframes animation code below is adapted from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css -->
+        <div class="walk-photos">
+          <!-- Define the slideshow container -->
+          <div id="slideshow">
+              <div class="slide-wrapper">
 
-              </h1>
+                  <!-- Define each of the slides -->
+                  <div class="slide">
+                      <img src="./assets/images/Arklow-Rock-from-south-beach-sunny.JPG"
+                          alt="Arklow Rock seen from south beach">
+                  </div>
+                  <div class="slide">
+                      <img src="./assets/images/Arklow-Rock-cove-breakwater.JPG"
+                          alt="Arklow South Breakwater seen from Cove">
+                  </div>
+                  <div class="slide">
+                      <img src="./assets/images/Arklow-Rock-wicklow-wexford-coastal-view-south Credit Emma D alltrails_com.jpg"
+                          alt="Views over Wexford and Wicklow coastline">
+                  </div>
+                  <div class="slide">
+                      <img src="./assets/images/Nature-reserve-cliff-walk-stormy.JPG"
+                          alt="Cliff walk in stormy weather">
+                  </div>
+              </div>
           </div>
+          <hr>
+          <hr>
       </div>
-  </div>
-  
-  </section>
+</section>
 
   <section class="main-right">
     <!-- Card Flip with Text -->
     <!-- Add flip card details for each of the walks -->
-    <a href="walks.html#kilbride_pyramid">Kilbride Pyramid 5km - More details...</a>
-                        <a href="walks.html#riverbank">Arklow Riverbank 3km - More details...</a>
-                        <a href="walks.html#glenart_wood">Glenart Woods 5-8km - More details...</a>
+    <!-- 4th Walk - Arklow Rock -->
+    <br>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./assets/images/Arklow-Rock-cove-breakwater.jpeg" alt="Walk picture"
+            style="width:200px;height:150px; border-radius:15px;" class="orange-border">
+        </div>
+        <div class="flip-card-back orange-border">
+          <br>
+          <i class="fa-solid fa-person-walking"></i> Arklow Rock 3.5km
+          <i class="fa-solid fa-swim"></i>
+          <i class="fa-solid fa-ship"></i>
+          <br>
+          <i class="fa-solid fa-square-parking"></i>Beach car park (free)
+          <p>Difficulty: Moderate </p>
+          <p>Terrain: Gravel path, hills<p>
+              <br>
+              <a href="walks.html#walk01">More details...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5th Walk - Arklow Nature Reserve -->
+    <br>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./assets/images/Nature-reserve-boating-lake.jpeg" alt="Walk picture" class="fuschia-border"
+            style="width:200px;height:150px; border-radius:15px;">
+        </div>
+        <div class="flip-card-back fuschia-border">
+          <br>
+          <i class="fa-solid fa-person-walking"></i> Nature Reserve 2.2km
+          <i class="fa-solid fa-river"></i>
+          <i class="fa-solid crow"></i>
+          <br>
+          <i class="fa-solid fa-square-parking"></i> Public Car Park (free)
+          <p>Difficulty: Easy </p>
+          <p>Terrain: Flat, paved </p>
+          <br>
+          <a href="walks.html#walk04">More details...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6th Walk - Moneylands Farm -->
+    <br>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./assets/images/Moneylands_Farm_View.png" alt="Walk picture" class="yellow-border"
+            style="width:200px;height:150px; border-radius:15px;">
+        </div>
+        <div class="flip-card-back yellow-border">
+          <br>
+          <i class="fa-solid fa-person-walking"></i> Moneylands Farm 5km
+          <br>
+          <i class="fa-solid fa-square-parking"></i> Tesco car park (free)
+          <p>Difficulty: Easy </p>
+          <p>Terrain: Paved <p>
+              <br>
+              <a href="walks.html#walk06">More details...</a>
+        </div>
+      </div>
+    </div>
+
+
   </section>
 
 
 
+  <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
   <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
   <footer class="footer">
     <div class="container-foot">
@@ -214,8 +271,8 @@
     </div> <!-- end container-foot -->
       </footer>
 
-      
-  <!-- font awesome script -->
+
+      <!-- font awesome script -->
   <!-- using current/latest font awesome release pack -->
 
   <script src="https://kit.fontawesome.com/a5acd5b07c.js" crossorigin="anonymous"></script>
