@@ -71,6 +71,11 @@ h2 {
     margin-left: 30px;
 }
 
+.logo-wrapper {
+    grid-area: hd;
+    display:flex;
+    
+}
 #menu,
 #logo {
     /* line-height: 75px 20/04/23 DMcC - modified to remove line-height as think this is contributing to overspill large header on small screen */
@@ -611,6 +616,9 @@ a text detail section and a photos section */
     #menu,
     #logo {
         font-size: 0.7em;
+    }
+    logo-wrapper{
+        justify-content:center;
     }
 }
 

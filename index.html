@@ -26,10 +26,11 @@
   <header class="header">
     <!-- 18/04/23 DMcC:  Reinstate container classes as needed for responsive media queries-->
     <div class="container"> 
-    <a href="index.html" state:>
-      <img id="logo" src="./assets/images/logo.jpg" alt="Arklow Trails Logo"
-        style="width:112px;height:72px; border: 2px greenyellow;">
-    </a>
+      <div class="logo-wrapper">
+        <a href="index.html">
+          <h1 id="logo">Arklow Trails</h1>
+        </a>
+        </div> <!-- end logo-wrapper -->
     <nav id="navbar">
       <!-- Add list items for navbar-->
       <ul id="menu">
@@ -46,8 +47,8 @@
           </li>
           
       </ul>
-    </nav>
-    </div> 
+    </nav> <!-- end navbar -->
+    </div> <!-- end container -->
   </header>
 
   <section class="main-left">
@@ -61,11 +62,9 @@
         <div class="flip-card-front">
           <img src="./assets/images/Kilbride-Woods- Pyramid.JPG" alt="Walk picture"
             class=" blue-border">
-            
+        
             <!-- 20/04/23 DMcC: Extract style from image as want flexible image styling for mobile screens 
               style="width:200px;height:150px; border-radius:15px;"-->
-
-
         </div>
 
         <div class="flip-card-back  blue-border">
