@@ -588,9 +588,9 @@ img {
     #menu,
     #logo {
         font-size: 0.7em;
-        letter-spacing: 2px;
+        letter-spacing: 1px; /* 21/04/23 DMcC - further reduction as still get overspill n screen sizes 320-400px */
     }
-    
+  
     .flip-card {
         width: 160px;
         height: 120px;
@@ -600,7 +600,11 @@ img {
             width: 160px;
             height: 120px;
         }
-
+/* 21/04/23 DMcC:  Issue 018 - text overflows the flip card when deployed & tested on android mobile under FF -  and the user cannot see or activate the 
+'more details' link - solution is to reduce text size for screen width 320-400px */
+        .flip-card-back {
+         font-size: 0.6rem; 
+        }
 
         .flip-card-front img {
             width:160px;
