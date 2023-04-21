@@ -221,6 +221,7 @@ The use of Google Map was a deliberate design decision. Google maps is widely us
 ### F02 Color-coded mapped walks
 Six colour-coded mapped trails are shown.  The range of colours means they can be clearly distinguished from one another, and the same colour is used in the flipcard boundary.  
 ![Six colour-coded walks on Google Maps background](./assets/readme_images/F02-Feature-colour-coded-walks.jpg?raw=true "Mapped Walks")
+![Colour-coded walks Google Maps large screen](./assets/readme_images/F02-Feature-Google-Map-maximised-to-show-walk-data.jpg?raw=true "Colour-coded walks Google Maps large screen")
 
 ### F03 Colour-edged Photo Flipcards
 The landing page map is surrounded by colour-edged flipcards.
@@ -230,49 +231,80 @@ Each flipcard shows an attractive or intruiging photo, encouraging the user to h
 
 ### F04 The colour-edged photos flip to reveal data
 If the user's mouse moves over (desktop) or clicks (mobile) a colour-edged photo, it performs a pleasing shimmy and reveals summary trail data.
-The user can then select a 'More details' link to access a point within the detailed 'Walks' page
+The user can then select a 'More details' link to access a point within the detailed 'Walks' page:
+
 ![Flipcard walks summary card](./assets/readme_images/F04_b-Flipcard-images-walk-summary.jpg?raw=true "Flipcard Attractive Photo")
 
 Standard symbols are used for walk categorisation e.g. birds, sea, swimming, river, forest:
-![Flipcard walks summary with category symbols](./assets/readme_images/F04-Feature-Fipcard-use-of-categorisation-iconss.jpg?raw=true "Flipcard summary with category symbols")
 
-Each flipcard has a 'More details...' link to encourage the user to access the walk details page
-![Flipcard walks summary more details link](./assets/readme_images/F04Feature-Flipcard-More-Details.jpg?raw=true "Flipcard summary with link to more details")
+![Flipcard walks summary with category symbols](./assets/readme_images/F04-Feature-Fipcard-use-of-categorisation-icons.jpg?raw=true "Flipcard summary with category symbols")
 
+Each flipcard has a 'More details...' link to encourage the user to access the walk details page:
 
+![Flipcard walks summary more details link](./assets/readme_images/F04-Feature-Flipcard-More-Details.jpg?raw=true "Flipcard summary with link to more details")
 
-### More details for each trail
+### F05 More details for each trail
 The user can see more details per trail in one of three ways:
 * By clicking on the 'more details' link from a flipcard (link to more details for a specific trail)
 * By clicking on the URL linked to each trail in Google Maps (link to more details for a specific trail)
 * Using the navbar to go directly to the 'Walks' page and scroll to find a walk of interest
 
+Note that there are hyperlinks within page to position at each walk (walk01, walk02, etc )
+
+![More details of a walk](./assets/readme_images/F05-Feature-Walk-Details-Page.jpg?raw=true "More details of a walk")
+
+### F06 Feature consistent icons and categorisation
+As per the walks summary flipcard the same symbols are used to help with learning the website
+![Consistent Use of icons and categories](./assets/readme_images/F06-Feature-Walk-Details-use-of-categorisation-icons.jpg?raw=true "Icons and categories walks detail")
+
+### F07-Average Reviews stars
+Feature average reviews
+![Average trail reviews per walk](./assets/readme_images/F07-Feature-Walk-Details-average-trail-reviews.jpg?raw=true "Average trail reviews stars out of 5")
+
+### F08 Walk Details Descriptive text
+Helpful descriptions to describe the walk and help the reader determine if it is suitable or of interest to them.
+![Six colour-coded walks on Google Maps background](./assets/readme_images/F08-Feature-Walk-Details-descriptive text.jpg?raw=true "Mapped Walks")
+
+### F09 Image carousel
+An animated gallery of images is available per walk.
+This is a simple html/css animation using a deck of 4 photos per walk with the viewing window transitioning between them.
+(This became more complex to implement when I realised that the animation must be iniated by the user rather than auto-play).
+![A clickable image carousel is shown](./assets/readme_images/F09-Feature-album-carousel.jpg?raw=true "Image carousel")
+
+### F10 Responsive Navbar
+Navbar is attractively laid out.  Four links are available - Home - Walks - Gallery - Feedback
+The navbar is visible at the top of each screen.   
+![More details of a walk](./assets/readme_images/F10-Feature-Navbar.jpg?raw=true "More details of a walk")
+
+### F11 Partner social media links (footer)
+As this website is structured to operate more like to a peer-to-peer than a hierarchical structre, the footer bar is not currently used for broadcasting from a single site owner's social links, instead it is a set of 'partner' links to groups or websites which are relevant.  Currently configured to point to:
+* Social media/fabebook - Arklow Trail Trotters walking group, with details of their meeting times.
+* Visit wicklow website
+* generic youtube
+* generic instagram
+![Footer partner links](./assets/readme_images/F11-Feature-Footer-bar.jpg?raw=true "Partner links")
+
 ### Interaction with Mapped trails routes
 Six colour-coded mapped trails routes are selectable within the Google Maps panel, and clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
 ![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
 
-### F07 Google Maps app functionality preserved on Arklow Trails website
+### F12 Google Maps app functionality preserved on Arklow Trails website
 ![Six colour-coded walks on Google Maps background](./assets/readme_images/F07-Feature-Google-Map-direction-finder1?raw=true "Mapped Walks")
-![Six colour-coded walks on Google Maps background](./assets/readme_images/F07-Feature-Google-Map-direction-finder1?raw=true "Mapped Walks")
+![More details of a walk](./assets/readme_images/F05-Feature-Walk-Details-Page.jpg?raw=true "More details of a walk")
 Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.
+
+![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-integrated-data.jpg?raw=true "More details of a walk")
+![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-direction-finder2.jpg?raw=true "More details of a walk")
+![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-integrated-data.jpg?raw=true "More details of a walk")
+
 
 
 ### Navbar
-Four links are available - Home - Walks - Gallery - Feedback
-The navbar is visible at the top of each screen.   
-
-### Partner social media links (footer)
-As this is effectively a community website, the social media links dont relate directly to the site owner.... more detail needed here...
 
 ### Walks page
-Categorisation
-Text
-Average review score
-Photo carousel
-hyperlinks within page to position at each walk (walk01, walk02, etc )
 
 ### Walk page - photo carousel
-This is a simple html/css implementation using a deck of 4 photos per walk with the viewing window transitioning between them.
+
 
 ### Features in Scope - refer to excel sheet for details of user stories (requirements) features and RTM.
 This website includes 5 pages and X features (to be completed...)
