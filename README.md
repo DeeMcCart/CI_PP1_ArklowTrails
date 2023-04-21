@@ -212,35 +212,50 @@ slightly faded postcard photos ... retro feel to bring people back into safety o
 * what it is that they want to achieve and 
 * how your project is the best way to help them achieve these things.
  
-### Google Maps used as the anchor image on the landing page
+### F01 Google Maps used as the anchor image on the landing page
 ![Landing Page showing Google Map at centre](./assets/readme_images/230418%20Landing%20Page.jpg?raw=true "Landing Page")
-
+![Landing Page showing Google Map at centre](./assets/readme_images/F01-Feature-Google-Map-as-main-image-on-screen?raw=true "Landing Page")
+![Landing Page showing Google Map at centre](./assets/readme_images/F01-Feature-Google-Map-as-main-image-on-screen-tablet-mode?raw=true "Landing Page")
 The use of Google Map was a deliberate design decision. Google maps is widely used (by people of all demographics) as a navigation tool.  It's familiarity reduces the overall learning curve for new users of the Arklow Trails website.  
 
-### Color-coded mapped walks
-Six colour-coded mapped trails are shown.  The range of colours means they can be distinguished from one another.  
+### F02 Color-coded mapped walks
+Six colour-coded mapped trails are shown.  The range of colours means they can be clearly distinguished from one another, and the same colour is used in the flipcard boundary.  
+![Six colour-coded walks on Google Maps background](./assets/readme_images/F02-Feature-colour-coded-walks.jpg?raw=true "Mapped Walks")
 
-### Google Maps app functionality preserved on Arklow Trails website
-Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.
-
-### Mapped trails routes
-Six colour-coded mapped trails routes are selectable within the Google Maps panel, and clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
-![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
-
-### Colour-edged Photo Flipcards
+### F03 Colour-edged Photo Flipcards
 The landing page map is surrounded by colour-edged flipcards.
 The border colour of each flipcard corresponds to the #rgb colour of its associated trail.
 Each flipcard shows an attractive or intruiging photo, encouraging the user to hover over the image trail information.
+![Flipcard attractive photo example](./assets/readme_images/F03_a-Flipcard-images-photos.jpg?raw=true "Flipcard Attractive Photo")
 
-### The colour-edged photos flip to reveal data
+### F04 The colour-edged photos flip to reveal data
 If the user's mouse moves over (desktop) or clicks (mobile) a colour-edged photo, it performs a pleasing shimmy and reveals summary trail data.
 The user can then select a 'More details' link to access a point within the detailed 'Walks' page
+![Flipcard walks summary card](./assets/readme_images/F04_b-Flipcard-images-walk-summary.jpg?raw=true "Flipcard Attractive Photo")
+
+Standard symbols are used for walk categorisation e.g. birds, sea, swimming, river, forest:
+![Flipcard walks summary with category symbols](./assets/readme_images/F04-Feature-Fipcard-use-of-categorisation-iconss.jpg?raw=true "Flipcard summary with category symbols")
+
+Each flipcard has a 'More details...' link to encourage the user to access the walk details page
+![Flipcard walks summary more details link](./assets/readme_images/F04Feature-Flipcard-More-Details.jpg?raw=true "Flipcard summary with link to more details")
+
+
 
 ### More details for each trail
 The user can see more details per trail in one of three ways:
 * By clicking on the 'more details' link from a flipcard (link to more details for a specific trail)
 * By clicking on the URL linked to each trail in Google Maps (link to more details for a specific trail)
 * Using the navbar to go directly to the 'Walks' page and scroll to find a walk of interest
+
+### Interaction with Mapped trails routes
+Six colour-coded mapped trails routes are selectable within the Google Maps panel, and clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
+![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
+
+### F07 Google Maps app functionality preserved on Arklow Trails website
+![Six colour-coded walks on Google Maps background](./assets/readme_images/F07-Feature-Google-Map-direction-finder1?raw=true "Mapped Walks")
+![Six colour-coded walks on Google Maps background](./assets/readme_images/F07-Feature-Google-Map-direction-finder1?raw=true "Mapped Walks")
+Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.
+
 
 ### Navbar
 Four links are available - Home - Walks - Gallery - Feedback
