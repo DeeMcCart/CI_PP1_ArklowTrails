@@ -183,9 +183,27 @@ https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/UX-structur
 
 
 ### Wireframes
-(link to wireframe images desktop)
-(link to wireframe images tablet??)
-(link to wireframe images mobile - assuming it is best practice to include a wireframe image for mobile also)
+<details><summary>Landing Page</summary>
+The landing page WF is shown here with 4 sceen resolutions as I found when testing that the Motorola G(7) was truncating to the right hand side for 2-column pictures display, therefore I added an additional responsiveness section to cater for 320-400 pixel screen size.
+  
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF01-landing-page.jpg">
+</details>
+
+<details><summary>Walk Details</summary>
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF02-Walk-Details.jpg">
+</details>
+
+<details><summary>Gallery</summary>
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF03-gallery.jpg">
+</details>
+
+<details><summary>Feedback</summary>
+<img src="docs/wireframes/WF04-feedback.jpg">
+</details>
+
+
+
+
 
 ### Fonts Chosen
 Libre Franklin and Libre Baskerville are chosen because they are readable on large screens or smaller mobile devices.  This font is recommended for sites that may be content-heavy but which are regarded as fun friendly and approachable/inclusive.  These are identified by Google as good pairing.
