@@ -23,7 +23,6 @@ body {
         "foot foot foot";
 }
 
-
 h2 {
     display:none;
 }
@@ -33,14 +32,7 @@ h2 {
     display:block;
 }
 
-
-/* 12/04/23 DMcC : think this is now redundant 
-.navbar {
-    color: #fff;
-    height: 50px;
-} */
-
-/* 16/04/23 DMcC:  Reinistate container as needed for responsive media queries */
+/* 16/04/23 DMcC:  Container needed for responsive media queries */
 .container {
     grid-area: hd;
     display: flex;
@@ -48,8 +40,6 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     min-height: 75px;
-    /*margin: 0 auto;
-    overflow: auto;*/
     padding: 0;
     background-color: rgb(96, 239, 191);
 }
@@ -167,7 +157,6 @@ img {
     align-content: center;
 }
 
-
 /* Flexbox styling for map and walk IDs to appear in centre of screen */
 .mainmap {
     grid-area: main-center;
@@ -175,29 +164,6 @@ img {
     /* z-index: 1; */
     background-color: beige;
 }
-
-/* Flexbox styling for walk ids to display around edges of container */
-/* z-index is set to 2 to set the walk IDs to the front */
-/* 16/04/23 DMcC:  Think this is no longer relevant as was originally used to show walk numbers in flex box arrangement */
-/*.walk-id {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border: 3px dotted blue;
-    background-color: transparent;
-    padding: 0;
-    color: red;
-    font-size: 80px;
-    font-weight: 900;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-content: space-between;} */
-
 
 /* Change display when hover over individual walks */
 /* 16/04/23 DMcC:  Think the below code no longer relevant as related to using flex box to show walk IDs */
@@ -250,15 +216,12 @@ img {
     font-weight: 800;
 }
 
-/* DMcC 18/04/23 Need to look at the below in the context of issue #011 Feedback stars are displaying L->R rather than R-L */
+/* DMcC 18/04/23 issue #011 Feedback stars are displaying L->R rather than R-L (resolved )*/
 /* 22/04/23 DMcC: Corrected misspelling of 'row-reserve' as 'row-reversed' post CSS validator ISSUE011 */
 .feedback .star-rating {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    /*
-    flex-direction: row-reversed;
-    justify-content:flex-end; */
 }
 
 #review {
@@ -324,13 +287,11 @@ img {
     align-content: stretch;
 }
 
-
 /* 18/04/23 DMcC:  Remove absolute positioning, flex display can then work - as per support call with Ed 18/04/23*/
 .partners {
     display: flex;
     place-self: auto center;
 }
-
 
 .partners>li {
     display: inline;
@@ -362,7 +323,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-width: 50px; */
 }
 
 .blue-border {
@@ -395,7 +355,6 @@ img {
     border-color: rgb(103, 58, 183);
 }
 
-
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -404,7 +363,7 @@ img {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -447,10 +406,7 @@ a text detail section and a photos section */
 .walk-photos > img {
     width: 300px;
     height: 225px;
-    border-color:pink;
-    /* margin: 0 auto; */
-}
-
+    }
 
 /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
 /* styling for entering a star rating  on the feedback form */
