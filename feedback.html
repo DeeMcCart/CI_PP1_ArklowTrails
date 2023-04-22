@@ -79,9 +79,12 @@
       </select>
 <!-- start rating code sourced from:..... -->
       <br>
-      <label for="review-stars">Your star rating: </label>
+      <br>
+      <label for="review-stars" id="review-stars">Your star rating:              
 <!-- 18/04/23 DMcC:  currently laid out as a form within a form which is against css rules; subsitute a div-->      
-        <div class="star-rating" id="review-stars">
+        <div class="star-rating" >
+          
+          
         <input class="radio-input" type="radio" id="star5" name="star-input" value="5" />
         <label class="radio-label" class for="star5" title="5 stars">5 stars</label>
 
@@ -96,7 +99,8 @@
 
         <input class="radio-input" type="radio" id="star1" name="star-input" value="1" />
         <label class="radio-label" for="star1" title="1 star">1 star</label>
-        </div>
+        </div>  
+      </label> <!-- end review-stars positioning-->
       <br>
       <label for="date-walked">Date walked: <br></label>
       <input id="date-walked" type="date" name="date" />
@@ -105,7 +109,8 @@
       <input id="review" type="textarea" name="review" required />
       <br><br>
 
-      <label for="photo1">Your photos(s); </label>
+      <label for="photo1">Your photo(s); </label>
+      <br>
       <input id="photo1" type="file" name="TrailPhoto1" />
       <input id="photo2" type="file" name="TrailPhoto2" />
       <input id="photo3" type="file" name="TrailPhoto3" />
@@ -124,7 +129,8 @@
       <br><br>
       <input id="accept_terms" type="checkbox" name="accept_terms" />
       <label for="tandc">Tick to accept Terms and Conditions<br></label>
-      <input type="submit" />Submit Feeback
+      
+      <input type="submit" name="submit"/>
     </form>
     <br>
     <p>Feedback is used to rate the walks listed and also to suggest new walks which should be added (choose 'Other'

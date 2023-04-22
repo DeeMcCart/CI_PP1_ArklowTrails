@@ -376,31 +376,41 @@ The pages - which effectively bring these features together - are:
 * Feedback page (image link)
 * About page (image link)
 
-### Landing Page
-The landing includes a responsive google map at centre, surrounded by category cards for each of the walks.
+- __Landing Page__
+The initial website page shows a responsive google map at centre, surrounded by category cards for each of the walks.
 This section introduces the user to the geographic territory of arklow and the map is useful to give an overview of the walk locations e.g.  seaside vs  inland.
 There is very little text (header bar) displayed initially which means that language barriers are reduced and the site becomes very accessible to visually confident users.
+This page has been designed to be responsive and to display correctly on different screen sizes.  
 
 ![Landing Page](./assets/readme_images/P01-Landing-Page.jpg?raw=true "Central Google Map with 3 walk flipcards either side")
 
-- __Walk descriptions__
-To be completed...
+- __Walks Page__
+This page shows details of each walk, and is structured with hyperlinks so that focus can be moved directly to a walk of interest (for example when taking 'more details' from a flipcard, or from a google map.)
+* Each walk shows a legend with consistent cateogries (distance, features, terrain, average review score)
+* Each walk contains text-paragraphs description explaining some of the features of the walk, how it feels to walk it, what a person might see when they are following the route, any items of historical interest etc
+* A photo carousel is shown per walk, this allows the user to click to start animation display of a number of stored photos.
+* 'Latest review' with star rating is shown.
 
-- __Walks Detail Page__
-To be completed...
+![Walks Page](./assets/readme_images/P02-Walk_Details.jpg?raw=true "Page with details for each walk")
 
-- __Walk Gallery__
-- The gallery will provide the user with supporting images to see what each walk look like.
-  - The gallery identifies objects of interest that the user may encounter on each walk.
-     - This section is valuable to the user as it encourages them to partake in a given walk. 
+
+- __Gallery Page__
+- The gallery displays an attractive set of images taken from various walks - these are not matched against a particular walk, so it acts as a general gallery which showcases the entire locality.   This is valuable to all user personas.
+
+Note that images shown in the gallery don't include people but instead highlight the landscape and walk features. 
+It is intended that this be adopted as a policy, both to avoid any data protection issues and also to promote the walks themselves, rather than the people partaking in them.
+
+![Gallery Page](./assets/readme_images/P03-Walk_Details.jpg?raw=true "Gallery")
 
 - __Feedback page__ 
-including ability to upload image of user's own walk
+This page gives a first-time or returning-user the opportunity to contribute to the content of this site.  They can do this by uploading images, ratings or comments (or all 3!) for an existing or indeed a proposed new walk.
 
 - - This page encourages the user to add their own reviews relating to various walks
   - and to upload their photos
   - and to add a star rating
   - the user must provide a username and email address in order to be permitted to upload photos.  They must also accept the terms and conditions.
+
+![Feedback Page](./assets/readme_images/P04-Feedback.jpg?raw=true "Feedback")
 
 ### Features Left to Implement
 Some of the user stories could be addressed more directly in the future: 
@@ -411,7 +421,8 @@ Some of the user stories could be addressed more directly in the future:
 
 ### RTM
 Requirements traceability matrix showing link between user stories and implemented/ future-release features
-user-stories-checked-against-features
+
+![stories vs features](./assets/readme_images/user-stories-checked-against-features.jpg?raw=true "Checklist of user stories and the features that implement them")
 
 ## Technologies
 

@@ -65,7 +65,7 @@ h2 {
 }
 
 #logo {
-    clear: all;
+    clear: both;
     text-transform: uppercase;
     font-size: 180%;
     margin-left: 30px;
@@ -90,11 +90,7 @@ h2 {
     display:flex;
     }
 
-    #logo 
-    {
-        size: 80%;}
-
-#menu {
+    #menu {
     font-size: 110%;
     display: flex;
     flex-wrap: wrap;
@@ -243,9 +239,10 @@ img {
 }
 
 /* DMcC 18/04/23 Need to look at the below in the context of issue #011 Feedback stars are displaying L->R rather than R-L */
+/* 22/04/23 DMcC: Corrected misspelling of 'row-reserve' as 'row-reversed' post CSS validator ISSUE011 */
 .feedback .star-rating {
     display: flex;
-    flex-direction: row-reversed;
+    flex-direction: row-reverse;
     justify-content: flex-start;
     /*
     flex-direction: row-reversed;
@@ -455,10 +452,6 @@ a text detail section and a photos section */
 }
 
 
-.checkbox {
-    position: centre;
-}
-
 /* Add animation to the slides */
 .slide-wrapper {
     /* Calculate the total width on the
@@ -514,9 +507,17 @@ a text detail section and a photos section */
 
 /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
 /* styling for entering a star rating  on the feedback form */
+
+/* 22/04/23 DMcC: Corrected misspelling of 'row-reserve' as 'row-reversed' post CSS validator ISSUE011 */
+
+#review-stars {
+    display: flex;
+    flex-basis: left;
+}
+
 .star-rating {
     display: flex;
-    flex-direction: row-reversed;
+    flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
