@@ -544,7 +544,7 @@ slideshow01:hover {
 
 #review-stars {
     display: flex;
-    flex-basis: left;
+    flex-basis:auto;
 }
 
 .star-rating {

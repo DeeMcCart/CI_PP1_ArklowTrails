@@ -452,9 +452,13 @@ Provide proofs of successful testing of each user story
 
 ### Validator Testing 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - One errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/index.html)
+  - Multiple errors  [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/walks.html)- 
+  - Multiple errors on [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/feedback.html)
+  - Some errors on  [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/gallery.html)
+  
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - Errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Manual Testing
 To be completed...
