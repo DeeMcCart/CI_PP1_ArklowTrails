@@ -224,14 +224,25 @@ Six colour-coded mapped trails are shown.  The range of colours means they can b
 ![Colour-coded walks Google Maps large screen](./assets/readme_images/F02-Feature-Google-Map-maximised-to-show-walk-data.jpg?raw=true "Colour-coded walks Google Maps large screen")
 
 ### F03 Colour-edged Photo Flipcards
-The landing page map is surrounded by colour-edged flipcards.
+The landing page map is surrounded by colour-edged flipcards, one per walks.
 The border colour of each flipcard corresponds to the #rgb colour of its associated trail.
 Each flipcard shows an attractive or intruiging photo, encouraging the user to hover over the image trail information.
-![Flipcard attractive photo example](./assets/readme_images/F03_a-Flipcard-images-photos.jpg?raw=true "Flipcard Attractive Photo")
 
-### F04 The colour-edged photos flip to reveal data
+![Flipcard attractive photo example](./assets/readme_images/F03_a-Flipcard-images-photos.jpg?raw=true "Flipcard Attractive Photo").
+
+On larger screens the flipcards are positioned to the left and the right of the main map.  On smaller screens, the main map appears first, with the flipcards appearing in either two, or, at smallest, one column below the map.
+
+Hovering over a walk card 'flips' the display to show a walk name and summary detail.
+
+### F04 The colour-edged photos flip to reveal walk summary
 If the user's mouse moves over (desktop) or clicks (mobile) a colour-edged photo, it performs a pleasing shimmy and reveals summary trail data.
 The user can then select a 'More details' link to access a point within the detailed 'Walks' page:
+  - Each card identifies the walk by name and some key features of each walk.
+  - Clicking on a particular card opens a link to the relevant walk detail  
+
+- Icons are used within the category cards to categorise distance, trail type (forest/nature/seaside) etc..... 
+- The consistent and repeated use of certain icons aids user learning 
+- The use of icons improves readability and navigation, particularly for returning users
 
 ![Flipcard walks summary card](./assets/readme_images/F04_b-Flipcard-images-walk-summary.jpg?raw=true "Flipcard Attractive Photo")
 
@@ -256,6 +267,10 @@ Note that there are hyperlinks within page to position at each walk (walk01, wal
 ### F06 Feature consistent icons and categorisation
 As per the walks summary flipcard the same symbols are used to help with learning the website
 ![Consistent Use of icons and categories](./assets/readme_images/F06-Feature-Walk-Details-use-of-categorisation-icons.jpg?raw=true "Icons and categories walks detail")
+- clicking on a walk card brings the user to a separate walk details window which provides more information on each walk.  
+- an explanation of the icons and categories is given on the 'About' page
+![WalkCatCards](image3.png)
+![HelpIconCategories](image4.png)
 
 ### F07-Average Reviews stars
 Feature average reviews
@@ -263,7 +278,7 @@ Feature average reviews
 
 ### F08 Walk Details Descriptive text
 Helpful descriptions to describe the walk and help the reader determine if it is suitable or of interest to them.
-![Six colour-coded walks on Google Maps background](./assets/readme_images/F08-Feature-Walk-Details-descriptive text.jpg?raw=true "Mapped Walks")
+![Six colour-coded walks on Google Maps background](./assets/readme_images/F08-Feature-Walk-Details-descriptive-text.jpg?raw=true "Mapped Walks")
 
 ### F09 Image carousel
 An animated gallery of images is available per walk.
@@ -272,42 +287,38 @@ This is a simple html/css animation using a deck of 4 photos per walk with the v
 ![A clickable image carousel is shown](./assets/readme_images/F09-Feature-album-carousel.jpg?raw=true "Image carousel")
 
 ### F10 Responsive Navbar
-Navbar is attractively laid out.  Four links are available - Home - Walks - Gallery - Feedback
-The navbar is visible at the top of each screen.   
-![More details of a walk](./assets/readme_images/F10-Feature-Navbar.jpg?raw=true "More details of a walk")
+The navigation bar appears on all pages, and is attractively laid out.  Four links are available - Home - Walks - Gallery - Feedback
+The navbar is visible at the top of each screen, and is identical in each page/ screen size combination to allow for easy navigation.
+It is fully responsive so will change positioning at 320, 400, 800 pixel screen widths. 
+This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+
+![Responsive navbar](./assets/readme_images/F10-Feature-Navbar.jpg?raw=true "Responsive navbar")
+
 
 ### F11 Partner social media links (footer)
 As this website is structured to operate more like to a peer-to-peer than a hierarchical structre, the footer bar is not currently used for broadcasting from a single site owner's social links, instead it is a set of 'partner' links to groups or websites which are relevant.  Currently configured to point to:
 * Social media/fabebook - Arklow Trail Trotters walking group, with details of their meeting times.
-* Visit wicklow website
+* Visit Wicklow website
 * generic youtube
 * generic instagram
 ![Footer partner links](./assets/readme_images/F11-Feature-Footer-bar.jpg?raw=true "Partner links")
 
-### Interaction with Mapped trails routes
-Six colour-coded mapped trails routes are selectable within the Google Maps panel, and clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
-![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
 
 ### F12 Google Maps app functionality preserved on Arklow Trails website
+Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.  Google maps background mapping provides rich detail to the user.
+
+![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-integrated-data.jpg?raw=true "More details of a walk")
 ![Six colour-coded walks on Google Maps background](./assets/readme_images/F07-Feature-Google-Map-direction-finder1?raw=true "Mapped Walks")
 ![More details of a walk](./assets/readme_images/F05-Feature-Walk-Details-Page.jpg?raw=true "More details of a walk")
-Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.
 
-![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-integrated-data.jpg?raw=true "More details of a walk")
-![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-direction-finder2.jpg?raw=true "More details of a walk")
-![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-integrated-data.jpg?raw=true "More details of a walk")
-
-
-
-### Navbar
-
-### Walks page
-
-### Walk page - photo carousel
+### F13 Google Interaction with Arklow Trails-specific My Maps Data
+As many potential site users are already familiar with Google map usages, the data created for the Arklow Trails website allows users to utilise it compatibly in the Google Maps interface.   clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
+![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
+![More details of a walk](./assets/readme_images/F13-Feature-Google-Map-direction-finder2.jpg?raw=true "More details of a walk")
 
 
 ### Features in Scope - refer to excel sheet for details of user stories (requirements) features and RTM.
-This website includes 5 pages and X features (to be completed...)
+This website includes 5 pages and 13 features 
 The pages are:
 * Landing Page (image link)
 * Walks detail page (image link)
@@ -315,35 +326,12 @@ The pages are:
 * Feedback page (image link)
 * About page (image link)
 
-- __The landing page image__
+### Landing Page
+The landing includes a responsive google map at centre, surrounded by category cards for each of the walks.
+This section introduces the user to the geographic territory of arklow and the map is useful to give an overview of the walk locations e.g.  seaside vs  inland.
+There is very little text (header bar) displayed initially which means that language barriers are reduced and the site becomes very accessible to visually confident users.
 
-  - The landing includes a responsive google map at centre, surrounded by category cards for each of the walks.
-  - This section introduces the user to the geographic territory of arklow and the map is useful to give an overview of the walk locations e.g.  seaside vs  inland.
-
-![Landing Page](image2.png)
-
-- __Navigation Bar__
-
-  - Featured on all pages, the fully responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-
-![Nav Bar](image1.png)
-
-
-- __Walk Category Cards__
-
-  - Surrounding the map are a set of category cards, one per walk.
-  - Each card identifies the walk by name and some key features of each walk.
-  - Clicking on a particular card opens a link to the relevant walk detail  
-
-- Icons are used within the category cards to categorise distance, trail type (forest/nature/seaside) etc..... 
-- The consistent and repeated use of certain icons aids user learning 
-- The use of icons improves readability and navigation, particularly for returning users
-- Hovering over a walk card changes the display so it is possible to see which is 'active'.
-- clicking on a walk card brings the user to a separate walk details window which provides more information on each walk.  
-- an explanation of the icons and categories is given on the 'About' page
-![WalkCatCards](image3.png)
-![HelpIconCategories](image4.png)
+![Landing Page](./assets/readme_images/P01-Landing-Page.jpg?raw=true "Central Google Map with 3 walk flipcards either side")
 
 - __Walk descriptions__
 To be completed...
@@ -367,10 +355,6 @@ including ability to upload image of user's own walk
   - also links to partner sites
   The links will open to a new tab to allow easy navigation for the user. 
   - The footer is valuable to the user as it encourages them to keep connected via social media and to engage in a deeper way with the community sponsors of this project
-
-![Footer](image.png)
-
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
 
 - __The Feedback Page__
   - This page encourages the user to add their own reviews relating to various walks
