@@ -453,12 +453,22 @@ Provide proofs of successful testing of each user story
 ### Validator Testing 
 - HTML
   - One errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/index.html)
+  <img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/css-validator-warnings.jpg">
+  (check with Mo on this one as it previosuly caused a problem with deployment in github)
+
   - Multiple errors  [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/walks.html)- 
   - Multiple errors on [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/feedback.html)
   - Some errors on  [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/gallery.html)
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF01-landing-page.jpg">
+</details>
+(still more work to be done here)
   
 - CSS
-  - Errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - warnings were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/css-validator-warnings.jpg">
+</details>
+(check with Mo)
 
 ### Manual Testing
 To be completed...
@@ -488,7 +498,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - https://deemccart.github.io/CI_PP1_ArklowTrails/index.html
 
 
 ## Credits 
