@@ -48,7 +48,7 @@
   </header>
   
   <section class="main-left">
-    <p><h2>Left-hand panel - intentionaly left blank</h2></p>
+    <h2>Left-hand panel - intentionaly left blank</h2>
   </section>
 
   <!-- Main section - feedback fields -->
@@ -82,7 +82,7 @@
       <br>
       <label for="review-stars">Your star rating: </label> <!-- end review-stars positioning-->
         <!-- 18/04/23 DMcC:  currently laid out as a frm within a frm which is against css rules; subsitute a div-->
-        <form class="star-rating" id="review-stars">
+        <div class="star-rating" id="review-stars">
 
           <input class="radio-input" type="radio" id="star5" name="star-input" value="5" />
           <label class="radio-label" for="star5" title="5 stars">5 stars</label>
@@ -98,7 +98,7 @@
 
           <input class="radio-input" type="radio" id="star1" name="star-input" value="1" />
           <label class="radio-label" for="star1" title="1 star">1 star</label>
-        </form> <!-- end review star input-->
+        </div> <!-- end review star input-->
       
       <br>
       <label for="date-walked">Date walked: <br></label>
