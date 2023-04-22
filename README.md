@@ -476,7 +476,16 @@ To be completed... mention unfixed bugs and why they were not fixed. This sectio
 ## Accessibility
 To be completed... e.g. using WAVE WebAIM accessibility evaluation tool.
 All pages pass with X errors
-(comment here on any errors encountered)
+- [Accessability: index page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/index.html)
+- [Accessibility: walks page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/walks.html)
+- [Accessibility: gallery page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/gallery.html)
+- [Accessibility:  feedback page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/feedback.html)
+
+Running the accessibility checks against the index page identified a problem with the flipcards, which showed text and icons in white against a mid-blue background.  This was deemed insufficient contrast so was modified to black text against an aqua background (the same rgb as the header and footer). 
+
+On the feedback page, there were file upload buttons which had no form label (multiple photo update buttons)
+After making these changes there were no errors.
+
 
 ## Performance
 To be completed...

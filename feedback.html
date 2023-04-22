@@ -106,42 +106,44 @@
       <br><br>
       <label for="review">Your review:<br> </label>
       <!-- 22/04/23 DMcC:  Removed required tag on review field as not valid for textarea -->
-      <input id="review" type="text" name="review" />
+      <input id="review"  type="text" name="review" rows="4" cols="50" placeholder="Please share your experience and photos!" />
       <br><br>
 
-      <label for="photo1">Your photo(s); </label>
+      <p>We would love to have your photos!</p>
       <br>
-      <input id="photo1" type="file" name="TrailPhoto1" />
-      <input id="photo2" type="file" name="TrailPhoto2" />
-      <input id="photo3" type="file" name="TrailPhoto3" />
-
-      <br><br>
-
-
+      <label for="photo1">Photo1: </label>
+      <input id="photo1" type="file" name="TrailPhoto1" /><br>
+      <label for="photo2">Photo2: </label>
+      <input id="photo2" type="file" name="TrailPhoto2" /><br>
+      <label for="photo3">Photo3: </label>
+      <input id="photo3" type="file" name="TrailPhoto3" /><br>
+      <br>
+      <br>
       <label for="firstname">Firstname: </label>
       <input id="firstname" type="text" name="fname" />
-
       <label for="surname">Surname: </label>
       <input id="surname" type="text" name="sname" />
-      <br><br>
+      <br>
+      <br>
       <label for="email">Email: </label>
       <input id="email" type="email" name="email" required />
-      <br><br>
+      <br>
+      <br>
       <input id="accept_terms" type="checkbox" name="accept_terms" required />
       <label for="accept_terms">Tick to accept Terms and Conditions<br></label>
-      <input type="submit" name="submit" />
+      <br>
+      <input type="submit" class="button" value="Submit" name="submit" />
+      
     </form> <!-- end main frm  -->
     <br>
     <p>Feedback is used to rate the walks listed and also to suggest new walks which should be added (choose 'Other'
       and add details/ photos).</p>
     <p>Email address will be verified prior to upload of images or reviews are shared</p>
-
   </section>
   <section class="main-right">
     <h2>right-hand panel - intentionally left blank</h2>
     <p></p>
   </section>
-
 
   <!-- Footer section showing social media links and logos for the collaborative partners of this site -->
   <footer class="footer">
