@@ -549,7 +549,7 @@ slideshow01:hover {
 
 .star-rating {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
