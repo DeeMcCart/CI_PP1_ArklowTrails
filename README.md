@@ -4,46 +4,46 @@
 # Table of Contents:
 1. [About](#about)
 2. [Project Goals: ](#project-goals)
-  1. [UX Design - Strategy ](#ux-design-strategy) 
-  2. [UX Design - Strategy - Competitor Portals](#ux-design-strategy-analysis-of-competitor-offerings)
-  3. [UX Design - Strategy - Target Audience](#ux-design-strategy-target-audience)
+    1. [UX Design - Strategy ](#ux-design-strategy) 
+    2. [UX Design - Strategy - Competitor Portals](#ux-design-strategy-analysis-of-competitor-offerings)
+    3. [UX Design - Strategy - Target Audience](#ux-design-strategy-target-audience)
 3. [UX Design - Scope](#ux-design-scope)
     1. [UX Design - Scope - User Requirements and Expectations](#ux-design-scope-user-requirements-and-expectations)
     2. [UX Design - Scope - Data](#ux-design-scope-data)
     3. [UX Design - Scope - Viewing Device](#ux-design-scope-viewing-device)
-4.[User goals/ user stories: ](#user-goals-user-stories)
-  1.  [Site Owner Goals](#site-owner-goals)
-  2.  [First-time User Goals](#first-time-user-goals)
-  3.  [Returning User Goals](#returning-user-goals)
-  4.  [Other stakeholder Goals](#other-stakeholder-goals)
-  5.  [Future Site owner and Administrator Goals](#future-site-owner-and-administrator-goals)
-6.  [Further UX Design: ](#ux-design-decisions)
-  1. [Structure - Checklist](#structure)
-  2. [Skeleton - Wireframes; ](#wireframes)
-  3. [Surface - Fonts; ](#fonts-chosen) 
-  4. [Surface - Colours](#colour-scheme)
-  5. [Surface - Imagery](#design-images)
-7. [Features](#features)
-  1. [Included](#features-in-scope)
-  2. [Future Development](#features-left-to-implement)
-  3. [Requirements Tracing](#RTM)
-4. [Technology](#technologies)
-  6.1  [Languages](#langugages)
-  6.2  [Frameworks and Tools](#frameworks--tools)
-14. [Testing](#testing)
-  7.1 [Testing against Requirements](#rtm-proof)
-  7.2 [Validator testing](#validator-testing)
-  7.3 [Manual Testing](#manual-testing)
-    7.4 [Multi-device Testing](#multi-device-testing)
-    7.5 [Multi-browser Testing](#multi-browser-testing)
-    7.6 [Unfixed Bugs](#unfixed-bugs)
-15. [Accessibility](#accessibility)
-16. [Performance](#performance)
-17. [Deployment](#deployment)
-18. [Credits](#credits)
-  11.1 [Content](#content)
-  11.2 [Media](#media)
-  11.3 [Acknowledgements](#acknowledgements)
+4. [User goals/ user stories: ](#user-goals-user-stories)
+    1. [Site Owner Goals](#site-owner-goals)
+    2. [First-time User Goals](#first-time-user-goals)
+    3. [Returning User Goals](#returning-user-goals)
+    4. [Other stakeholder Goals](#other-stakeholder-goals)
+    5. [Future Site owner and Administrator Goals](#future-site-owner-and-administrator-goals)
+5. [Further UX Design: ](#ux-design-decisions)
+    1. [Structure - Checklist](#structure)
+    2. [Skeleton - Wireframes; ](#wireframes)
+    3. [Surface - Fonts; ](#fonts-chosen)
+    4. [Surface - Colours](#colour-scheme)
+    5. [Surface - Imagery](#design-images)
+6. [Features](#features)
+    1. [Included](#features-in-scope)
+    2. [Future Development](#features-left-to-implement)
+    3. [Requirements Tracing](#RTM)
+7. [Technology](#technologies)
+    1. [Languages](#langugages)
+    2. [Frameworks and Tools](#frameworks--tools)
+8. [Testing](#testing)
+    1. [Testing against Requirements](#rtm-proof)
+    2. [Validator testing](#validator-testing)
+    3. [Manual Testing](#manual-testing)
+    4. [Multi-device Testing](#multi-device-testing)
+    5. [Multi-browser Testing](#multi-browser-testing)
+    6. [Unfixed Bugs](#unfixed-bugs)
+9. [Accessibility](#accessibility)
+10. [Performance](#performance)
+11. [Deployment](#deployment)
+12. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+    3. [Acknowledgements](#acknowledgements)
 
 ## About
 ---------
@@ -101,7 +101,7 @@ The Arklow Trails website therefore proposes to provide a portal whereby standar
 ### UX Design Strategy Target Audience
 * The target audience includes visitors to, and residents of, Arklow who seek running/walking route information
 * The target audience includes recreational walkers, joggers and hikers, alone or in groups.
-* Runners are a particular target audience, and would like to know route difficulty level?
+* Joggers/runners are a particular target audience, and would like to know route difficulty level
 * Family groups are a particular target audience, perhaps including mobility challenges - suitability for pushchairs/wheelchairs
 * Dog walkers?
 
@@ -218,7 +218,7 @@ These colours also represent forest, water - river and sea, and sand - these are
  The colours used are non-threatening and feel friendly, familiar and safe, so encouraging to users who may be socially hesitant,  or feel embarassed about their level of fitness, to feel that the Arklow Trails are inclusive, friendly and will welcome them.
 
 ### Design Imagery
-The images chosen is reminicent of .....
+The images chosen areis reminicent of .....
 ice cream
 1970's seaside visits
 slightly faded postcard photos ... retro feel to bring people back into safety of childhood.
