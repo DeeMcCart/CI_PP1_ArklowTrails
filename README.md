@@ -135,41 +135,41 @@ Support for a range of device types, and responsiveness to the size of the user'
 ----------------
 
 ### Site owner Goals
-* As site owner I want to list five (or more) key walks in the Arklow area
-* As site owner I want to categorize walks to allow users to choose the most appropriate for their needs
-* As site owner I want to provide a google maps link to the location of each of the walks
-* As site owner I want to provide an attractive gallery of images which encourage outdoor pursuits in this locality
-* As site owner I want to raise awareness of local sightseeing items
-* As site owner I wish to promote responsible dog walking (doggie poop bins)
-* As site owner I wish to showcase local hospitality business - cafes and tea shops en route 
-* As site owner I wish to promote community engagement by encouraging users to leave reviews and photos of their walk own experience
-* As site owner I want to encourage awareness of community sponsors including: Arklow Tidy Towns, Arklow Municipal District, Wicklow Sports Partnership, Arklow Maritime Musemu, Arklow Historical Society
+* SO_01 As site owner I want to list five (or more) key walks in the Arklow area
+* SO_02 As site owner I want to categorize walks to allow users to choose the most appropriate for their needs
+* SO_03 As site owner I want to provide a google maps link to the location of each of the walks
+* SO_04 As site owner I want to provide an attractive gallery of images which encourage outdoor pursuits in this locality
+* SO_05 As site owner I want to raise awareness of local sightseeing items
+* SO_06 As site owner I wish to promote responsible dog walking (doggie poop bins)
+* SO_07 As site owner I wish to showcase local hospitality business - cafes and tea shops en route 
+* SO_08 As site owner I wish to promote community engagement by encouraging users to leave reviews and photos of their walk own experience
+* SO_09 As site owner I want to encourage awareness of community sponsors including: Arklow Tidy Towns, Arklow Municipal District, Wicklow Sports Partnership, Arklow Maritime Musemu, Arklow Historical Society
 
 ### First-time User Goals
-* As a first-time user I want to see what trails are available within a geographic area
-* As a first-time user I want to see how long a trail is, and how difficult (gradient, terrain) it is
-* As a family user I want to know whether it is suitable for pushchairs or young children
-* As a first-time user I want to see attractive pictures (to motivate me and others to select a particular trail)
-* As a first-time/ family/ recreational user I would like to know what rest/food facilities are available on the route
-* As a first-time user I would like to understand how to reach the start point from my current location   
-* As a first time user I would like to be able to navigate the site and quickly learn its functionality
+* FTU_01 As a first-time user I want to see what trails are available within a geographic area
+* FTU_02 As a first-time user I want to see how long a trail is, and how difficult (gradient, terrain) it is
+* FTU_03 As a family user I want to know whether it is suitable for pushchairs or young children
+* FTU_04 As a first-time user I want to see attractive pictures (to motivate me and others to select a particular trail)
+* FTU_05 As a first-time/ family/ recreational user I would like to know what rest/food facilities are available on the route
+* FTU_06 As a first-time user I would like to understand how to reach the start point from my current location   
+* FTU_07 As a first time user I would like to be able to navigate the site and quickly learn its functionality
 
 ### Returning User Goals
-* As a returning user I would like to be able to navigate the site easily and to 'drill into' selected walks
-* As a returning user I would like to be able to navigate the sites on my mobile device when 'out and about'
-* As a returning user I would like to be able to view photo gallery for individual walks
-* As a returning user I would like to locate the start of a walk relative to my own location
-* As a returning user I would like to have a facility to upload my walk photos and add reviews/comments
-* As a returning user I would like to be able to suggest other walks of interest and upload information for consideration by the site owners
+* RU_01 As a returning user I would like to be able to navigate the site easily and to 'drill into' selected walks
+* RU_02 As a returning user I would like to be able to navigate the sites on my mobile device when 'out and about'
+* RU_03 As a returning user I would like to be able to view photo gallery for individual walks
+* RU_04 As a returning user I would like to locate the start of a walk relative to my own location
+* RU_05 As a returning user I would like to have a facility to upload my walk photos and add reviews/comments
+* RU_06 As a returning user I would like to be able to suggest other walks of interest and upload information for consideration by the site owners
 
 ### Other stakeholder Goals
-* As a local restaurant/cafe/shop owner, while I don't plan to use the site myself, I would like my business to be promoted as a stop-off
-* As a local litter warden I would like people to be aware where the doggie poop bins/ bag stores are located
-* As the local Tidy Towns co-ordinator I would like to promote certain walks where we want to increase foot traffic thereby reducing anti-social activity
+* OT_01 As a local restaurant/cafe/shop owner, while I don't plan to use the site myself, I would like my business to be promoted as a stop-off
+* OT_02 As a local litter warden I would like people to be aware where the doggie poop bins/ bag stores are located
+* OT_03 As the local Tidy Towns co-ordinator I would like to promote certain walks where we want to increase foot traffic thereby reducing anti-social activity
 
 ### Future Site owner and Administrator Goals
-* NB In the future, the current site owner role may evolve into two roles - Site Owner and Site Administrator.  One or more Site Administrators would take on the roles listed above for specific geographic territories, and a new Site Owner role with overall responsibilities for hosting a bank of trails websites (and possibly for digitising new walks at the site Administrators request)    
-* In order to process user feedback, a future rule of site moderator (Administrator) will be needed to review and approve submitted reviews and photos, and add them to the trails website databank.
+* FUT_01 NB In the future, the current site owner role may evolve into two roles - Site Owner and Site Administrator.  One or more Site Administrators would take on the roles listed above for specific geographic territories, and a new Site Owner role with overall responsibilities for hosting a bank of trails websites (and possibly for digitising new walks at the site Administrators request)    
+* FUT_02 In order to process user feedback, a future rule of site moderator (Administrator) will be needed to review and approve submitted reviews and photos, and add them to the trails website databank.
 
 ## UX Design Decisions
 ----------------
@@ -184,7 +184,7 @@ https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/UX-structur
 
 ### Wireframes
 <details><summary>Landing Page</summary>
-The landing page WF is shown here with 4 sceen resolutions as I found when testing that the Motorola G(7) was truncating to the right hand side for 2-column pictures display, therefore I added an additional responsiveness section to cater for 320-400 pixel screen size.
+The landing page WF is shown here with 4 sceen resolutions as I found when testing that the Motorola G(7) was truncating to the right hand side for 2-column pictures display, therefore I added an additional responsiveness section to cater for 320-400 pixel screen size.   This was really just an issue for the landing page, the remaining screens sized OK for the content.
   
 <img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF01-landing-page.jpg">
 </details>
@@ -198,7 +198,8 @@ The landing page WF is shown here with 4 sceen resolutions as I found when testi
 </details>
 
 <details><summary>Feedback</summary>
-<img src="docs/wireframes/WF04-feedback.jpg">
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF04-feedback.jpg">
+>
 </details>
 
 
@@ -207,44 +208,58 @@ The landing page WF is shown here with 4 sceen resolutions as I found when testi
 
 ### Fonts Chosen
 Libre Franklin and Libre Baskerville are chosen because they are readable on large screens or smaller mobile devices.  This font is recommended for sites that may be content-heavy but which are regarded as fun friendly and approachable/inclusive.  These are identified by Google as good pairing.
-
-In practice, these fonts DO look readable and businesslike, but don't look particularly  friendly or approachable... therefore an improved font would be less formal (sans serif???)
+Fallback fronts are used in both cases
+In practice, these fonts DO look readable and businesslike, but don't look particularly  friendly or approachable...
 
 ### Colour Scheme
-The colour combinations chosen are ...
-blue-green, light-blue, ice-cream yellow.... the overall to resemble neapolitan ice cream which is a visual trigger for Arklow as a seaside town.
-These colours also represent forest, water - river and sea, and sand - these are typical landscapes covered by the walks shown, as Arklow is a coastal town sited in a river valley and giving access to large stretches of rocky coastline.
+The colour combinations chosen are blue-green, light-blue, yellow-beige .... somewhat resembling ice cream which is a visual trigger for Arklow as a seaside town!
+These colours also represent (green) forest, (blue-green) water - river and sea, and (beige/yellow) sand - these are typical landscapes covered by the walks shown, as Arklow is a coastal town sited in a river valley and giving access to large stretches of rocky coastline.  the background colours are muted and calm.  The background colours are muted to allow foreground images and data to stand out.  Background colours are chosen to feel non-threatening and friendly, familiar and safe, so encouraging to users who may be socially hesitant,  or feel embarassed about their level of fitness, to feel that the Arklow Trails are inclusive, friendly and will welcome them.
 
- The colours used are non-threatening and feel friendly, familiar and safe, so encouraging to users who may be socially hesitant,  or feel embarassed about their level of fitness, to feel that the Arklow Trails are inclusive, friendly and will welcome them.
+For this particular site the foreground images tend to have strong and meaningful colours.  For example the central Google map redendering at the initial scale to show the 6 walks, has a lot of strong blue (sea) and strong green (countryside).   Wakls are mapped against the Google map background using strong, vibrant colours which stand out against the map background.  The same colour coding is used for the border of each walk flipchart to act as a visual reminder to users of the link between the map and the Arklow Trails website itself.
 
-### Design Imagery
-The images chosen areis reminicent of .....
-ice cream
-1970's seaside visits
-slightly faded postcard photos ... retro feel to bring people back into safety of childhood.
+Colours used for flipchart boundaries per walks:
+blue-border:    rgb(2, 136, 209)
+fuschia-border: rgb(136, 14, 79)
+orange-border: rgb(230, 81, 0)
+yellow-border: rgb(255, 234, 0)
+sludgegreen-border: rgb(129, 119, 23)
+purple-border: rgb(103, 58, 183);
+
+This corresponds with the colours which are available within Google maps digitising capabilities, so the rbg values of the mapped walk and its flipcard are consistent.
+
+Digitising options in Google Maps:
+![Colour choices when digitising in Google Maps](./assets/readme_images/ux-design-choices-accessing-style-in-google-maps.jpg?raw=true "Google maps colour choices").
+ 
+### Design Imagery 
+This site is reasonably image-heavy, a lot of the interest for users is in creating, uploading or browsing the walk images.  Because of the nature of the landscape in the location of Arklow (lots of waterbodies - sea, rivers; lots of green - woods), the images are given sufficient size for the user to be able to view and enjoy.  (ref user stories SO_04, FTU_04, RU_03, RU_05)
+
+However a very fundamental aspect of this site is the categorisation of walks, it is not something that shouts out from the site, as the walk gallery photos take a lot of user attention, but in fact the cateogorisation is absolutely key to this site meeting its fundamental user requirement..  (ref user stories SO_02, FTU02, FTU_07) 
+
+The approach taken is to use standardised categories, with freely downloadable font-awesome icons throughout the site (most particularly on walk summary flipcards, and on the walk details pages).   The range of icons available was not 100% correct, however a reaonsable compromise (e.g. using a 'crow' symbol to represent birdwatching)  was found in most cases.
+
+![walk category symbols](./assets/readme_images/F06-Feature-Walk-Details-use-of-categorisation-icons.jpg?raw=true "Example of Walk Category Symbols used")
+
 
 ## Features 
-* Different parts of your project, and describe each in a sentence or so. 
-* Explain what value each of the features provides for the user, 
-* focusing on who this website is for, 
-* what it is that they want to achieve and 
-* how your project is the best way to help them achieve these things.
  
 ### F01 Google Maps used as the anchor image on the landing page
+The use of Google Map was a deliberate design decision. Google maps is widely used by people of all demographics, internationally as well as within Ireland, as a navigation tool.  Familiarity reduces the overall learning curve for new users of the Arklow Trails website.   Digitising tools available within the Google MyMaps interface, while outside the scope of this document, mean that trails data is presented visually in an attractive, comprehensible way which is meaningful to site users (corresponds to user stories SO_01, SO_03, FTU_01, FTU_07, RU_01 )
+
 ![Landing Page showing Google Map at centre](./assets/readme_images/230418%20Landing%20Page.jpg?raw=true "Landing Page")
-![Landing Page showing Google Map at centre](./assets/readme_images/F01-Feature-Google-Map-as-main-image-on-screen?raw=true "Landing Page")
-![Landing Page showing Google Map at centre](./assets/readme_images/F01-Feature-Google-Map-as-main-image-on-screen-tablet-mode?raw=true "Landing Page")
-The use of Google Map was a deliberate design decision. Google maps is widely used (by people of all demographics) as a navigation tool.  It's familiarity reduces the overall learning curve for new users of the Arklow Trails website.  
 
 ### F02 Color-coded mapped walks
-Six colour-coded mapped trails are shown.  The range of colours means they can be clearly distinguished from one another, and the same colour is used in the flipcard boundary.  
+Six colour-coded mapped trails are shown.  The range of colours means they can be clearly distinguished from one another, and the same colour is used in the flipcard boundary. 
+
 ![Six colour-coded walks on Google Maps background](./assets/readme_images/F02-Feature-colour-coded-walks.jpg?raw=true "Mapped Walks")
+
+The main objective of using consistent colour-coding is to make the site learnable, and act as a visual reminder for users when navigating between mapped walks and their corresponding flipcard.   This addresses elements of user stories FTU_01, FTU_07, RU_01
+
 ![Colour-coded walks Google Maps large screen](./assets/readme_images/F02-Feature-Google-Map-maximised-to-show-walk-data.jpg?raw=true "Colour-coded walks Google Maps large screen")
 
 ### F03 Colour-edged Photo Flipcards
 The landing page map is surrounded by colour-edged flipcards, one per walks.
 The border colour of each flipcard corresponds to the #rgb colour of its associated trail.
-Each flipcard shows an attractive or intruiging photo, encouraging the user to hover over the image trail information.
+Each flipcard shows an attractive or intruiging photo, encouraging the user to hover over the image trail information.  This cnotributes to user stories SO_04, SO_05, FTU_04, FYU_07, RU_01
 
 ![Flipcard attractive photo example](./assets/readme_images/F03_a-Flipcard-images-photos.jpg?raw=true "Flipcard Attractive Photo").
 
@@ -270,7 +285,11 @@ Standard symbols are used for walk categorisation e.g. birds, sea, swimming, riv
 
 Each flipcard has a 'More details...' link to encourage the user to access the walk details page:
 
-![Flipcard walks summary more details link](./assets/readme_images/F04-Feature-Flipcard-More-Details.jpg?raw=true "Flipcard summary with link to more details")
+![Flipcard walks summary more details link](./assets/readme_images/F04Feature-Flipcard-More-Details.jpg?raw=true "Flipcard summary with link to more details")
+
+The flip-card detail is really a navigational aid, to encourage the user to traverse through images on the site, and progressively reveal details of the walks below.   On checking summary information the user might immediately think 'oh that walk is too long/short for me, it's not for me' and can quickly move along to the next image and scan the summary there.  So its a very nice feature because the user hasn't actually left the landing page and is just moving their mouse around to quickly investigate.
+Ref user stories  
+
 
 ### F05 More details for each trail
 The user can see more details per trail in one of three ways:
@@ -291,17 +310,17 @@ As per the walks summary flipcard the same symbols are used to help with learnin
 ![HelpIconCategories](image4.png)
 
 ### F07-Average Reviews stars
-Feature average reviews
+Ability to view average ratings on scale 1-5 per walk, where 1 = terrible and 5 = fantastic, represented using star symbols (also echoed in the feedback form where the user can enter their own walk ratings) 
 ![Average trail reviews per walk](./assets/readme_images/F07-Feature-Walk-Details-average-trail-reviews.jpg?raw=true "Average trail reviews stars out of 5")
 
 ### F08 Walk Details Descriptive text
-Helpful descriptions to describe the walk and help the reader determine if it is suitable or of interest to them.
+Helpful descriptions to describe the walk and help the reader determine if it is suitable or of interest to them.  This is in accordance with the 'progressive disclosure' principle whereby the user now has chosen to access full details of the walk.
 ![Six colour-coded walks on Google Maps background](./assets/readme_images/F08-Feature-Walk-Details-descriptive-text.jpg?raw=true "Mapped Walks")
 
 ### F09 Image carousel
 An animated gallery of images is available per walk.
 This is a simple html/css animation using a deck of 4 photos per walk with the viewing window transitioning between them.
-(This became more complex to implement when I realised that the animation must be iniated by the user rather than auto-play).
+(This became more complex to implement when I realised that the animation must be iniated by the user rather than auto-play!!).
 ![A clickable image carousel is shown](./assets/readme_images/F09-Feature-album-carousel.jpg?raw=true "Image carousel")
 
 ### F10 Responsive Navbar
@@ -314,7 +333,12 @@ This section will allow the user to easily navigate from page to page across all
 
 
 ### F11 Partner social media links (footer)
-As this website is structured to operate more like to a peer-to-peer than a hierarchical structre, the footer bar is not currently used for broadcasting from a single site owner's social links, instead it is a set of 'partner' links to groups or websites which are relevant.  Currently configured to point to:
+As this website is structured to operate more like to a peer-to-peer than a hierarchical structre, the footer bar is not currently used for broadcasting from a single site owner's social links, instead it is a set of 'partner' links to groups or websites which are relevant.    
+
+  The links will open to a new tab to allow easy navigation for the user. 
+  The footer is valuable to the user as it encourages them to keep connected via social media and to engage in a deeper way with the community sponsors of this project
+
+Currently configured to point to:
 * Social media/fabebook - Arklow Trail Trotters walking group, with details of their meeting times.
 * Visit Wicklow website
 * generic youtube
@@ -323,21 +347,29 @@ As this website is structured to operate more like to a peer-to-peer than a hier
 
 
 ### F12 Google Maps app functionality preserved on Arklow Trails website
-Arklow Trails website has been designed so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.  Google maps background mapping provides rich detail to the user.
+Although this is fundamental to the successful operation of the site, it is not software that was developed within the Arklow Trails site, and has therefore been left towards the end of the list of 'Arklow Trails' features.  Arklow Trails has been designed and implemented so that standard Google maps features (navigation, pan, zoom, choice of mapping background, local points of interest) are still available to the user.
+
+(This presented an implementation challenge as ideally the flipcards would have slightly overlapped the Google Maps screen, and it was intended to implement using z-positioning to overlay.... however when testing it was found that the Google Maps functionality was disabled as the focus was on the flipcards to the forefront... therefore an implementation decision to separate map and flipcards into different screen areas was taken)
 
 ![More details of a walk](./assets/readme_images/F12-Feature-Google-Map-integrated-data.jpg?raw=true "More details of a walk")
 ![Six colour-coded walks on Google Maps background](./assets/readme_images/F07-Feature-Google-Map-direction-finder1?raw=true "Mapped Walks")
 ![More details of a walk](./assets/readme_images/F05-Feature-Walk-Details-Page.jpg?raw=true "More details of a walk")
 
-### F13 Google Interaction with Arklow Trails-specific My Maps Data
+### F13 Google My Maps Data
 As many potential site users are already familiar with Google map usages, the data created for the Arklow Trails website allows users to utilise it compatibly in the Google Maps interface.   clicking on either a route or its associated start-point (generally indicated by a colour-coded P on the map) triggers two actions:
 ![Google Map at centre](./assets/readme_images/GM-click-on-a-walk.jpg?raw=true "Using the Central Map as a start point")
 ![More details of a walk](./assets/readme_images/F13-Feature-Google-Map-direction-finder2.jpg?raw=true "More details of a walk")
 
+Data created for the Arklow Trails website with Google MyMaps included:
+* colour-coded walk polylines
+* colour-coded startpoints, indicated by a P on the map which are a navigable element within Google
+* hyperlinks to walk details within Arklow Trails website, this opens the 'walks detail' page at the relevant section in a new window.
+(Note that, in implementing, I had intended to use a 3rd party URL shortener however I found that the shortened URL was intermittently disabled/blocked for my test users, so reinstated the longer URL.) 
 
 ### Features in Scope - refer to excel sheet for details of user stories (requirements) features and RTM.
 This website includes 5 pages and 13 features 
-The pages are:
+Features are as listed in previous section.
+The pages - which effectively bring these features together - are:
 * Landing Page (image link)
 * Walks detail page (image link)
 * Gallery page (image link)
@@ -354,7 +386,7 @@ There is very little text (header bar) displayed initially which means that lang
 - __Walk descriptions__
 To be completed...
 
-- __Walk reviews__
+- __Walks Detail Page__
 To be completed...
 
 - __Walk Gallery__
@@ -362,42 +394,24 @@ To be completed...
   - The gallery identifies objects of interest that the user may encounter on each walk.
      - This section is valuable to the user as it encourages them to partake in a given walk. 
 
-- __Feedback form__ 
+- __Feedback page__ 
 including ability to upload image of user's own walk
 
-- __Links__
- to partner websites.  Appears in the footer and also on the 'about' page
-
-- __The Footer__ 
-  - The footer section includes links to the relevant social media sites (to be completed)...
-  - also links to partner sites
-  The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media and to engage in a deeper way with the community sponsors of this project
-
-- __The Feedback Page__
-  - This page encourages the user to add their own reviews relating to various walks
+- - This page encourages the user to add their own reviews relating to various walks
   - and to upload their photos
   - and to add a star rating
   - the user must provide a username and email address in order to be permitted to upload photos.  They must also accept the terms and conditions.
 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-Consider whether a separate utilities file will be used...
-To be completed...
-
 ### Features Left to Implement
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-- Another feature idea
-Include suitability of various walks for dogs?
-Include details to access guided walks and walking/running groups in the area?
-Newsletter signup?
-Moderation of user feedback - text and photos; and ability to upload this into the site content
+Some of the user stories could be addressed more directly in the future: 
+* Include suitability of various walks for dogs? - this has not really been expanded in the current setup, other than mentioning dogs on the walks details text.
+* Include details to access guided walks and walking/running groups in the area?
+* Moderation of user feedback - text and photos; and ability to upload this into the site content
+* Scaling of site - this is currently implemented for a particular geogrpahic location, however the design and implementation principles followed mean that it would be possible to re-use much of the code, and, by creating fresh Google MyMaps digitised routes and updated walk details, to re-use this solution for a different territory.  This is definitely something i would like to investigate in the near future. 
 
 ### RTM
 Requirements traceability matrix showing link between user stories and implemented/ future-release features
+user-stories-checked-against-features
 
 ## Technologies
 
