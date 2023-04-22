@@ -386,8 +386,8 @@ img {
 }
 
 .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: rgb(96, 239, 191);
+    color: black;
     font-size: 0.75em;
     text-align: center;
     transform: rotateY(180deg);

@@ -452,30 +452,14 @@ Provide proofs of successful testing of each user story
 
 ### Validator Testing 
 - HTML
-  - No errors returned on the four website pages
-  https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Findex.html
-  https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Fwalks.html
-  https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Fgallery.html
-  ... still working on feedback form
-  
-  One errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.
-  https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Findex.htmlgithub.io/CI_PP1_ArklowTrails/index.html)
-  <img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/css-validator-warnings.jpg">
-  (check with Mo on this one as it previosuly caused a problem with deployment in github)
-
-  - Multiple errors  [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/walks.html)- 
-  - Multiple errors on [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/feedback.html)
-  - Some errors on  [W3C validator](https://validator.w3.org/nu/?doc=https://deemccart.github.io/CI_PP1_ArklowTrails/gallery.html)
-<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/WF01-landing-page.jpg">
-</details>
-(still more work to be done here)
+  - No errors returned on the four website html pages when checked in the W3C validator:
+  - [W3C validator - index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Findex.html) 
+  - [W3C validator - walks page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Fwalks.html) 
+  - [W3C validator - gallery page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Fgallery.html) 
+  - [W3C validator - feedback page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Ffeedback.html)
   
 - CSS
-  - warnings were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
-<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/css-validator-warnings.jpg">
-</details>
-(check with Mo)
+  - No errors returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https://deemccart.github.io/CI_PP1_ArklowTrails/&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 ### Manual Testing
 To be completed...
