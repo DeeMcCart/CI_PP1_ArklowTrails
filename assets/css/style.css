@@ -23,9 +23,16 @@ body {
         "foot foot foot";
 }
 
+
 h2 {
     display:none;
 }
+
+/* h2 is used on walks page to display walk titles */ 
+#walk01 h2, #walk02 h2, #walk03 h2, #walk04 h2, #walk05 h2, #walk06 h2{
+    display:block;
+}
+
 
 /* 12/04/23 DMcC : think this is now redundant 
 .navbar {
@@ -435,107 +442,15 @@ a text detail section and a photos section */
     border: rgba(7, 117, 36, 0.5);
 }
 
-
-
 /* The keyframes animation code below is adapted from https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/ */
 /* Styling the area of the slides */
-#slideshow {
-    overflow: hidden;
-    height: 225px;
+.walk-photos > img {
     width: 300px;
-    margin: 0 auto;
-}
-
-
-
-/* Style each of the sides
-    with a fixed width and height */
-.slide {
-    float: left;
     height: 225px;
-    width: 300px;
+    border-color:pink;
+    /* margin: 0 auto; */
 }
 
-
-/* Add animation to the slides */
-.slide-wrapper {
-    /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(300px * 4);
-
-    /* animation moved to a separate class to make it controllable */
-    /* animation: slide 15s ease infinite; /* 21/04/23 DMcC - added animation-play-state: paused to prevent autoplay */
-}
-
-/* start slideshow animation - but just for the walk you're interested in */
-/* this class is invoked per walk to invoke animation */
-.ss-start01 {
-    animation: slide 15s ease infinite running;
-}
-
-.ss-start02 {
-    animation: slide 15s ease infinite running;
-}
-
-.ss-start03 {
-    animation: slide 15s ease infinite running;
-}
-
-.ss-start04 {
-    animation: slide 15s ease infinite running;
-}
-
-.ss-start05 {
-    animation: slide 15s ease infinite running;
-}
-
-.ss-start06 {
-    animation: slide 15s ease infinite running;
-}
-
-/* the above logic should only be invoked when the relevant slideshow button is active */
-slideshow01:active {
-     animation: slide 15s ease running;
-}
-
-slideshow01:hover {
-    color: aquamarine;
-}
-
-/* hmmmmmm when I apply the logic above I get animation on my buttons but not on the parent element slidewrapper where it is needed */
-
-/* OK so try... */
-#slide-wrapper01-play:target {
-    animation: slide 15s ease;
-}
-
-/* pause slideshow animation */
-.ss-paused {
-    animation: slide 15s ease infinite paused;
-}
-
-/* Define the animation
-    for the slideshow */
-@keyframes slide {
-
-    /* Calculate the margin-left for
-    each of the slides */
-    20% {
-        margin-left: 0px;
-    }
-
-    40% {
-        margin-left: calc(-300px * 1);
-    }
-
-    60% {
-        margin-left: calc(-300px * 2);
-    }
-
-    80% {
-        margin-left: calc(-300px * 3);
-    }
-}
 
 /* Code below sourced from nikitahl.com/star-rating-with-css, modified very slightly for descriptors only */
 /* styling for entering a star rating  on the feedback form */
@@ -545,6 +460,7 @@ slideshow01:hover {
 #review-stars {
     display: flex;
     flex-basis:auto;
+    justify-content: flex-end;
 }
 
 .star-rating {
