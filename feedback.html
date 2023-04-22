@@ -80,8 +80,8 @@
       <!-- start rating code sourced from:..... -->
       <br>
       <br>
-      <label for="review-stars">Your star rating: </label> <!-- end review-stars positioning-->
-        <!-- 18/04/23 DMcC:  currently laid out as a frm within a frm which is against css rules; subsitute a div-->
+      <p>Your star rating: </p> <!-- end review-stars positioning-->
+        <!-- 18/04/23 DMcC:  was laid out as a frm within a frm which is against css rules; subsitute a div-->
         <div class="star-rating" id="review-stars">
 
           <input class="radio-input" type="radio" id="star5" name="star-input" value="5" />
@@ -103,10 +103,10 @@
       <br>
       <label for="date-walked">Date walked: <br></label>
       <input id="date-walked" type="date" name="date" />
-      <br>
+      <br><br>
       <label for="review">Your review:<br> </label>
       <!-- 22/04/23 DMcC:  Removed required tag on review field as not valid for textarea -->
-      <input id="review" type="textarea" name="review" />
+      <input id="review" type="text" name="review" />
       <br><br>
 
       <label for="photo1">Your photo(s); </label>
@@ -127,7 +127,7 @@
       <label for="email">Email: </label>
       <input id="email" type="email" name="email" required />
       <br><br>
-      <input id="accept_terms" type="checkbox" name="accept_terms" />
+      <input id="accept_terms" type="checkbox" name="accept_terms" required />
       <label for="accept_terms">Tick to accept Terms and Conditions<br></label>
       <input type="submit" name="submit" />
     </form> <!-- end main frm  -->
