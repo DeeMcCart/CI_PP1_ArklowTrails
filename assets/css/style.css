@@ -494,14 +494,12 @@ a text detail section and a photos section */
 }
 
 /* the above logic should only be invoked when the relevant slideshow button is active */
-#slideshow01:active {
-    color: aquamarine;
-    animation: slide 15s ease infinite running;
+slideshow01:active {
+     animation: slide 15s ease running;
 }
 
-#slideshow01:hover {
+slideshow01:hover {
     color: aquamarine;
-    animation: slide 15s ease infinite running;
 }
 
 /* hmmmmmm when I apply the logic above I get animation on my buttons but not on the parent element slidewrapper where it is needed */
