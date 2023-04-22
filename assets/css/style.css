@@ -23,6 +23,10 @@ body {
         "foot foot foot";
 }
 
+h2 {
+    display:none;
+}
+
 /* 12/04/23 DMcC : think this is now redundant 
 .navbar {
     color: #fff;
