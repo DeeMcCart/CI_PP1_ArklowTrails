@@ -29,12 +29,15 @@
 7. [Technology](#technologies)
     1. [Languages](#langugages)
     2. [Frameworks and Tools](#frameworks--tools)
-8. [Testing](#testing)
-    1. [Testing against Requirements](#rtm-proof)
-    2. [Validator testing](#validator-testing)
-    3. [Manual Testing](#manual-testing)
-    4. [Multi-device Testing](#multi-device-testing)
-    5. [Multi-browser Testing](#multi-browser-testing)
+8. [Validation](#validation)
+    1. [HTML Validation](#html-validation)
+    2. [CSS Validation](#css-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Multi-device Testing](#multi-device-testing)
+    6. [Multi-browser Testing](#multi-browser-testing)
+    7. [Testing user stories](#testing-user-stories)
+    6. [Feature testing(#rtm-proof)]
     6. [Unfixed Bugs](#unfixed-bugs)
 9. [Accessibility](#accessibility)
 10. [Performance](#performance)
@@ -42,7 +45,9 @@
 12. [Credits](#credits)
     1. [Content](#content)
     2. [Media](#media)
-    3. [Acknowledgements](#acknowledgements)
+    3. [Code](#code)
+    4. [References](#references)
+    5. [Acknowledgements](#acknowledgements)
 
 ## About
 ---------
@@ -416,30 +421,20 @@ Requirements traceability matrix showing link between user stories and implement
 ## Technologies
 
 ### Langugages
-HTML (version)
-CSS (version)
+- HTML 
+- CSS
 
 ### Frameworks & Tools
-git
-github
-balsamiq
-... to be completed ...
+* Github
+* Git
+* Gitpod
+* Balsamiq
+* Google Fonts
+* Font Awesome
 
-## Testing 
-To be completed ...  remember to include a table here which shows user stories/ user requirements and whether each has a pass/fail result (do I need to repeat each test on different device sizes?)
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+## Validation 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-### RTM-proof
-Requirements traceability matrix showing link between requirements and features
-Provide proofs of successful testing of each user story
-
-### Validator Testing 
+### HTML Validation 
 - HTML
   - No errors returned on the four website html pages when checked in the W3C validator:
   - [W3C validator - index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Findex.html) 
@@ -447,22 +442,10 @@ Provide proofs of successful testing of each user story
   - [W3C validator - gallery page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Fgallery.html) 
   - [W3C validator - feedback page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdeemccart.github.io%2FCI_PP1_ArklowTrails%2Ffeedback.html)
   
-- CSS
+### CSS Validation
   - No errors returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https://deemccart.github.io/CI_PP1_ArklowTrails/&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-### Manual Testing
-To be completed...
-
-### Multi-device Testing
-To be completed...
-
-### Multi-browser Testing
-To be completed...
-
-### Unfixed Bugs
-To be completed... mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
-
-## Accessibility
+### Accessibility
 The site was tested using the WAVE WebAIM accessibility evaluation tool.
 All pages pass with 0 errors
 - [Accessability: index page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/index.html)
@@ -474,30 +457,61 @@ Running the accessibility checks against the index page identified a problem wit
 On the feedback page, there were file upload buttons which had no form label (multiple photo update buttons)
 After making these changes there were no errors.
 
+### Performance
+Performance for all pages was tested using the Lighthouse tool within Google Chrome.  After adjusting image sizes, performance was at or above 90% for all pages.
 
-## Performance
 <details><summary>Performance: Index page</summary>
-<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-index-page.jpg">
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/performance-results-index-page.jpg">
 </details>
 <details><summary>Performance: Walks page</summary>
-<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-walks-page.jpg">
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/performance-results-walks-page.jpg">
 </details>
 <details><summary>Performance: Gallery page</summary>
-<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-gallery-page.jpg">
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/performance-results-gallery-page.jpg">
 </details>
 <details><summary>Performance: Feedback page</summary>
-<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-feedback-page.jpg">
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images//performance-results-feedback-page.jpg">
 </details>
 
+### Device Testing
+The website was tested on the following devices:
+* HP laptop
+* Samsung Galaxy S10 tablet
+* Motorola G(7) android phone
+
+### Multi-browser Testing
+The website was tested on the following browsers:
+* Google Chrome v112.0.5615.138 (HP laptop)
+* Google Chrome v112.0.5615.136 (Samsung Galaxy tablet)
+* Mozilla Firefox v112.1.0 (Motorola g(7) phone)
+
+### Testing User Stories
+![User story testing](./assets/readme_images/user-stories-checked-against-features.jpg?raw=true "testing user stories")
 
 
+
+### Feature Testing
+User Story Testing
+The user feature testing is documented in a pdf file:
+ https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/user-feature-test.pdf
+
+In addition, you should mention in this sectioning how your project looks and works on different browsers and screen sizes.
+
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
+
+
+Requirements traceability matrix showing link between requirements and features
+Provide proofs of successful testing of each user story### Unfixed Bugs
+To be completed... mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
 
 ## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
+* The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab - pages 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
@@ -505,31 +519,51 @@ The live link can be found here - https://deemccart.github.io/CI_PP1_ArklowTrail
 
 
 ## Credits 
-
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+Multiple sources were used in assembling this site.
 
 ### Content 
+* Text for the Glenart Woods walk was re-used from https://www.coillte.ie/site/glenart-wood/ some text lifted from here also
+* Text for Arklow Nature Reserve walk was re-used from https://www.visitarklow.ie/post/4-family-friendly-trails-in-arklow-town-great-for-a-walk-cycle-or-scoot
+* Inspiration and content for walks reviews was taken from https://www.alltrails.com/ireland/county-wicklow/arklow 
+* The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
+Images not credited are developer's own.
+* Moneylands Farm walk photos came from https://www.moneylandsfarm.com/
+* Glenart photos from the following site were re-used https://www.coillte.ie/site/glenart-wood/
+ 
+### Code
+* Inspiration for the flipcards came from Elaine B Roche's Thrive project at https://elainebroche-dev.github.io/ms1-thrive/
+* How to implement flip card functionality: sourced from W3schools ref https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+* For instructions on how to embed a responsive google map into html https://blog.hubspot.com/website/how-to-embed-google-map-in-html 
+* Google mymaps for specific code to embed in the website
+* https://www.w3schools.com/css/css_image_gallery.asp How to create an image gallery
+* https://www.w3schools.com/howto/howto_css_flip_card.asp How to create a flip card using CSS
+* https://www.w3schools.com/howto/howto_css_star_rating.asp creating review stars
+* https://css-tricks.com/five-methods-for-five-star-ratings/ Used for representing review stars
+* https://nikitahl.com/star-rating-with-css Simple star rating with pure CSS
+* https://stackoverflow.com/questions/12316501/including-google-fonts-link-or-import
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
- [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
 
-Double check the articles below:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-References:
-https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project
+### References
+Building this website involved a lot of learning for the developer, the following sites were used to assist with this:
+* Understanding wireframes:  https://visme.co/blog/what-is-a-wireframe/
+* How to wireframe a website https://www.youtube.com/watch?v=ZAYgDPtohYw Lily Creative
+* What is the end-to-end UX process: https://uxdesign.cc/ui-ux-case-study-a-step-by-step-guide-to-the-process-of-designing-a-pet-diet-app-d635b911b648
+* Embedding a google map: https://stackoverflow.com/questions/29441617/wordpress-google-map-in-background-overlay
+* Understanding flex:  https://flexboxfroggy.com/
+* CSS Grid vs Flexbox Acemind https://www.youtube.com/watch?v=RSIclWvNTdQ 
+* Create a jump-link  https://blog.hubspot.com/marketing/jump-link-same-page 
+* https://www.youtube.com/watch?v=p0bGHP-PXD4 Build a Responsive Website | HTML, CSS Grid, Flexbox & More   
+* https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project
+* https://chat.openai.com/chat 'What should a readme file for a website include?'
+* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing Tips to keep your CSS tidy
 
+For ideas on hosting a trails website and for certain photos and images:
+* For some ideas on local attractions:  https://www.arklowmaritimeheritage.ie/
+* For examples of feedback from users: https://www.sportireland.ie/outdoors/walking/trails/ 
+ 
 ### Acknowledgements
-I would like to sincerely thank my mentor, Mo Shami for his patience and support throughout.
-And I would like to thank Derek for his support in keeping everything going at home.
+* I would like to sincerely thank my mentor, Mo Shami for his patience and support throughout.
+* I would also like to thank Derek for his support and keeping everything running at home.
