@@ -18,11 +18,10 @@
     4. [Other stakeholder Goals](#other-stakeholder-goals)
     5. [Future Site owner and Administrator Goals](#future-site-owner-and-administrator-goals)
 5. [Further UX Design: ](#ux-design-decisions)
-    1. [Structure - Checklist](#structure)
-    2. [Skeleton - Wireframes; ](#wireframes)
-    3. [Surface - Fonts; ](#fonts-chosen)
-    4. [Surface - Colours](#colour-scheme)
-    5. [Surface - Imagery](#design-images)
+    1. [Skeleton - Wireframes; ](#wireframes)
+    2. [Surface - Fonts; ](#fonts-chosen)
+    3. [Surface - Colours](#colour-scheme)
+    4. [Surface - Imagery](#design-images)
 6. [Features](#features)
     1. [Included](#features-in-scope)
     2. [Future Development](#features-left-to-implement)
@@ -174,14 +173,6 @@ Support for a range of device types, and responsiveness to the size of the user'
 ## UX Design Decisions
 ----------------
 
-### Structure
-
-The key goals of UX design - structure plane - are addressed as follows:<br>
-
-https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/UX-structure-plane.jpg
-
-
-
 ### Wireframes
 <details><summary>Landing Page</summary>
 The landing page WF is shown here with 4 sceen resolutions as I found when testing that the Motorola G(7) was truncating to the right hand side for 2-column pictures display, therefore I added an additional responsiveness section to cater for 320-400 pixel screen size.   This was really just an issue for the landing page, the remaining screens sized OK for the content.
@@ -203,13 +194,9 @@ The landing page WF is shown here with 4 sceen resolutions as I found when testi
 </details>
 
 
-
-
-
 ### Fonts Chosen
 Libre Franklin and Libre Baskerville are chosen because they are readable on large screens or smaller mobile devices.  This font is recommended for sites that may be content-heavy but which are regarded as fun friendly and approachable/inclusive.  These are identified by Google as good pairing.
 Fallback fronts are used in both cases
-In practice, these fonts DO look readable and businesslike, but don't look particularly  friendly or approachable...
 
 ### Colour Scheme
 The colour combinations chosen are blue-green, light-blue, yellow-beige .... somewhat resembling ice cream which is a visual trigger for Arklow as a seaside town!
@@ -227,10 +214,12 @@ purple-border: rgb(103, 58, 183);
 
 This corresponds with the colours which are available within Google maps digitising capabilities, so the rbg values of the mapped walk and its flipcard are consistent.
 
-Digitising options in Google Maps:
+<details><summary>Digitising options in Google Maps</summary>
 ![Colour choices when digitising in Google Maps](./assets/readme_images/ux-design-choices-accessing-style-in-google-maps.jpg?raw=true "Google maps colour choices").
+</details>
+
  
-### Design Imagery 
+### Design Images
 This site is reasonably image-heavy, a lot of the interest for users is in creating, uploading or browsing the walk images.  Because of the nature of the landscape in the location of Arklow (lots of waterbodies - sea, rivers; lots of green - woods), the images are given sufficient size for the user to be able to view and enjoy.  (ref user stories SO_04, FTU_04, RU_03, RU_05)
 
 However a very fundamental aspect of this site is the categorisation of walks, it is not something that shouts out from the site, as the walk gallery photos take a lot of user attention, but in fact the cateogorisation is absolutely key to this site meeting its fundamental user requirement..  (ref user stories SO_02, FTU02, FTU_07) 
