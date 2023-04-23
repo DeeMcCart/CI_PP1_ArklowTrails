@@ -463,21 +463,35 @@ To be completed...
 To be completed... mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
 
 ## Accessibility
-To be completed... e.g. using WAVE WebAIM accessibility evaluation tool.
-All pages pass with X errors
+The site was tested using the WAVE WebAIM accessibility evaluation tool.
+All pages pass with 0 errors
 - [Accessability: index page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/index.html)
 - [Accessibility: walks page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/walks.html)
 - [Accessibility: gallery page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/gallery.html)
 - [Accessibility:  feedback page](https://wave.webaim.org/report#/https://8000-deemccart-cipp1arklowtr-sigag7qpuok.ws-eu95.gitpod.io/feedback.html)
 
 Running the accessibility checks against the index page identified a problem with the flipcards, which showed text and icons in white against a mid-blue background.  This was deemed insufficient contrast so was modified to black text against an aqua background (the same rgb as the header and footer). 
-
 On the feedback page, there were file upload buttons which had no form label (multiple photo update buttons)
 After making these changes there were no errors.
 
 
 ## Performance
-To be completed...
+<details><summary>Performance: Index page</summary>
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-index-page.jpg">
+</details>
+<details><summary>Performance: Walks page</summary>
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-walks-page.jpg">
+</details>
+<details><summary>Performance: Gallery page</summary>
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-gallery-page.jpg">
+</details>
+<details><summary>Performance: Feedback page</summary>
+<img src="https://deemccart.github.io/CI_PP1_ArklowTrails/assets/readme_images/./assets/readme_images/performance-results-feedback-page.jpg">
+</details>
+
+
+
+
 
 ## Deployment
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
@@ -517,4 +531,5 @@ References:
 https://bulldogjob.com/readme/how-to-write-a-good-readme-for-your-github-project
 
 ### Acknowledgements
-Acknowledgements including mentor acknowledgement here
+I would like to sincerely thank my mentor, Mo Shami for his patience and support throughout.
+And I would like to thank Derek for his support in keeping everything going at home.
